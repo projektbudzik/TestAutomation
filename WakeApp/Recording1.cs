@@ -79,40 +79,88 @@ namespace WakeApp
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://www.projektbudzik.pl/Contact' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("http://www.projektbudzik.pl/Contact", "Chrome", "", false, false, false, true, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://www.projektbudzik.pl/' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("http://www.projektbudzik.pl/", "Chrome", "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Submit' at 46;22.", repo.WelcomeWakeApp.SubmitInfo, new RecordItemIndex(2));
-            repo.WelcomeWakeApp.Submit.Click("46;22");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n                    WakeApp\n                ') on item 'WelcomeWakeApp.ProjektbudzikPl'.", repo.WelcomeWakeApp.ProjektbudzikPlInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.ProjektbudzikPlInfo, "InnerText", "\n                    WakeApp\n                ");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='http://www.projektbudzik.pl/') on item 'WelcomeWakeApp.ProjektbudzikPl'.", repo.WelcomeWakeApp.ProjektbudzikPlInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.ProjektbudzikPlInfo, "Href", "http://www.projektbudzik.pl/");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Title='projektbudzik.pl') on item 'WelcomeWakeApp.ProjektbudzikPl'.", repo.WelcomeWakeApp.ProjektbudzikPlInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.ProjektbudzikPlInfo, "Title", "projektbudzik.pl");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Title='Pobierz aplikację na Androida') on item 'WelcomeWakeApp.PobierzAplikacjęNaAndroida'.", repo.WelcomeWakeApp.PobierzAplikacjęNaAndroidaInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.PobierzAplikacjęNaAndroidaInfo, "Title", "Pobierz aplikację na Androida");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (FormAction='/Contact') on item 'WelcomeWakeApp.Kontakt1'.", repo.WelcomeWakeApp.Kontakt1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.Kontakt1Info, "FormAction", "/Contact");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Title='Kontakt') on item 'WelcomeWakeApp.Kontakt1'.", repo.WelcomeWakeApp.Kontakt1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.Kontakt1Info, "Title", "Kontakt");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='http://www.projektbudzik.pl/transparentlogo.png') on item 'WelcomeWakeApp.WakeApp'.", repo.WelcomeWakeApp.WakeAppInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.WakeAppInfo, "Src", "http://www.projektbudzik.pl/transparentlogo.png");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Ta strona wykorzystuje pliki cookie') on item 'WelcomeWakeApp.TaStronaWykorzystujePlikiCookie'.", repo.WelcomeWakeApp.TaStronaWykorzystujePlikiCookieInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.TaStronaWykorzystujePlikiCookieInfo, "InnerText", "Ta strona wykorzystuje pliki cookie");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeWakeApp.NavItem'.", repo.WelcomeWakeApp.NavItemInfo, new RecordItemIndex(10));
+            Validate.Exists(repo.WelcomeWakeApp.NavItemInfo);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Zamknij' at 11;12.", repo.WelcomeWakeApp.ZamknijInfo, new RecordItemIndex(11));
+            repo.WelcomeWakeApp.Zamknij.Click("11;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='The Name field is required.') on item 'WelcomeWakeApp.DivTagRow.TheNameFieldIsRequired'.", repo.WelcomeWakeApp.DivTagRow.TheNameFieldIsRequiredInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TheNameFieldIsRequiredInfo, "InnerText", "The Name field is required.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='http://www.projektbudzik.pl/Home/AboutUs') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.ONas'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.ONasInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.ONasInfo, "Href", "http://www.projektbudzik.pl/Home/AboutUs");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='The Email field is required.') on item 'WelcomeWakeApp.DivTagRow.TheEmailFieldIsRequired'.", repo.WelcomeWakeApp.DivTagRow.TheEmailFieldIsRequiredInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TheEmailFieldIsRequiredInfo, "InnerText", "The Email field is required.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Polityka prywatności') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatności'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatnościInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatnościInfo, "InnerText", "Polityka prywatności");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='The Subject field is required.') on item 'WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequired'.", repo.WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequiredInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequiredInfo, "InnerText", "The Subject field is required.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='http://www.projektbudzik.pl/Home/Privacy') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatności'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatnościInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PolitykaPrywatnościInfo, "Href", "http://www.projektbudzik.pl/Home/Privacy");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='The Subject field is required.') on item 'WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequired'.", repo.WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequiredInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TheSubjectFieldIsRequiredInfo, "InnerText", "The Subject field is required.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Pomoc') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.Pomoc'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PomocInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PomocInfo, "InnerText", "Pomoc");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (SafeClass='field-validation-error text-danger') on item 'WelcomeWakeApp.DivTagRow.TheMessageFieldIsRequired'.", repo.WelcomeWakeApp.DivTagRow.TheMessageFieldIsRequiredInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TheMessageFieldIsRequiredInfo, "SafeClass", "field-validation-error text-danger");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='http://www.projektbudzik.pl/Home/Help') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.Pomoc'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PomocInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.PomocInfo, "Href", "http://www.projektbudzik.pl/Home/Help");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(8));
-            Host.Current.KillApplication(repo.WelcomeWakeApp.Self);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Kontakt') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.Kontakt'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.KontaktInfo, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.KontaktInfo, "InnerText", "Kontakt");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='http://www.projektbudzik.pl/Contact') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.Kontakt'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.KontaktInfo, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.KontaktInfo, "Href", "http://www.projektbudzik.pl/Contact");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (SafeClass='fa fa-github') on item 'WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.FaFaGithub'.", repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.FaFaGithubInfo, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DFlexJustifyContentCenterMb1Pt4.FaFaGithubInfo, "SafeClass", "fa fa-github");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n                © WakeApp - Projekt zespołowy pracy dyplomowej studentów Wydziału Informatyki PJATK Gdańsk ') on item 'WelcomeWakeApp.DivTagCWakeAppProje'.", repo.WelcomeWakeApp.DivTagCWakeAppProjeInfo, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagCWakeAppProjeInfo, "InnerText", "\n                © WakeApp - Projekt zespołowy pracy dyplomowej studentów Wydziału Informatyki PJATK Gdańsk ");
+            Delay.Milliseconds(100);
             
         }
 

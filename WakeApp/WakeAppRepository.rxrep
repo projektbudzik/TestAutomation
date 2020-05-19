@@ -131,26 +131,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']/?/?/footer/?/?/div[@innertext&gt;'                &#169; WakeApp']
 			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="7b96ee0f-f573-4d4d-a8b2-f2db086685a3"
-			name="ButtonTag"
-			refimgid="71977879-4190-473a-9ade-7a3c6658f4f8"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='                                        Zaloguj się                                    ']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext&gt;'']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="5de7e16f-d67c-469f-ba19-a298b0b27c1d"
-			name="ButtonTag1"
-			refimgid="30750b8b-3cd9-4162-a923-70e0e955b5db"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[4]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='                                        Rejestracja                                    ']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[4]/form[@action='http://www.projektbudzik.pl/']/button[@innertext&gt;'']
-			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -366,6 +346,66 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			refpath="/dom[@domain='www.projektbudzik.pl']//button[#'submit']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']//button[#'submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="34bac232-6509-48ac-93e0-d6593fe5dd70"
+			name="PobierzAplikacjęNaAndroida"
+			refimgid="094a51e3-3a83-4ed7-9115-d5d552d5cd00"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[1]/form[@action='http://www.projektbudzik.pl/']/a[@title='Pobierz aplikację na Androida']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/a[@title&gt;'Pobierz aplikacj&#281; na Andr']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="94d6584c-8239-4847-85e9-bea13d203319"
+			name="Kontakt1"
+			refimgid="a7a81246-7473-4dda-ad1b-86ff12c92787"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="631af2d3-d27a-4f8a-aee6-a0d681c675a1"
+			name="FaFaUserCircleO1"
+			refimgid="63ab2e65-9893-4c2f-88d6-8a876011f686"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/button[@innertext='                                        Zaloguj się                                    ']/i"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/?/?/i
+			</item>
+			<item
+			addcaps="unknown,webelement,h6tag"
+			capname="h6tag"
+			id="9a37b010-3d99-4d3d-b65f-9b57b22de612"
+			name="TaStronaWykorzystujePlikiCookie"
+			refimgid="1fc36b9c-bfef-4508-8f30-ce880f3b3741"
+			refpath="/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/h6[@innertext='Ta strona wykorzystuje pliki cookie']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/h6[@innertext&gt;'Ta strona wykorzystuje pliki']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="48edf724-1806-440e-938b-77a9c66cb4c0"
+			name="NavItem"
+			refimgid="d6d27e87-b0ca-47ae-9b40-e87bfee7d732"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[4]"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[4]
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="a0fae0bc-55ec-43c4-b657-43d08560d722"
+			name="Zamknij"
+			refimgid="dba1b024-9a36-4e4b-9d01-bf96a66c196c"
+			refpath="/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/a[@innertext='x']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/a[@innertext='x']
 			</item>
 			<basepath>
 				/dom[@domain='www.projektbudzik.pl']

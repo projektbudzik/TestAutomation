@@ -13,18 +13,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="36ac4ce8-ef60-483a-8f0f-179e8b0d18d6"
-			name="CloseBrowser"
-			ref="c5f06714-6b8b-46e7-8468-44e3641fae39"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="36fb9d86-9709-4bd7-970c-0230201d132e"
-			name="Recording1"
-			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="6f6f7711-6296-44a8-9e49-12784b55cbcc"
 			name="Recording1"
 			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
@@ -118,17 +106,9 @@
 						<smartfoldernode
 						id="deb15c95-d8c5-47d1-9003-33f062876b4d"
 						name="SmartFolder1">
-							<testmodule
-							id="36fb9d86-9709-4bd7-970c-0230201d132e"
-							name="Recording1">
-							</testmodule>
 							<teardown
 							id="00c4572d-0a88-4a7e-99ef-469c40271bde"
 							name="teardown">
-								<testmodule
-								id="36ac4ce8-ef60-483a-8f0f-179e8b0d18d6"
-								name="CloseBrowser">
-								</testmodule>
 							</teardown>
 						</smartfoldernode>
 					</testcase>

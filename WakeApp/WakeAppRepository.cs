@@ -145,14 +145,18 @@ namespace WakeApp
             RepoItemInfo _projektbudzikplInfo;
             RepoItemInfo _wakeappInfo;
             RepoItemInfo _divtagcwakeappprojeInfo;
-            RepoItemInfo _buttontagInfo;
-            RepoItemInfo _buttontag1Info;
             RepoItemInfo _fafausercircleoInfo;
             RepoItemInfo _fafaandroid1Info;
             RepoItemInfo _h5tagpobierzaplikacjęInfo;
             RepoItemInfo _kontaktInfo;
             RepoItemInfo _somedivtagInfo;
             RepoItemInfo _submitInfo;
+            RepoItemInfo _pobierzaplikacjęnaandroidaInfo;
+            RepoItemInfo _kontakt1Info;
+            RepoItemInfo _fafausercircleo1Info;
+            RepoItemInfo _tastronawykorzystujeplikicookieInfo;
+            RepoItemInfo _navitemInfo;
+            RepoItemInfo _zamknijInfo;
 
             /// <summary>
             /// Creates a new WelcomeWakeApp  folder.
@@ -169,14 +173,18 @@ namespace WakeApp
                 _projektbudzikplInfo = new RepoItemInfo(this, "ProjektbudzikPl", "?/?/header/nav/?/?/a[@innertext>'                    WakeApp']", 30000, null, "72227eb6-18fb-4f50-a965-89817f713b24");
                 _wakeappInfo = new RepoItemInfo(this, "WakeApp", "body/div[1]/main/div/div/img[@alt='WakeApp']", 30000, null, "9f9cac08-74cf-47b5-bc52-37b957afa40d");
                 _divtagcwakeappprojeInfo = new RepoItemInfo(this, "DivTagCWakeAppProje", "?/?/footer/?/?/div[@innertext>'                © WakeApp']", 30000, null, "edb369dd-323a-4fcc-81f1-e82abdca6af6");
-                _buttontagInfo = new RepoItemInfo(this, "ButtonTag", "?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext>'']", 30000, null, "7b96ee0f-f573-4d4d-a8b2-f2db086685a3");
-                _buttontag1Info = new RepoItemInfo(this, "ButtonTag1", "?/?/header/nav//ul/li[4]/form[@action='http://www.projektbudzik.pl/']/button[@innertext>'']", 30000, null, "5de7e16f-d67c-469f-ba19-a298b0b27c1d");
                 _fafausercircleoInfo = new RepoItemInfo(this, "FaFaUserCircleO", ".//nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext>'']/i", 30000, null, "9d5869c6-76d5-4974-9973-2b09e5d7547b");
                 _fafaandroid1Info = new RepoItemInfo(this, "FaFaAndroid1", "body/div//h5[@innertext>'                pobierz aplikację']/a[@title>'Pobierz aplikację na Andr']/i", 30000, null, "c4907e55-f8de-40d9-910f-353dec8e07a2");
                 _h5tagpobierzaplikacjęInfo = new RepoItemInfo(this, "H5TagPobierzAplikację", "body/div//h5[@innertext>'                pobierz aplikację']", 30000, null, "3e1bebd1-93b0-49f5-8369-09d387ff2cf1");
                 _kontaktInfo = new RepoItemInfo(this, "Kontakt", "body/div/?/?/section/h2[@innertext='Kontakt']", 30000, null, "fe7d7127-81b5-47d7-ad62-142ee7f626c6");
                 _somedivtagInfo = new RepoItemInfo(this, "SomeDivTag", ".//div[#'map-container-section']/iframe[@src='https://maps.google.com/maps?q=Polsko-Japo%C5%84ska+Akademia+Technik+Komputerowych&t=&z=15&ie=UTF8&iwloc=&output=embed']//div[#'mapDiv']/div/div/div[1]/div[3]", 30000, null, "f6846fb0-6c32-4292-91d8-b916cca10a63");
                 _submitInfo = new RepoItemInfo(this, "Submit", ".//button[#'submit']", 30000, null, "a7b3baed-49f6-43be-9ecb-75c46a8de6b5");
+                _pobierzaplikacjęnaandroidaInfo = new RepoItemInfo(this, "PobierzAplikacjęNaAndroida", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/a[@title>'Pobierz aplikację na Andr']", 30000, null, "34bac232-6509-48ac-93e0-d6593fe5dd70");
+                _kontakt1Info = new RepoItemInfo(this, "Kontakt1", "?/?/header/nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']", 30000, null, "94d6584c-8239-4847-85e9-bea13d203319");
+                _fafausercircleo1Info = new RepoItemInfo(this, "FaFaUserCircleO1", "?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/?/?/i", 30000, null, "631af2d3-d27a-4f8a-aee6-a0d681c675a1");
+                _tastronawykorzystujeplikicookieInfo = new RepoItemInfo(this, "TaStronaWykorzystujePlikiCookie", ".//div[#'cookieinfo']/h6[@innertext>'Ta strona wykorzystuje pliki']", 30000, null, "9a37b010-3d99-4d3d-b65f-9b57b22de612");
+                _navitemInfo = new RepoItemInfo(this, "NavItem", "?/?/header/nav//ul/li[4]", 30000, null, "48edf724-1806-440e-938b-77a9c66cb4c0");
+                _zamknijInfo = new RepoItemInfo(this, "Zamknij", ".//div[#'cookieinfo']/a[@innertext='x']", 30000, null, "a0fae0bc-55ec-43c4-b657-43d08560d722");
             }
 
             /// <summary>
@@ -407,54 +415,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The ButtonTag item.
-            /// </summary>
-            [RepositoryItem("7b96ee0f-f573-4d4d-a8b2-f2db086685a3")]
-            public virtual Ranorex.ButtonTag ButtonTag
-            {
-                get
-                {
-                    return _buttontagInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTag item info.
-            /// </summary>
-            [RepositoryItemInfo("7b96ee0f-f573-4d4d-a8b2-f2db086685a3")]
-            public virtual RepoItemInfo ButtonTagInfo
-            {
-                get
-                {
-                    return _buttontagInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTag1 item.
-            /// </summary>
-            [RepositoryItem("5de7e16f-d67c-469f-ba19-a298b0b27c1d")]
-            public virtual Ranorex.ButtonTag ButtonTag1
-            {
-                get
-                {
-                    return _buttontag1Info.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTag1 item info.
-            /// </summary>
-            [RepositoryItemInfo("5de7e16f-d67c-469f-ba19-a298b0b27c1d")]
-            public virtual RepoItemInfo ButtonTag1Info
-            {
-                get
-                {
-                    return _buttontag1Info;
-                }
-            }
-
-            /// <summary>
             /// The FaFaUserCircleO item.
             /// </summary>
             [RepositoryItem("9d5869c6-76d5-4974-9973-2b09e5d7547b")]
@@ -595,6 +555,150 @@ namespace WakeApp
                 get
                 {
                     return _submitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PobierzAplikacjęNaAndroida item.
+            /// </summary>
+            [RepositoryItem("34bac232-6509-48ac-93e0-d6593fe5dd70")]
+            public virtual Ranorex.ATag PobierzAplikacjęNaAndroida
+            {
+                get
+                {
+                    return _pobierzaplikacjęnaandroidaInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PobierzAplikacjęNaAndroida item info.
+            /// </summary>
+            [RepositoryItemInfo("34bac232-6509-48ac-93e0-d6593fe5dd70")]
+            public virtual RepoItemInfo PobierzAplikacjęNaAndroidaInfo
+            {
+                get
+                {
+                    return _pobierzaplikacjęnaandroidaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Kontakt1 item.
+            /// </summary>
+            [RepositoryItem("94d6584c-8239-4847-85e9-bea13d203319")]
+            public virtual Ranorex.ButtonTag Kontakt1
+            {
+                get
+                {
+                    return _kontakt1Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Kontakt1 item info.
+            /// </summary>
+            [RepositoryItemInfo("94d6584c-8239-4847-85e9-bea13d203319")]
+            public virtual RepoItemInfo Kontakt1Info
+            {
+                get
+                {
+                    return _kontakt1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaFaUserCircleO1 item.
+            /// </summary>
+            [RepositoryItem("631af2d3-d27a-4f8a-aee6-a0d681c675a1")]
+            public virtual Ranorex.ITag FaFaUserCircleO1
+            {
+                get
+                {
+                    return _fafausercircleo1Info.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaFaUserCircleO1 item info.
+            /// </summary>
+            [RepositoryItemInfo("631af2d3-d27a-4f8a-aee6-a0d681c675a1")]
+            public virtual RepoItemInfo FaFaUserCircleO1Info
+            {
+                get
+                {
+                    return _fafausercircleo1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TaStronaWykorzystujePlikiCookie item.
+            /// </summary>
+            [RepositoryItem("9a37b010-3d99-4d3d-b65f-9b57b22de612")]
+            public virtual Ranorex.H6Tag TaStronaWykorzystujePlikiCookie
+            {
+                get
+                {
+                    return _tastronawykorzystujeplikicookieInfo.CreateAdapter<Ranorex.H6Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TaStronaWykorzystujePlikiCookie item info.
+            /// </summary>
+            [RepositoryItemInfo("9a37b010-3d99-4d3d-b65f-9b57b22de612")]
+            public virtual RepoItemInfo TaStronaWykorzystujePlikiCookieInfo
+            {
+                get
+                {
+                    return _tastronawykorzystujeplikicookieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NavItem item.
+            /// </summary>
+            [RepositoryItem("48edf724-1806-440e-938b-77a9c66cb4c0")]
+            public virtual Ranorex.LiTag NavItem
+            {
+                get
+                {
+                    return _navitemInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavItem item info.
+            /// </summary>
+            [RepositoryItemInfo("48edf724-1806-440e-938b-77a9c66cb4c0")]
+            public virtual RepoItemInfo NavItemInfo
+            {
+                get
+                {
+                    return _navitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Zamknij item.
+            /// </summary>
+            [RepositoryItem("a0fae0bc-55ec-43c4-b657-43d08560d722")]
+            public virtual Ranorex.ATag Zamknij
+            {
+                get
+                {
+                    return _zamknijInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Zamknij item info.
+            /// </summary>
+            [RepositoryItemInfo("a0fae0bc-55ec-43c4-b657-43d08560d722")]
+            public virtual RepoItemInfo ZamknijInfo
+            {
+                get
+                {
+                    return _zamknijInfo;
                 }
             }
 
