@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c5f06714-6b8b-46e7-8468-44e3641fae39"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="WakeApp">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4e28f929-0d03-477c-b4fd-e94ba63756de">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e34f58c7-60a1-42ca-ad46-7a96f04c40df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="1cb3639a-dab9-484b-b470-871f8b54925e"
+	name="WakeAppRepository"
+	relativepath="WakeAppRepository.rxrep">
+		<codegen
+		classname="WakeAppRepository"
+		namespace="WakeApp">
+		</codegen>
+		<rootfolder
+		id="b82432a2-0496-4b32-8d7c-b7b3a367b0c3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

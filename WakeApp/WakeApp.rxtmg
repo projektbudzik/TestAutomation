@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="WakeApp"
+      id="bd1e4fd9-d72e-49b8-9242-2057f9e6f900"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="WakeApp"
+      id="bd1e4fd9-d72e-49b8-9242-2057f9e6f900"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
