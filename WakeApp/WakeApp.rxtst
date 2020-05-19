@@ -4,12 +4,25 @@
 		<flatlistofchildren>
 			<teardown
 			id="00c4572d-0a88-4a7e-99ef-469c40271bde"
-			name="teardown">
+			name="teardown1">
 			</teardown>
+			<smartfoldernode
+			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b"
+			name="Happy_Path_for_user_and_group_registration">
+				<description>
+					<![CDATA[Happy path - go thru registration process of user an group]]>
+				</description>
+			</smartfoldernode>
 			<testmodule
-			id="24145d19-a7b1-4e14-b549-f1c482eae574"
-			name="Recording1"
-			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
+			id="36bcac0a-71d6-41da-8fbd-6abc3b381d93"
+			name="RegisterAlreadyUserCredentials"
+			ref="d0d5d5b0-8b21-47d1-b315-16ff446301c6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
+			name="HappyPath"
+			ref="240274e3-a7e5-413d-8bcf-357237c95cad"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -18,6 +31,13 @@
 			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="7da44347-21a8-456b-b001-63cf8bf87286"
+			name="Register_Empty_form">
+				<description>
+					<![CDATA[Check for correct errors&nbsp;when all fields are empty]]>
+				</description>
+			</smartfoldernode>
 			<testcase
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6"
 			name="Test_Case_for_main_page_validation">
@@ -32,6 +52,19 @@
 			name="Test_Case_for_Contact_Form">
 			</testcase>
 			<smartfoldernode
+			id="bb1709bb-7486-42db-9705-486261d30467"
+			name="Register_Already_User_email">
+				<description>
+					<![CDATA[<p>Check if already user email will be registered</p><p><br></p><p><br></p>]]>
+				</description>
+			</smartfoldernode>
+			<testmodule
+			id="bc5b0c4d-8d12-45ff-8581-9940fdf634d0"
+			name="SendEmptyForm"
+			ref="5f452627-79df-425f-ad45-814839d5eabf"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
 			id="c9415a68-3fa6-4b25-bed0-d91d10177c3f"
 			name="Check_error_message_when_fields_are_empy">
 			</smartfoldernode>
@@ -40,15 +73,14 @@
 			name="Recording1"
 			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
 			type="Recording">
+				<description>
+					<![CDATA[Validation of main page (links, position of text, text, size of elements)]]>
+				</description>
 			</testmodule>
 			<smartfoldernode
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d"
 			name="SmartFolder1">
 			</smartfoldernode>
-			<testcase
-			id="eddfe778-cad1-425b-9993-26864db26bd1"
-			name="Test_Case_for_Contact_page_validation">
-			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -68,6 +100,10 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testcase
+			id="fa2595f1-c970-4369-8ce9-18c379a79934"
+			name="Test_Case_for_Registration_Form">
+			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -85,14 +121,6 @@
 						</testmodule>
 					</testcase>
 					<testcase
-					id="eddfe778-cad1-425b-9993-26864db26bd1"
-					name="Test_Case_for_Contact_page_validation">
-						<testmodule
-						id="24145d19-a7b1-4e14-b549-f1c482eae574"
-						name="Recording1">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1"
 					name="Test_Case_for_Contact_Form">
 						<smartfoldernode
@@ -106,11 +134,39 @@
 						<smartfoldernode
 						id="deb15c95-d8c5-47d1-9003-33f062876b4d"
 						name="SmartFolder1">
-							<teardown
-							id="00c4572d-0a88-4a7e-99ef-469c40271bde"
-							name="teardown">
-							</teardown>
 						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="fa2595f1-c970-4369-8ce9-18c379a79934"
+					name="Test_Case_for_Registration_Form">
+						<smartfoldernode
+						id="7da44347-21a8-456b-b001-63cf8bf87286"
+						name="Register_Empty_form">
+							<testmodule
+							id="bc5b0c4d-8d12-45ff-8581-9940fdf634d0"
+							name="SendEmptyForm">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="bb1709bb-7486-42db-9705-486261d30467"
+						name="Register_Already_User_email">
+							<testmodule
+							id="36bcac0a-71d6-41da-8fbd-6abc3b381d93"
+							name="RegisterAlreadyUserCredentials">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0b5bafe9-fbc8-4058-b231-1216b98cda2b"
+						name="Happy_Path_for_user_and_group_registration">
+							<testmodule
+							id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
+							name="HappyPath">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="00c4572d-0a88-4a7e-99ef-469c40271bde"
+						name="teardown1">
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -123,6 +179,12 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b">
+			</testcontainer>
+			<testcontainer
+			id="7da44347-21a8-456b-b001-63cf8bf87286">
+			</testcontainer>
+			<testcontainer
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6">
 			</testcontainer>
 			<testcontainer
@@ -132,13 +194,13 @@
 			id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1">
 			</testcontainer>
 			<testcontainer
+			id="bb1709bb-7486-42db-9705-486261d30467">
+			</testcontainer>
+			<testcontainer
 			id="c9415a68-3fa6-4b25-bed0-d91d10177c3f">
 			</testcontainer>
 			<testcontainer
-			id="deb15c95-d8c5-47d1-9003-33f062876b4d">
-			</testcontainer>
-			<testcontainer
-			id="eddfe778-cad1-425b-9993-26864db26bd1">
+			id="fa2595f1-c970-4369-8ce9-18c379a79934">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

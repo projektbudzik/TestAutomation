@@ -333,6 +333,26 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				searchtimeout="30000ms">
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext&gt;'The Message field is requ']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b14b653d-48b7-490a-aca2-483d50910e06"
+				name="FormCheck"
+				refimgid="cc488cf1-4c10-47bc-ae2e-e8f94e46aa66"
+				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form/div[6]/div[2]"
+				searchtimeout="30000ms">
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="74d797dd-803f-4c95-9c36-e24247c38726"
+				name="PodanyAdresEmailJużIstnieje"
+				refimgid="40ccc54d-247a-40c7-a831-3fd9c5f5ce11"
+				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext='Podany adres email już istnieje']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext&gt;'Podany adres email ju&#380; is']
+				</item>
 				<basepath>
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]
 				</basepath>
@@ -406,6 +426,156 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			refpath="/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/a[@innertext='x']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']//div[#'cookieinfo']/a[@innertext='x']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2cfb75a2-96bd-4e84-bc01-26c30c425ca0"
+			name="Submit1"
+			refimgid="5f4b88f1-3b1d-491b-811b-c49839d5a1db"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div/div[1]/div/div/form/div[6]/div[6]/input[@type='submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[6]/input[@type='submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="5824f8a9-a2cc-40ea-91bd-204f3f90d7d5"
+			name="NameError"
+			refimgid="11d65ec6-dd75-41f6-afe3-312185404ef0"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'Name-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'Name-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="cc74656e-cc9b-4909-b0ae-12016589e824"
+			name="EmailError"
+			refimgid="e4ebcf1a-935d-434b-9277-2da058b650aa"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'Email-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'Email-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="84c91e27-6ce5-4c12-9d6a-cb68cca765f0"
+			name="PasswordError"
+			refimgid="3e90c418-6617-45a2-8470-5a8d850fe85d"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'Password-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'Password-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c429f0e9-6ec2-4f79-9245-785e476d088b"
+			name="ConfirmPasswordError"
+			refimgid="3c10d3b6-3efb-4fa0-ae2d-866b0f342a4c"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'ConfirmPassword-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'ConfirmPassword-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="16c519b4-b599-4983-970c-31ef1c8c78f3"
+			name="GroupNameError"
+			refimgid="8b45c386-a3d8-4178-a37b-a0b57c95c03c"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'GroupName-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'GroupName-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c01d1c37-1065-4ef1-8fde-4b79b6537ac9"
+			name="GroupPasswordError"
+			refimgid="b8a7b6fb-d517-497d-b20e-20f2cef1a27b"
+			refpath="/dom[@domain='www.projektbudzik.pl']//span[#'GroupPassword-error']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//span[#'GroupPassword-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="16dffdea-8194-4848-a1fd-e0b4caff8d3b"
+			name="Name"
+			refimgid="f36449d6-1960-4254-92b4-482fdaefb89b"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Name']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Name']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="555f779d-8591-46cd-98d8-7a938b4f2b25"
+			name="Email"
+			refimgid="1a5231cd-6206-4baa-bff5-5fb382346c66"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Email']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Email']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a0753bc4-a813-46a6-b17e-42721665eb9e"
+			name="Password"
+			refimgid="46ee8fb5-85fc-4a88-8679-f225273e223f"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Password']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9a3d6e44-2da3-438a-85e8-febe4d1cd26f"
+			name="ConfirmPassword"
+			refimgid="9d82ed0b-8712-4cea-b234-17b666ece925"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'ConfirmPassword']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'ConfirmPassword']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="91002e45-f61a-4069-be93-9af7872a5bdb"
+			name="LabelTagCreateNewGroup"
+			refimgid="b35e0648-57a8-4327-be69-95ff308abb9d"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form/div[6]/div[2]/label[@innertext>' Create new group']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]/label[@innertext&gt;' Create new group']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="d836de61-74d7-4688-ac44-562f7849a78b"
+			name="GroupName"
+			refimgid="cbad48df-e208-473b-9ab6-4b419d68c7f8"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'GroupName']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'GroupName']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="cfc5af30-4216-4f5d-aa9f-6114342b0fb4"
+			name="GroupPassword"
+			refimgid="2bbd6f03-686e-49ee-9043-8151dc4a8203"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'GroupPassword']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'GroupPassword']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="264e39d3-92ba-479e-a754-46c255689803"
+			name="GroupConfirmPassword"
+			refimgid="a50fa04f-f046-496a-9a2b-2521442aaa64"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'GroupConfirmPassword']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'GroupConfirmPassword']
 			</item>
 			<basepath>
 				/dom[@domain='www.projektbudzik.pl']

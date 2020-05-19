@@ -157,6 +157,21 @@ namespace WakeApp
             RepoItemInfo _tastronawykorzystujeplikicookieInfo;
             RepoItemInfo _navitemInfo;
             RepoItemInfo _zamknijInfo;
+            RepoItemInfo _submit1Info;
+            RepoItemInfo _nameerrorInfo;
+            RepoItemInfo _emailerrorInfo;
+            RepoItemInfo _passworderrorInfo;
+            RepoItemInfo _confirmpassworderrorInfo;
+            RepoItemInfo _groupnameerrorInfo;
+            RepoItemInfo _grouppassworderrorInfo;
+            RepoItemInfo _nameInfo;
+            RepoItemInfo _emailInfo;
+            RepoItemInfo _passwordInfo;
+            RepoItemInfo _confirmpasswordInfo;
+            RepoItemInfo _labeltagcreatenewgroupInfo;
+            RepoItemInfo _groupnameInfo;
+            RepoItemInfo _grouppasswordInfo;
+            RepoItemInfo _groupconfirmpasswordInfo;
 
             /// <summary>
             /// Creates a new WelcomeWakeApp  folder.
@@ -185,6 +200,21 @@ namespace WakeApp
                 _tastronawykorzystujeplikicookieInfo = new RepoItemInfo(this, "TaStronaWykorzystujePlikiCookie", ".//div[#'cookieinfo']/h6[@innertext>'Ta strona wykorzystuje pliki']", 30000, null, "9a37b010-3d99-4d3d-b65f-9b57b22de612");
                 _navitemInfo = new RepoItemInfo(this, "NavItem", "?/?/header/nav//ul/li[4]", 30000, null, "48edf724-1806-440e-938b-77a9c66cb4c0");
                 _zamknijInfo = new RepoItemInfo(this, "Zamknij", ".//div[#'cookieinfo']/a[@innertext='x']", 30000, null, "a0fae0bc-55ec-43c4-b657-43d08560d722");
+                _submit1Info = new RepoItemInfo(this, "Submit1", "body/div/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[6]/input[@type='submit']", 30000, null, "2cfb75a2-96bd-4e84-bc01-26c30c425ca0");
+                _nameerrorInfo = new RepoItemInfo(this, "NameError", ".//span[#'Name-error']", 30000, null, "5824f8a9-a2cc-40ea-91bd-204f3f90d7d5");
+                _emailerrorInfo = new RepoItemInfo(this, "EmailError", ".//span[#'Email-error']", 30000, null, "cc74656e-cc9b-4909-b0ae-12016589e824");
+                _passworderrorInfo = new RepoItemInfo(this, "PasswordError", ".//span[#'Password-error']", 30000, null, "84c91e27-6ce5-4c12-9d6a-cb68cca765f0");
+                _confirmpassworderrorInfo = new RepoItemInfo(this, "ConfirmPasswordError", ".//span[#'ConfirmPassword-error']", 30000, null, "c429f0e9-6ec2-4f79-9245-785e476d088b");
+                _groupnameerrorInfo = new RepoItemInfo(this, "GroupNameError", ".//span[#'GroupName-error']", 30000, null, "16c519b4-b599-4983-970c-31ef1c8c78f3");
+                _grouppassworderrorInfo = new RepoItemInfo(this, "GroupPasswordError", ".//span[#'GroupPassword-error']", 30000, null, "c01d1c37-1065-4ef1-8fde-4b79b6537ac9");
+                _nameInfo = new RepoItemInfo(this, "Name", ".//input[#'Name']", 30000, null, "16dffdea-8194-4848-a1fd-e0b4caff8d3b");
+                _emailInfo = new RepoItemInfo(this, "Email", ".//input[#'Email']", 30000, null, "555f779d-8591-46cd-98d8-7a938b4f2b25");
+                _passwordInfo = new RepoItemInfo(this, "Password", ".//input[#'Password']", 30000, null, "a0753bc4-a813-46a6-b17e-42721665eb9e");
+                _confirmpasswordInfo = new RepoItemInfo(this, "ConfirmPassword", ".//input[#'ConfirmPassword']", 30000, null, "9a3d6e44-2da3-438a-85e8-febe4d1cd26f");
+                _labeltagcreatenewgroupInfo = new RepoItemInfo(this, "LabelTagCreateNewGroup", "body/div[1]/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]/label[@innertext>' Create new group']", 30000, null, "91002e45-f61a-4069-be93-9af7872a5bdb");
+                _groupnameInfo = new RepoItemInfo(this, "GroupName", ".//input[#'GroupName']", 30000, null, "d836de61-74d7-4688-ac44-562f7849a78b");
+                _grouppasswordInfo = new RepoItemInfo(this, "GroupPassword", ".//input[#'GroupPassword']", 30000, null, "cfc5af30-4216-4f5d-aa9f-6114342b0fb4");
+                _groupconfirmpasswordInfo = new RepoItemInfo(this, "GroupConfirmPassword", ".//input[#'GroupConfirmPassword']", 30000, null, "264e39d3-92ba-479e-a754-46c255689803");
             }
 
             /// <summary>
@@ -703,6 +733,366 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The Submit1 item.
+            /// </summary>
+            [RepositoryItem("2cfb75a2-96bd-4e84-bc01-26c30c425ca0")]
+            public virtual Ranorex.InputTag Submit1
+            {
+                get
+                {
+                    return _submit1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit1 item info.
+            /// </summary>
+            [RepositoryItemInfo("2cfb75a2-96bd-4e84-bc01-26c30c425ca0")]
+            public virtual RepoItemInfo Submit1Info
+            {
+                get
+                {
+                    return _submit1Info;
+                }
+            }
+
+            /// <summary>
+            /// The NameError item.
+            /// </summary>
+            [RepositoryItem("5824f8a9-a2cc-40ea-91bd-204f3f90d7d5")]
+            public virtual Ranorex.SpanTag NameError
+            {
+                get
+                {
+                    return _nameerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NameError item info.
+            /// </summary>
+            [RepositoryItemInfo("5824f8a9-a2cc-40ea-91bd-204f3f90d7d5")]
+            public virtual RepoItemInfo NameErrorInfo
+            {
+                get
+                {
+                    return _nameerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmailError item.
+            /// </summary>
+            [RepositoryItem("cc74656e-cc9b-4909-b0ae-12016589e824")]
+            public virtual Ranorex.SpanTag EmailError
+            {
+                get
+                {
+                    return _emailerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmailError item info.
+            /// </summary>
+            [RepositoryItemInfo("cc74656e-cc9b-4909-b0ae-12016589e824")]
+            public virtual RepoItemInfo EmailErrorInfo
+            {
+                get
+                {
+                    return _emailerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PasswordError item.
+            /// </summary>
+            [RepositoryItem("84c91e27-6ce5-4c12-9d6a-cb68cca765f0")]
+            public virtual Ranorex.SpanTag PasswordError
+            {
+                get
+                {
+                    return _passworderrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PasswordError item info.
+            /// </summary>
+            [RepositoryItemInfo("84c91e27-6ce5-4c12-9d6a-cb68cca765f0")]
+            public virtual RepoItemInfo PasswordErrorInfo
+            {
+                get
+                {
+                    return _passworderrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPasswordError item.
+            /// </summary>
+            [RepositoryItem("c429f0e9-6ec2-4f79-9245-785e476d088b")]
+            public virtual Ranorex.SpanTag ConfirmPasswordError
+            {
+                get
+                {
+                    return _confirmpassworderrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPasswordError item info.
+            /// </summary>
+            [RepositoryItemInfo("c429f0e9-6ec2-4f79-9245-785e476d088b")]
+            public virtual RepoItemInfo ConfirmPasswordErrorInfo
+            {
+                get
+                {
+                    return _confirmpassworderrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupNameError item.
+            /// </summary>
+            [RepositoryItem("16c519b4-b599-4983-970c-31ef1c8c78f3")]
+            public virtual Ranorex.SpanTag GroupNameError
+            {
+                get
+                {
+                    return _groupnameerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupNameError item info.
+            /// </summary>
+            [RepositoryItemInfo("16c519b4-b599-4983-970c-31ef1c8c78f3")]
+            public virtual RepoItemInfo GroupNameErrorInfo
+            {
+                get
+                {
+                    return _groupnameerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupPasswordError item.
+            /// </summary>
+            [RepositoryItem("c01d1c37-1065-4ef1-8fde-4b79b6537ac9")]
+            public virtual Ranorex.SpanTag GroupPasswordError
+            {
+                get
+                {
+                    return _grouppassworderrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupPasswordError item info.
+            /// </summary>
+            [RepositoryItemInfo("c01d1c37-1065-4ef1-8fde-4b79b6537ac9")]
+            public virtual RepoItemInfo GroupPasswordErrorInfo
+            {
+                get
+                {
+                    return _grouppassworderrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Name item.
+            /// </summary>
+            [RepositoryItem("16dffdea-8194-4848-a1fd-e0b4caff8d3b")]
+            public virtual Ranorex.InputTag Name
+            {
+                get
+                {
+                    return _nameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Name item info.
+            /// </summary>
+            [RepositoryItemInfo("16dffdea-8194-4848-a1fd-e0b4caff8d3b")]
+            public virtual RepoItemInfo NameInfo
+            {
+                get
+                {
+                    return _nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Email item.
+            /// </summary>
+            [RepositoryItem("555f779d-8591-46cd-98d8-7a938b4f2b25")]
+            public virtual Ranorex.InputTag Email
+            {
+                get
+                {
+                    return _emailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Email item info.
+            /// </summary>
+            [RepositoryItemInfo("555f779d-8591-46cd-98d8-7a938b4f2b25")]
+            public virtual RepoItemInfo EmailInfo
+            {
+                get
+                {
+                    return _emailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Password item.
+            /// </summary>
+            [RepositoryItem("a0753bc4-a813-46a6-b17e-42721665eb9e")]
+            public virtual Ranorex.InputTag Password
+            {
+                get
+                {
+                    return _passwordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Password item info.
+            /// </summary>
+            [RepositoryItemInfo("a0753bc4-a813-46a6-b17e-42721665eb9e")]
+            public virtual RepoItemInfo PasswordInfo
+            {
+                get
+                {
+                    return _passwordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPassword item.
+            /// </summary>
+            [RepositoryItem("9a3d6e44-2da3-438a-85e8-febe4d1cd26f")]
+            public virtual Ranorex.InputTag ConfirmPassword
+            {
+                get
+                {
+                    return _confirmpasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("9a3d6e44-2da3-438a-85e8-febe4d1cd26f")]
+            public virtual RepoItemInfo ConfirmPasswordInfo
+            {
+                get
+                {
+                    return _confirmpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelTagCreateNewGroup item.
+            /// </summary>
+            [RepositoryItem("91002e45-f61a-4069-be93-9af7872a5bdb")]
+            public virtual Ranorex.LabelTag LabelTagCreateNewGroup
+            {
+                get
+                {
+                    return _labeltagcreatenewgroupInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelTagCreateNewGroup item info.
+            /// </summary>
+            [RepositoryItemInfo("91002e45-f61a-4069-be93-9af7872a5bdb")]
+            public virtual RepoItemInfo LabelTagCreateNewGroupInfo
+            {
+                get
+                {
+                    return _labeltagcreatenewgroupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupName item.
+            /// </summary>
+            [RepositoryItem("d836de61-74d7-4688-ac44-562f7849a78b")]
+            public virtual Ranorex.InputTag GroupName
+            {
+                get
+                {
+                    return _groupnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupName item info.
+            /// </summary>
+            [RepositoryItemInfo("d836de61-74d7-4688-ac44-562f7849a78b")]
+            public virtual RepoItemInfo GroupNameInfo
+            {
+                get
+                {
+                    return _groupnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupPassword item.
+            /// </summary>
+            [RepositoryItem("cfc5af30-4216-4f5d-aa9f-6114342b0fb4")]
+            public virtual Ranorex.InputTag GroupPassword
+            {
+                get
+                {
+                    return _grouppasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("cfc5af30-4216-4f5d-aa9f-6114342b0fb4")]
+            public virtual RepoItemInfo GroupPasswordInfo
+            {
+                get
+                {
+                    return _grouppasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupConfirmPassword item.
+            /// </summary>
+            [RepositoryItem("264e39d3-92ba-479e-a754-46c255689803")]
+            public virtual Ranorex.InputTag GroupConfirmPassword
+            {
+                get
+                {
+                    return _groupconfirmpasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupConfirmPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("264e39d3-92ba-479e-a754-46c255689803")]
+            public virtual RepoItemInfo GroupConfirmPasswordInfo
+            {
+                get
+                {
+                    return _groupconfirmpasswordInfo;
+                }
+            }
+
+            /// <summary>
             /// The DFlexJustifyContentCenterMb1Pt4 folder.
             /// </summary>
             [RepositoryFolder("b3a1e41c-84bc-4c7f-a4b6-21cf5344c79f")]
@@ -930,6 +1320,8 @@ namespace WakeApp
             RepoItemInfo _theemailfieldisrequiredInfo;
             RepoItemInfo _thesubjectfieldisrequiredInfo;
             RepoItemInfo _themessagefieldisrequiredInfo;
+            RepoItemInfo _formcheckInfo;
+            RepoItemInfo _podanyadresemailjużistniejeInfo;
 
             /// <summary>
             /// Creates a new DivTagRow  folder.
@@ -944,6 +1336,8 @@ namespace WakeApp
                 _theemailfieldisrequiredInfo = new RepoItemInfo(this, "TheEmailFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[2]/span[@innertext>'The Email field is requir']", 30000, null, "d3541a73-c2d1-49eb-847e-45994639d706");
                 _thesubjectfieldisrequiredInfo = new RepoItemInfo(this, "TheSubjectFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[4]/span[@innertext>'The Subject field is requ']", 30000, null, "5b691459-4b2c-4bd2-9ed7-3d8339fe11c5");
                 _themessagefieldisrequiredInfo = new RepoItemInfo(this, "TheMessageFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext>'The Message field is requ']", 30000, null, "1148da5f-26de-47cc-892e-442616c75127");
+                _formcheckInfo = new RepoItemInfo(this, "FormCheck", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]", 30000, null, "b14b653d-48b7-490a-aca2-483d50910e06");
+                _podanyadresemailjużistniejeInfo = new RepoItemInfo(this, "PodanyAdresEmailJużIstnieje", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext>'Podany adres email już is']", 30000, null, "74d797dd-803f-4c95-9c36-e24247c38726");
             }
 
             /// <summary>
@@ -1135,6 +1529,54 @@ namespace WakeApp
                 get
                 {
                     return _themessagefieldisrequiredInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormCheck item.
+            /// </summary>
+            [RepositoryItem("b14b653d-48b7-490a-aca2-483d50910e06")]
+            public virtual Ranorex.DivTag FormCheck
+            {
+                get
+                {
+                    return _formcheckInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormCheck item info.
+            /// </summary>
+            [RepositoryItemInfo("b14b653d-48b7-490a-aca2-483d50910e06")]
+            public virtual RepoItemInfo FormCheckInfo
+            {
+                get
+                {
+                    return _formcheckInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PodanyAdresEmailJużIstnieje item.
+            /// </summary>
+            [RepositoryItem("74d797dd-803f-4c95-9c36-e24247c38726")]
+            public virtual Ranorex.SpanTag PodanyAdresEmailJużIstnieje
+            {
+                get
+                {
+                    return _podanyadresemailjużistniejeInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PodanyAdresEmailJużIstnieje item info.
+            /// </summary>
+            [RepositoryItemInfo("74d797dd-803f-4c95-9c36-e24247c38726")]
+            public virtual RepoItemInfo PodanyAdresEmailJużIstniejeInfo
+            {
+                get
+                {
+                    return _podanyadresemailjużistniejeInfo;
                 }
             }
         }

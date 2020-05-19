@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="240274e3-a7e5-413d-8bcf-357237c95cad"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="HappyPath"
+	namespace="WakeApp">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="True"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://www.projektbudzik.pl/Account/Register?
+			</url>
+		</openwebsiterecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="1cb3639a-dab9-484b-b470-871f8b54925e"
+	name="WakeAppRepository"
+	relativepath="WakeAppRepository.rxrep">
+		<codegen
+		classname="WakeAppRepository"
+		namespace="WakeApp">
+		</codegen>
+		<rootfolder
+		id="b82432a2-0496-4b32-8d7c-b7b3a367b0c3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		HappyPath.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

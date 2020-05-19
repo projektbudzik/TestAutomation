@@ -148,6 +148,18 @@
       <UserCode>true</UserCode>
       <id>6fd37d91-7589-4ea9-bc4e-41d681f2ad14</id>
     </Compile>
+    <Compile Include="HappyPath.cs">
+      <BoundTo>ad90f9a7-81d2-4545-85d7-02004a0ab287</BoundTo>
+      <DependentUpon>HappyPath.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9d4d87b-5284-489f-83ba-202c194de6af</id>
+    </Compile>
+    <Compile Include="HappyPath.UserCode.cs">
+      <BoundTo>ad90f9a7-81d2-4545-85d7-02004a0ab287</BoundTo>
+      <DependentUpon>HappyPath.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0875dfa5-84e3-4d46-b656-c0848ed10eb9</id>
+    </Compile>
     <Compile Include="OpenBrowser.cs">
       <BoundTo>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</BoundTo>
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
@@ -175,6 +187,30 @@
       <UserCode>true</UserCode>
       <id>a4b9a582-733e-4c5a-bcee-88b1609d1f1b</id>
     </Compile>
+    <Compile Include="RegisterAlreadyUserCredentials.cs">
+      <BoundTo>958ff3fd-8071-4696-9cfa-284bd5fbce9b</BoundTo>
+      <DependentUpon>RegisterAlreadyUserCredentials.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ed8e15b-a47d-49e8-8022-63b5538cdbb1</id>
+    </Compile>
+    <Compile Include="RegisterAlreadyUserCredentials.UserCode.cs">
+      <BoundTo>958ff3fd-8071-4696-9cfa-284bd5fbce9b</BoundTo>
+      <DependentUpon>RegisterAlreadyUserCredentials.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d7dbb64-d9d6-49c7-8505-ff151d8992a7</id>
+    </Compile>
+    <Compile Include="SendEmptyForm.cs">
+      <BoundTo>c65ea23a-c3dd-4d91-8f79-08872904a254</BoundTo>
+      <DependentUpon>SendEmptyForm.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81cb6e3a-99ce-4df3-b2f6-6dd5df716320</id>
+    </Compile>
+    <Compile Include="SendEmptyForm.UserCode.cs">
+      <BoundTo>c65ea23a-c3dd-4d91-8f79-08872904a254</BoundTo>
+      <DependentUpon>SendEmptyForm.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86ffebb2-937c-465c-abff-430a559ed664</id>
+    </Compile>
     <Compile Include="WakeAppRepository.cs">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <DependentUpon>WakeAppRepository.rxrep</DependentUpon>
@@ -191,6 +227,11 @@
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
       <recordtableid>c5f06714-6b8b-46e7-8468-44e3641fae39</recordtableid>
     </None>
+    <None Include="HappyPath.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>ad90f9a7-81d2-4545-85d7-02004a0ab287</id>
+      <recordtableid>240274e3-a7e5-413d-8bcf-357237c95cad</recordtableid>
+    </None>
     <None Include="OpenBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</id>
@@ -200,6 +241,16 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>0932e9ab-50c0-441c-b7a0-3b0a390ab3bd</id>
       <recordtableid>07973f8e-4ca6-4d9b-8b01-65abed1cf9f9</recordtableid>
+    </None>
+    <None Include="RegisterAlreadyUserCredentials.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>958ff3fd-8071-4696-9cfa-284bd5fbce9b</id>
+      <recordtableid>d0d5d5b0-8b21-47d1-b315-16ff446301c6</recordtableid>
+    </None>
+    <None Include="SendEmptyForm.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>c65ea23a-c3dd-4d91-8f79-08872904a254</id>
+      <recordtableid>5f452627-79df-425f-ad45-814839d5eabf</recordtableid>
     </None>
     <None Include="WakeAppRepository.rximg">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

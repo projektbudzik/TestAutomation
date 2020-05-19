@@ -2476,6 +2476,24 @@ UAFFFFABRRRQAUUUUAFLSUtACUUUtACUUUUAFFFFAC0lFFABRRRQAUUtFAH/2Q==
 				&#10;                &#169; WakeApp - Projekt zespo&#322;owy pracy dyplomowej student&#243;w Wydzia&#322;u Informatyki PJATK Gda&#324;sk&#32;
 			</matchvalue>
 		</validationitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="100ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="7d627e07-8607-420d-8ec3-b593db3627a4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="af579ae3-af4b-4a5d-a072-16f9d944ff0f"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='www.projektbudzik.pl']
+				</path>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="1cb3639a-dab9-484b-b470-871f8b54925e"

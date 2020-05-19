@@ -162,6 +162,10 @@ namespace WakeApp
             Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagCWakeAppProjeInfo, "InnerText", "\n                © WakeApp - Projekt zespołowy pracy dyplomowej studentów Wydziału Informatyki PJATK Gdańsk ");
             Delay.Milliseconds(100);
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(21));
+            Host.Current.CloseApplication(repo.WelcomeWakeApp.Self, 100);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
