@@ -29,6 +29,7 @@ namespace WakeApp
         static WakeAppRepository instance = new WakeAppRepository();
         WakeAppRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
         WakeAppRepositoryFolders.WelcomeWakeAppAppFolder _welcomewakeapp;
+        WakeAppRepositoryFolders.BrowserAppFolder _browser;
 
         /// <summary>
         /// Gets the singleton class instance representing the WakeAppRepository element repository.
@@ -47,6 +48,7 @@ namespace WakeApp
         {
             _applicationundertest = new WakeAppRepositoryFolders.ApplicationUnderTestAppFolder(this);
             _welcomewakeapp = new WakeAppRepositoryFolders.WelcomeWakeAppAppFolder(this);
+            _browser = new WakeAppRepositoryFolders.BrowserAppFolder(this);
         }
 
 #region Variables
@@ -81,6 +83,15 @@ namespace WakeApp
         public virtual WakeAppRepositoryFolders.WelcomeWakeAppAppFolder WelcomeWakeApp
         {
             get { return _welcomewakeapp; }
+        }
+
+        /// <summary>
+        /// The Browser folder.
+        /// </summary>
+        [RepositoryFolder("7855513f-a5aa-42d6-b5ea-7ef3d15754d4")]
+        public virtual WakeAppRepositoryFolders.BrowserAppFolder Browser
+        {
+            get { return _browser; }
         }
     }
 
@@ -172,6 +183,12 @@ namespace WakeApp
             RepoItemInfo _groupnameInfo;
             RepoItemInfo _grouppasswordInfo;
             RepoItemInfo _groupconfirmpasswordInfo;
+            RepoItemInfo _subjecterrorInfo;
+            RepoItemInfo _messageerrorInfo;
+            RepoItemInfo _phoneInfo;
+            RepoItemInfo _subjectInfo;
+            RepoItemInfo _messageInfo;
+            RepoItemInfo _dziękujemyzakontaktodpiszemynajszybInfo;
 
             /// <summary>
             /// Creates a new WelcomeWakeApp  folder.
@@ -200,7 +217,7 @@ namespace WakeApp
                 _tastronawykorzystujeplikicookieInfo = new RepoItemInfo(this, "TaStronaWykorzystujePlikiCookie", ".//div[#'cookieinfo']/h6[@innertext>'Ta strona wykorzystuje pliki']", 30000, null, "9a37b010-3d99-4d3d-b65f-9b57b22de612");
                 _navitemInfo = new RepoItemInfo(this, "NavItem", "?/?/header/nav//ul/li[4]", 30000, null, "48edf724-1806-440e-938b-77a9c66cb4c0");
                 _zamknijInfo = new RepoItemInfo(this, "Zamknij", ".//div[#'cookieinfo']/a[@innertext='x']", 30000, null, "a0fae0bc-55ec-43c4-b657-43d08560d722");
-                _submit1Info = new RepoItemInfo(this, "Submit1", "body/div/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[6]/input[@type='submit']", 30000, null, "2cfb75a2-96bd-4e84-bc01-26c30c425ca0");
+                _submit1Info = new RepoItemInfo(this, "Submit1", "body/div[1]/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[5]/div[6]/input[@type='submit']", 30000, null, "2cfb75a2-96bd-4e84-bc01-26c30c425ca0");
                 _nameerrorInfo = new RepoItemInfo(this, "NameError", ".//span[#'Name-error']", 30000, null, "5824f8a9-a2cc-40ea-91bd-204f3f90d7d5");
                 _emailerrorInfo = new RepoItemInfo(this, "EmailError", ".//span[#'Email-error']", 30000, null, "cc74656e-cc9b-4909-b0ae-12016589e824");
                 _passworderrorInfo = new RepoItemInfo(this, "PasswordError", ".//span[#'Password-error']", 30000, null, "84c91e27-6ce5-4c12-9d6a-cb68cca765f0");
@@ -215,6 +232,12 @@ namespace WakeApp
                 _groupnameInfo = new RepoItemInfo(this, "GroupName", ".//input[#'GroupName']", 30000, null, "d836de61-74d7-4688-ac44-562f7849a78b");
                 _grouppasswordInfo = new RepoItemInfo(this, "GroupPassword", ".//input[#'GroupPassword']", 30000, null, "cfc5af30-4216-4f5d-aa9f-6114342b0fb4");
                 _groupconfirmpasswordInfo = new RepoItemInfo(this, "GroupConfirmPassword", ".//input[#'GroupConfirmPassword']", 30000, null, "264e39d3-92ba-479e-a754-46c255689803");
+                _subjecterrorInfo = new RepoItemInfo(this, "SubjectError", ".//span[#'Subject-error']", 30000, null, "aae5de0b-36d0-449c-baf8-4be1efddb004");
+                _messageerrorInfo = new RepoItemInfo(this, "MessageError", ".//span[#'Message-error']", 30000, null, "c20009e1-8a20-4c72-b518-86e9d2133cf6");
+                _phoneInfo = new RepoItemInfo(this, "Phone", ".//input[#'Phone']", 30000, null, "b6157f17-0bd3-460b-a64c-0646e713a50d");
+                _subjectInfo = new RepoItemInfo(this, "Subject", ".//input[#'Subject']", 30000, null, "e928cf28-20d2-4667-834e-684ce06a63b8");
+                _messageInfo = new RepoItemInfo(this, "Message", ".//textarea[#'Message']", 30000, null, "bf5c6af0-9d4e-41da-9a80-fbee6c34f2f6");
+                _dziękujemyzakontaktodpiszemynajszybInfo = new RepoItemInfo(this, "DziękujemyZaKontaktOdpiszemyNajszyb", "body/div[1]/?/?/section/?/?/h4[@innertext>'Dziękujemy za kontakt. Odpiszemy']", 30000, null, "cf5ea3cd-cbad-414a-9df0-e6f2d61161f3");
             }
 
             /// <summary>
@@ -1093,6 +1116,150 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The SubjectError item.
+            /// </summary>
+            [RepositoryItem("aae5de0b-36d0-449c-baf8-4be1efddb004")]
+            public virtual Ranorex.SpanTag SubjectError
+            {
+                get
+                {
+                    return _subjecterrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectError item info.
+            /// </summary>
+            [RepositoryItemInfo("aae5de0b-36d0-449c-baf8-4be1efddb004")]
+            public virtual RepoItemInfo SubjectErrorInfo
+            {
+                get
+                {
+                    return _subjecterrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MessageError item.
+            /// </summary>
+            [RepositoryItem("c20009e1-8a20-4c72-b518-86e9d2133cf6")]
+            public virtual Ranorex.SpanTag MessageError
+            {
+                get
+                {
+                    return _messageerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MessageError item info.
+            /// </summary>
+            [RepositoryItemInfo("c20009e1-8a20-4c72-b518-86e9d2133cf6")]
+            public virtual RepoItemInfo MessageErrorInfo
+            {
+                get
+                {
+                    return _messageerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Phone item.
+            /// </summary>
+            [RepositoryItem("b6157f17-0bd3-460b-a64c-0646e713a50d")]
+            public virtual Ranorex.InputTag Phone
+            {
+                get
+                {
+                    return _phoneInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phone item info.
+            /// </summary>
+            [RepositoryItemInfo("b6157f17-0bd3-460b-a64c-0646e713a50d")]
+            public virtual RepoItemInfo PhoneInfo
+            {
+                get
+                {
+                    return _phoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Subject item.
+            /// </summary>
+            [RepositoryItem("e928cf28-20d2-4667-834e-684ce06a63b8")]
+            public virtual Ranorex.InputTag Subject
+            {
+                get
+                {
+                    return _subjectInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Subject item info.
+            /// </summary>
+            [RepositoryItemInfo("e928cf28-20d2-4667-834e-684ce06a63b8")]
+            public virtual RepoItemInfo SubjectInfo
+            {
+                get
+                {
+                    return _subjectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Message item.
+            /// </summary>
+            [RepositoryItem("bf5c6af0-9d4e-41da-9a80-fbee6c34f2f6")]
+            public virtual Ranorex.TextAreaTag Message
+            {
+                get
+                {
+                    return _messageInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Message item info.
+            /// </summary>
+            [RepositoryItemInfo("bf5c6af0-9d4e-41da-9a80-fbee6c34f2f6")]
+            public virtual RepoItemInfo MessageInfo
+            {
+                get
+                {
+                    return _messageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DziękujemyZaKontaktOdpiszemyNajszyb item.
+            /// </summary>
+            [RepositoryItem("cf5ea3cd-cbad-414a-9df0-e6f2d61161f3")]
+            public virtual Ranorex.H4Tag DziękujemyZaKontaktOdpiszemyNajszyb
+            {
+                get
+                {
+                    return _dziękujemyzakontaktodpiszemynajszybInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DziękujemyZaKontaktOdpiszemyNajszyb item info.
+            /// </summary>
+            [RepositoryItemInfo("cf5ea3cd-cbad-414a-9df0-e6f2d61161f3")]
+            public virtual RepoItemInfo DziękujemyZaKontaktOdpiszemyNajszybInfo
+            {
+                get
+                {
+                    return _dziękujemyzakontaktodpiszemynajszybInfo;
+                }
+            }
+
+            /// <summary>
             /// The DFlexJustifyContentCenterMb1Pt4 folder.
             /// </summary>
             [RepositoryFolder("b3a1e41c-84bc-4c7f-a4b6-21cf5344c79f")]
@@ -1322,6 +1489,10 @@ namespace WakeApp
             RepoItemInfo _themessagefieldisrequiredInfo;
             RepoItemInfo _formcheckInfo;
             RepoItemInfo _podanyadresemailjużistniejeInfo;
+            RepoItemInfo _wyślijInfo;
+            RepoItemInfo _colmd4Info;
+            RepoItemInfo _godzinypracyInfo;
+            RepoItemInfo _wsparcietechniczneInfo;
 
             /// <summary>
             /// Creates a new DivTagRow  folder.
@@ -1338,6 +1509,10 @@ namespace WakeApp
                 _themessagefieldisrequiredInfo = new RepoItemInfo(this, "TheMessageFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext>'The Message field is requ']", 30000, null, "1148da5f-26de-47cc-892e-442616c75127");
                 _formcheckInfo = new RepoItemInfo(this, "FormCheck", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]", 30000, null, "b14b653d-48b7-490a-aca2-483d50910e06");
                 _podanyadresemailjużistniejeInfo = new RepoItemInfo(this, "PodanyAdresEmailJużIstnieje", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext>'Podany adres email już is']", 30000, null, "74d797dd-803f-4c95-9c36-e24247c38726");
+                _wyślijInfo = new RepoItemInfo(this, "Wyślij", ".//form[@action='http://www.projektbudzik.pl/Contact?']/div[7]/button[@innertext='Wyślij']", 30000, null, "0aaddfe7-2006-470d-a268-6067bc9418c8");
+                _colmd4Info = new RepoItemInfo(this, "ColMd4", "div[2]/div[2]/div[1]", 30000, null, "4242ebae-4fa0-4ec9-973a-9dcb335e4686");
+                _godzinypracyInfo = new RepoItemInfo(this, "GodzinyPracy", "div[2]/div[2]/div[2]/p[@innertext='Godziny pracy:']", 30000, null, "eae825a9-c8b7-4d96-ac49-c1ef8760651e");
+                _wsparcietechniczneInfo = new RepoItemInfo(this, "WsparcieTechniczne", "div[2]/div[2]/div[3]/p[@innertext='Wsparcie Techniczne:']", 30000, null, "b96ea376-083a-474e-b327-f4270db5f603");
             }
 
             /// <summary>
@@ -1577,6 +1752,193 @@ namespace WakeApp
                 get
                 {
                     return _podanyadresemailjużistniejeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Wyślij item.
+            /// </summary>
+            [RepositoryItem("0aaddfe7-2006-470d-a268-6067bc9418c8")]
+            public virtual Ranorex.ButtonTag Wyślij
+            {
+                get
+                {
+                    return _wyślijInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Wyślij item info.
+            /// </summary>
+            [RepositoryItemInfo("0aaddfe7-2006-470d-a268-6067bc9418c8")]
+            public virtual RepoItemInfo WyślijInfo
+            {
+                get
+                {
+                    return _wyślijInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColMd4 item.
+            /// </summary>
+            [RepositoryItem("4242ebae-4fa0-4ec9-973a-9dcb335e4686")]
+            public virtual Ranorex.DivTag ColMd4
+            {
+                get
+                {
+                    return _colmd4Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColMd4 item info.
+            /// </summary>
+            [RepositoryItemInfo("4242ebae-4fa0-4ec9-973a-9dcb335e4686")]
+            public virtual RepoItemInfo ColMd4Info
+            {
+                get
+                {
+                    return _colmd4Info;
+                }
+            }
+
+            /// <summary>
+            /// The GodzinyPracy item.
+            /// </summary>
+            [RepositoryItem("eae825a9-c8b7-4d96-ac49-c1ef8760651e")]
+            public virtual Ranorex.PTag GodzinyPracy
+            {
+                get
+                {
+                    return _godzinypracyInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GodzinyPracy item info.
+            /// </summary>
+            [RepositoryItemInfo("eae825a9-c8b7-4d96-ac49-c1ef8760651e")]
+            public virtual RepoItemInfo GodzinyPracyInfo
+            {
+                get
+                {
+                    return _godzinypracyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WsparcieTechniczne item.
+            /// </summary>
+            [RepositoryItem("b96ea376-083a-474e-b327-f4270db5f603")]
+            public virtual Ranorex.PTag WsparcieTechniczne
+            {
+                get
+                {
+                    return _wsparcietechniczneInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WsparcieTechniczne item info.
+            /// </summary>
+            [RepositoryItemInfo("b96ea376-083a-474e-b327-f4270db5f603")]
+            public virtual RepoItemInfo WsparcieTechniczneInfo
+            {
+                get
+                {
+                    return _wsparcietechniczneInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BrowserAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7855513f-a5aa-42d6-b5ea-7ef3d15754d4")]
+        public partial class BrowserAppFolder : RepoGenBaseFolder
+        {
+            WakeAppRepositoryFolders.DomAppFolder _dom;
+
+            /// <summary>
+            /// Creates a new Browser  folder.
+            /// </summary>
+            public BrowserAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Browser", "/mobileapp[@title='ranorex.RxBrowser']", parentFolder, 10000, null, false, "7855513f-a5aa-42d6-b5ea-7ef3d15754d4", "")
+            {
+                _dom = new WakeAppRepositoryFolders.DomAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7855513f-a5aa-42d6-b5ea-7ef3d15754d4")]
+            public virtual Ranorex.MobileApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MobileApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7855513f-a5aa-42d6-b5ea-7ef3d15754d4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Dom folder.
+            /// </summary>
+            [RepositoryFolder("1c6d52a2-0346-48f1-8157-72884aebb352")]
+            public virtual WakeAppRepositoryFolders.DomAppFolder Dom
+            {
+                get { return _dom; }
+            }
+        }
+
+        /// <summary>
+        /// The DomAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1c6d52a2-0346-48f1-8157-72884aebb352")]
+        public partial class DomAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new Dom  folder.
+            /// </summary>
+            public DomAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Dom", ".//dom", parentFolder, 10000, null, false, "1c6d52a2-0346-48f1-8157-72884aebb352", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1c6d52a2-0346-48f1-8157-72884aebb352")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1c6d52a2-0346-48f1-8157-72884aebb352")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

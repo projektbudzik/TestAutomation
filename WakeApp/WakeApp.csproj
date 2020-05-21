@@ -136,6 +136,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>8760b8fc-eed7-4c6e-b99b-50b217d6c0b0</id>
     </Compile>
+    <Compile Include="CheckErrorMessages.cs">
+      <BoundTo>4525ff2b-21fa-4172-93a8-3e55a934c6da</BoundTo>
+      <DependentUpon>CheckErrorMessages.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1544f557-4969-433f-a50e-624907bee148</id>
+    </Compile>
+    <Compile Include="CheckErrorMessages.UserCode.cs">
+      <BoundTo>4525ff2b-21fa-4172-93a8-3e55a934c6da</BoundTo>
+      <DependentUpon>CheckErrorMessages.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e91b7cf7-8716-4a82-85c2-3a9275bdcbd3</id>
+    </Compile>
     <Compile Include="CloseBrowser.cs">
       <BoundTo>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</BoundTo>
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
@@ -159,6 +171,18 @@
       <DependentUpon>HappyPath.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0875dfa5-84e3-4d46-b656-c0848ed10eb9</id>
+    </Compile>
+    <Compile Include="HappyPathForContactForm.cs">
+      <BoundTo>1a57b41c-d76e-42ea-a2e3-ed1dda11736e</BoundTo>
+      <DependentUpon>HappyPathForContactForm.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5cd149a4-ee93-48bb-9a28-314e1b74dd5b</id>
+    </Compile>
+    <Compile Include="HappyPathForContactForm.UserCode.cs">
+      <BoundTo>1a57b41c-d76e-42ea-a2e3-ed1dda11736e</BoundTo>
+      <DependentUpon>HappyPathForContactForm.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5fd4425-a74f-4d50-aa55-42b0a0c227dd</id>
     </Compile>
     <Compile Include="OpenBrowser.cs">
       <BoundTo>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</BoundTo>
@@ -186,6 +210,18 @@
       <DependentUpon>Recording1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a4b9a582-733e-4c5a-bcee-88b1609d1f1b</id>
+    </Compile>
+    <Compile Include="Recording2.cs">
+      <BoundTo>ad3ad896-145c-49a6-b6a5-c004ed1c253b</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>687800ad-22ee-486e-9d4e-c650d79f631a</id>
+    </Compile>
+    <Compile Include="Recording2.UserCode.cs">
+      <BoundTo>ad3ad896-145c-49a6-b6a5-c004ed1c253b</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>737d44cd-6951-4316-9294-87cbe90bbc27</id>
     </Compile>
     <Compile Include="RegisterAlreadyUserCredentials.cs">
       <BoundTo>958ff3fd-8071-4696-9cfa-284bd5fbce9b</BoundTo>
@@ -222,6 +258,11 @@
     <None Include="app.config">
       <id>b6386d49-4e20-4336-9db1-b299a954be8d</id>
     </None>
+    <None Include="CheckErrorMessages.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>4525ff2b-21fa-4172-93a8-3e55a934c6da</id>
+      <recordtableid>bc8a9c5e-24ad-46d9-ba77-0a976762a8f1</recordtableid>
+    </None>
     <None Include="CloseBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
@@ -232,6 +273,11 @@
       <id>ad90f9a7-81d2-4545-85d7-02004a0ab287</id>
       <recordtableid>240274e3-a7e5-413d-8bcf-357237c95cad</recordtableid>
     </None>
+    <None Include="HappyPathForContactForm.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>1a57b41c-d76e-42ea-a2e3-ed1dda11736e</id>
+      <recordtableid>6d63139b-f39e-400e-be2d-c176591c3f40</recordtableid>
+    </None>
     <None Include="OpenBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</id>
@@ -241,6 +287,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>0932e9ab-50c0-441c-b7a0-3b0a390ab3bd</id>
       <recordtableid>07973f8e-4ca6-4d9b-8b01-65abed1cf9f9</recordtableid>
+    </None>
+    <None Include="Recording2.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>ad3ad896-145c-49a6-b6a5-c004ed1c253b</id>
+      <recordtableid>2778919f-20b3-4435-8b8d-c77587d00a0b</recordtableid>
     </None>
     <None Include="RegisterAlreadyUserCredentials.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

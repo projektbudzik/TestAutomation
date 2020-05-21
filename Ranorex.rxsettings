@@ -395,6 +395,24 @@ rxversion="9.2">
 		False
 	</Telemetry.Enabled>
 	<Endpoints.Data>
+		&lt;![CDATA[{
+  &quot;mobile.android.remote&quot;: [
+    {
+      &quot;Id&quot;: &quot;45a87a2e-ea97-4738-b582-45bc68df308b&quot;,
+      &quot;ControlFlags&quot;: 0,
+      &quot;CoreData&quot;: {},
+      &quot;PluginData&quot;: {
+        &quot;Platform&quot;: &quot;Android&quot;,
+        &quot;ConnectionType&quot;: &quot;WLAN&quot;
+      },
+      &quot;MetaData&quot;: {},
+      &quot;Description&quot;: &quot;&quot;,
+      &quot;DisplayName&quot;: &quot;WakeApp&quot;,
+      &quot;Url&quot;: &quot;192.168.0.106&quot;,
+      &quot;Tags&quot;: []
+    }
+  ]
+}]]&gt;
 	</Endpoints.Data>
 	<TestCase.Retry.Count>
 		0

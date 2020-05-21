@@ -25,12 +25,6 @@
 			ref="240274e3-a7e5-413d-8bcf-357237c95cad"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="6f6f7711-6296-44a8-9e49-12784b55cbcc"
-			name="Recording1"
-			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
-			type="Recording">
-			</testmodule>
 			<smartfoldernode
 			id="7da44347-21a8-456b-b001-63cf8bf87286"
 			name="Register_Empty_form">
@@ -38,10 +32,22 @@
 					<![CDATA[Check for correct errors&nbsp;when all fields are empty]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="7e2e2bf7-f877-4a7b-846b-a216d137486e"
+			name="HappyPathForContactForm"
+			ref="6d63139b-f39e-400e-be2d-c176591c3f40"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6"
 			name="Test_Case_for_main_page_validation">
 			</testcase>
+			<testmodule
+			id="a3faaf1d-65cb-434a-b19a-d1b1875558a2"
+			name="CheckErrorMessages"
+			ref="bc8a9c5e-24ad-46d9-ba77-0a976762a8f1"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a4a1184b-747a-499f-9b27-894e151dd824"
 			name="WakeApp"
@@ -79,7 +85,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d"
-			name="SmartFolder1">
+			name="SentContactMessage">
 			</smartfoldernode>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -127,13 +133,17 @@
 						id="c9415a68-3fa6-4b25-bed0-d91d10177c3f"
 						name="Check_error_message_when_fields_are_empy">
 							<testmodule
-							id="6f6f7711-6296-44a8-9e49-12784b55cbcc"
-							name="Recording1">
+							id="a3faaf1d-65cb-434a-b19a-d1b1875558a2"
+							name="CheckErrorMessages">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="deb15c95-d8c5-47d1-9003-33f062876b4d"
-						name="SmartFolder1">
+						name="SentContactMessage">
+							<testmodule
+							id="7e2e2bf7-f877-4a7b-846b-a216d137486e"
+							name="HappyPathForContactForm">
+							</testmodule>
 						</smartfoldernode>
 					</testcase>
 					<testcase
