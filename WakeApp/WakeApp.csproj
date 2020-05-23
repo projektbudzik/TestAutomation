@@ -133,6 +133,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAlarm.cs">
+      <BoundTo>819a6b2d-3ab0-4490-82c8-151a1ed042a1</BoundTo>
+      <DependentUpon>AddAlarm.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>033eaa16-776a-4210-9e17-3928262af1bd</id>
+    </Compile>
+    <Compile Include="AddAlarm.UserCode.cs">
+      <BoundTo>819a6b2d-3ab0-4490-82c8-151a1ed042a1</BoundTo>
+      <DependentUpon>AddAlarm.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86cb77f7-1ec8-4136-a749-6993c97533d8</id>
+    </Compile>
+    <Compile Include="AddDevice.cs">
+      <BoundTo>f6ec499b-9b69-4ae6-895f-805a772c68b2</BoundTo>
+      <DependentUpon>AddDevice.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4f83309-6dd2-41df-98cc-b459fa5ae7b4</id>
+    </Compile>
+    <Compile Include="AddDevice.UserCode.cs">
+      <BoundTo>f6ec499b-9b69-4ae6-895f-805a772c68b2</BoundTo>
+      <DependentUpon>AddDevice.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5968c11a-c8d9-4c1d-896f-de772c7dce92</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>8760b8fc-eed7-4c6e-b99b-50b217d6c0b0</id>
     </Compile>
@@ -160,6 +184,18 @@
       <UserCode>true</UserCode>
       <id>6fd37d91-7589-4ea9-bc4e-41d681f2ad14</id>
     </Compile>
+    <Compile Include="DeleteDevices.cs">
+      <BoundTo>f46e4271-9186-4df5-8faa-a64ea8167dbb</BoundTo>
+      <DependentUpon>DeleteDevices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8636d819-7e7c-4e60-90cf-d4fae6d7c463</id>
+    </Compile>
+    <Compile Include="DeleteDevices.UserCode.cs">
+      <BoundTo>f46e4271-9186-4df5-8faa-a64ea8167dbb</BoundTo>
+      <DependentUpon>DeleteDevices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3cc93273-709d-4a92-a039-1a18acc33a21</id>
+    </Compile>
     <Compile Include="HappyPath.cs">
       <BoundTo>ad90f9a7-81d2-4545-85d7-02004a0ab287</BoundTo>
       <DependentUpon>HappyPath.rxrec</DependentUpon>
@@ -183,6 +219,30 @@
       <DependentUpon>HappyPathForContactForm.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c5fd4425-a74f-4d50-aa55-42b0a0c227dd</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <BoundTo>efb6fd2c-5a3c-403e-8c9a-b1a0fb746542</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>060050b9-b68d-465b-bf14-6a6ba36f17cd</id>
+    </Compile>
+    <Compile Include="Login.UserCode.cs">
+      <BoundTo>efb6fd2c-5a3c-403e-8c9a-b1a0fb746542</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b0a60c89-429a-4731-844b-f44c1b1087de</id>
+    </Compile>
+    <Compile Include="MainPageValidation.cs">
+      <BoundTo>9c69ddcf-dd6f-482f-94c3-18b237f5a162</BoundTo>
+      <DependentUpon>MainPageValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>06c92920-86bc-425b-b020-f3e5752af763</id>
+    </Compile>
+    <Compile Include="MainPageValidation.UserCode.cs">
+      <BoundTo>9c69ddcf-dd6f-482f-94c3-18b237f5a162</BoundTo>
+      <DependentUpon>MainPageValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1723507-72c9-4cc1-b10e-1996c72d46d1</id>
     </Compile>
     <Compile Include="OpenBrowser.cs">
       <BoundTo>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</BoundTo>
@@ -255,6 +315,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AddAlarm.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>819a6b2d-3ab0-4490-82c8-151a1ed042a1</id>
+      <recordtableid>5e532534-a94a-4aa3-ab35-078ccc867a1e</recordtableid>
+    </None>
+    <None Include="AddDevice.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>f6ec499b-9b69-4ae6-895f-805a772c68b2</id>
+      <recordtableid>3e5cbe22-a4f8-4d2e-b9fa-273d92380733</recordtableid>
+    </None>
     <None Include="app.config">
       <id>b6386d49-4e20-4336-9db1-b299a954be8d</id>
     </None>
@@ -268,6 +338,11 @@
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
       <recordtableid>c5f06714-6b8b-46e7-8468-44e3641fae39</recordtableid>
     </None>
+    <None Include="DeleteDevices.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>f46e4271-9186-4df5-8faa-a64ea8167dbb</id>
+      <recordtableid>ac3d7932-25c7-4e37-8bac-e2cb1312ecc3</recordtableid>
+    </None>
     <None Include="HappyPath.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>ad90f9a7-81d2-4545-85d7-02004a0ab287</id>
@@ -277,6 +352,16 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>1a57b41c-d76e-42ea-a2e3-ed1dda11736e</id>
       <recordtableid>6d63139b-f39e-400e-be2d-c176591c3f40</recordtableid>
+    </None>
+    <None Include="Login.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>efb6fd2c-5a3c-403e-8c9a-b1a0fb746542</id>
+      <recordtableid>9988be6e-789f-4c29-a943-0a7af4384877</recordtableid>
+    </None>
+    <None Include="MainPageValidation.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>9c69ddcf-dd6f-482f-94c3-18b237f5a162</id>
+      <recordtableid>89f9e051-78f2-46a5-876a-a8b223247ad4</recordtableid>
     </None>
     <None Include="OpenBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
@@ -316,6 +401,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WakeApp.cd">
+      <id>6cef5b96-f802-4c63-ac51-08da75cba841</id>
+    </Content>
     <Content Include="WakeApp.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>aa0f6db0-990d-4fb0-ba6e-782c5c1a1e9b</id>

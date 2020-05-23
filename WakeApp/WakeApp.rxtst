@@ -13,6 +13,23 @@
 					<![CDATA[Happy path - go thru registration process of user an group]]>
 				</description>
 			</smartfoldernode>
+			<smartfoldernode
+			id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3"
+			name="Set_Alarm">
+				<description>
+					<![CDATA[Set Alarm + Validation of setting Alarm with wrong date - past]]>
+				</description>
+			</smartfoldernode>
+			<testcase
+			id="2e555e63-239c-41f2-a94f-9197bd8d241b"
+			name="Test_Case_for_Mobile_WebApplication">
+			</testcase>
+			<testmodule
+			id="316fa430-b1ec-4288-aa45-ce1753349a32"
+			name="DeleteDevices"
+			ref="ac3d7932-25c7-4e37-8bac-e2cb1312ecc3"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="36bcac0a-71d6-41da-8fbd-6abc3b381d93"
 			name="RegisterAlreadyUserCredentials"
@@ -20,10 +37,28 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3870e657-a890-4554-9e28-9282c5279f7d"
+			name="MainPageValidation"
+			ref="89f9e051-78f2-46a5-876a-a8b223247ad4"
+			type="Recording">
+				<description>
+					<![CDATA[Validation of main page (links, position of text, text, size of elements)]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
 			name="HappyPath"
 			ref="240274e3-a7e5-413d-8bcf-357237c95cad"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="72ee496b-5818-41fe-8047-0dc492a758f8"
+			name="AddDevice"
+			ref="3e5cbe22-a4f8-4d2e-b9fa-273d92380733"
+			type="Recording">
+				<description>
+					<![CDATA[Add Phone]]>
+				</description>
 			</testmodule>
 			<smartfoldernode
 			id="7da44347-21a8-456b-b001-63cf8bf87286"
@@ -37,7 +72,14 @@
 			name="HappyPathForContactForm"
 			ref="6d63139b-f39e-400e-be2d-c176591c3f40"
 			type="Recording">
+				<description>
+					<![CDATA[successfull sending of contact message]]>
+				</description>
 			</testmodule>
+			<testcase
+			id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
+			name="Test_Case_for_Android_Application">
+			</testcase>
 			<testcase
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6"
 			name="Test_Case_for_main_page_validation">
@@ -47,6 +89,18 @@
 			name="CheckErrorMessages"
 			ref="bc8a9c5e-24ad-46d9-ba77-0a976762a8f1"
 			type="Recording">
+				<description>
+					<![CDATA[validate error message for all fields]]>
+				</description>
+			</testmodule>
+			<testmodule
+			id="a443d843-2acb-4718-a62b-8ef0e6e779b6"
+			name="AddDevice"
+			ref="3e5cbe22-a4f8-4d2e-b9fa-273d92380733"
+			type="Recording">
+				<description>
+					<![CDATA[Add Arduino]]>
+				</description>
 			</testmodule>
 			<testcase
 			id="a4a1184b-747a-499f-9b27-894e151dd824"
@@ -54,9 +108,33 @@
 			reportlevel="Info;20">
 			</testcase>
 			<testcase
+			id="a81eeb45-f617-4015-b0e7-400385a6cc76"
+			name="Test_Case_for_LogIn_/_Device_/_Alarm_functionality">
+			</testcase>
+			<smartfoldernode
+			id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef"
+			name="Delete_both_Devices">
+				<description>
+					<![CDATA[<p>Deletion of created devices</p><p><br></p>]]>
+				</description>
+			</smartfoldernode>
+			<testmodule
+			id="aece6528-d023-47a5-84ea-2c99d4e92bd8"
+			name="Login"
+			ref="9988be6e-789f-4c29-a943-0a7af4384877"
+			type="Recording">
+			</testmodule>
+			<testcase
 			id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1"
 			name="Test_Case_for_Contact_Form">
 			</testcase>
+			<smartfoldernode
+			id="b684c052-bee0-429a-b764-9636db7f489d"
+			name="Successfull_LogIn">
+				<description>
+					<![CDATA[Successfull login]]>
+				</description>
+			</smartfoldernode>
 			<smartfoldernode
 			id="bb1709bb-7486-42db-9705-486261d30467"
 			name="Register_Already_User_email">
@@ -75,14 +153,18 @@
 			name="Check_error_message_when_fields_are_empy">
 			</smartfoldernode>
 			<testmodule
-			id="d7217478-65f4-4b06-9546-eb741e05f2ac"
-			name="Recording1"
-			ref="07973f8e-4ca6-4d9b-8b01-65abed1cf9f9"
+			id="d578a34c-75bc-4e1c-b8fd-d0185b07e3ea"
+			name="AddAlarm"
+			ref="5e532534-a94a-4aa3-ab35-078ccc867a1e"
 			type="Recording">
-				<description>
-					<![CDATA[Validation of main page (links, position of text, text, size of elements)]]>
-				</description>
 			</testmodule>
+			<smartfoldernode
+			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876"
+			name="Add_Device">
+				<description>
+					<![CDATA[<p>Add both devices</p><p><br></p>]]>
+				</description>
+			</smartfoldernode>
 			<smartfoldernode
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d"
 			name="SentContactMessage">
@@ -122,8 +204,8 @@
 					id="98d7dcfe-904c-41fe-8976-f659ab02f5d6"
 					name="Test_Case_for_main_page_validation">
 						<testmodule
-						id="d7217478-65f4-4b06-9546-eb741e05f2ac"
-						name="Recording1">
+						id="3870e657-a890-4554-9e28-9282c5279f7d"
+						name="MainPageValidation">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -173,10 +255,58 @@
 							name="HappyPath">
 							</testmodule>
 						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="2e555e63-239c-41f2-a94f-9197bd8d241b"
+					name="Test_Case_for_Mobile_WebApplication">
+					</testcase>
+					<testcase
+					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
+					name="Test_Case_for_Android_Application">
 						<teardown
 						id="00c4572d-0a88-4a7e-99ef-469c40271bde"
 						name="teardown1">
 						</teardown>
+					</testcase>
+					<testcase
+					id="a81eeb45-f617-4015-b0e7-400385a6cc76"
+					name="Test_Case_for_LogIn_/_Device_/_Alarm_functionality">
+						<smartfoldernode
+						id="b684c052-bee0-429a-b764-9636db7f489d"
+						name="Successfull_LogIn">
+							<testmodule
+							id="aece6528-d023-47a5-84ea-2c99d4e92bd8"
+							name="Login">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d5e4a80b-5238-47d0-a4bd-07d7493cb876"
+						name="Add_Device">
+							<testmodule
+							id="a443d843-2acb-4718-a62b-8ef0e6e779b6"
+							name="AddDevice">
+							</testmodule>
+							<testmodule
+							id="72ee496b-5818-41fe-8047-0dc492a758f8"
+							name="AddDevice">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3"
+						name="Set_Alarm">
+							<testmodule
+							id="d578a34c-75bc-4e1c-b8fd-d0185b07e3ea"
+							name="AddAlarm">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef"
+						name="Delete_both_Devices">
+							<testmodule
+							id="316fa430-b1ec-4288-aa45-ce1753349a32"
+							name="DeleteDevices">
+							</testmodule>
+						</smartfoldernode>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -192,7 +322,16 @@
 			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b">
 			</testcontainer>
 			<testcontainer
+			id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3">
+			</testcontainer>
+			<testcontainer
+			id="2e555e63-239c-41f2-a94f-9197bd8d241b">
+			</testcontainer>
+			<testcontainer
 			id="7da44347-21a8-456b-b001-63cf8bf87286">
+			</testcontainer>
+			<testcontainer
+			id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a">
 			</testcontainer>
 			<testcontainer
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6">
@@ -201,13 +340,28 @@
 			id="a4a1184b-747a-499f-9b27-894e151dd824">
 			</testcontainer>
 			<testcontainer
+			id="a81eeb45-f617-4015-b0e7-400385a6cc76">
+			</testcontainer>
+			<testcontainer
+			id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef">
+			</testcontainer>
+			<testcontainer
 			id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1">
+			</testcontainer>
+			<testcontainer
+			id="b684c052-bee0-429a-b764-9636db7f489d">
 			</testcontainer>
 			<testcontainer
 			id="bb1709bb-7486-42db-9705-486261d30467">
 			</testcontainer>
 			<testcontainer
 			id="c9415a68-3fa6-4b25-bed0-d91d10177c3f">
+			</testcontainer>
+			<testcontainer
+			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876">
+			</testcontainer>
+			<testcontainer
+			id="deb15c95-d8c5-47d1-9003-33f062876b4d">
 			</testcontainer>
 			<testcontainer
 			id="fa2595f1-c970-4369-8ce9-18c379a79934">

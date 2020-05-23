@@ -83,76 +83,75 @@ namespace WakeApp
             Host.Current.OpenBrowser("http://www.projektbudzik.pl/Account/Register?", "Chrome", "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Name' at 126;21.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(1));
-            repo.WelcomeWakeApp.Name.Click("126;21");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Name' at 21;15.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(2));
+            repo.WelcomeWakeApp.Name.Click("21;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'tomasz' with focus on 'WelcomeWakeApp.Name'.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'tomasz' with focus on 'WelcomeWakeApp.Name'.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(3));
             repo.WelcomeWakeApp.Name.PressKeys("tomasz");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Email' at 93;10.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(3));
-            repo.WelcomeWakeApp.Email.Click("93;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Email' at 27;16.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(4));
+            repo.WelcomeWakeApp.Email.Click("27;16");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'tomasz.faldrowicz{RShiftKey down}@{RShiftKey up}gmail.com' with focus on 'WelcomeWakeApp.Email'.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'tomasz.faldrowicz{RShiftKey down}@{RShiftKey up}gmail.com' with focus on 'WelcomeWakeApp.Email'.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(5));
             repo.WelcomeWakeApp.Email.PressKeys("tomasz.faldrowicz{RShiftKey down}@{RShiftKey up}gmail.com");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Password' at 107;17.", repo.WelcomeWakeApp.PasswordInfo, new RecordItemIndex(5));
-            repo.WelcomeWakeApp.Password.Click("107;17");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Password' at 62;31.", repo.WelcomeWakeApp.PasswordInfo, new RecordItemIndex(6));
+            repo.WelcomeWakeApp.Password.Click("62;31");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'haslo' with focus on 'WelcomeWakeApp.Password'.", repo.WelcomeWakeApp.PasswordInfo, new RecordItemIndex(6));
-            repo.WelcomeWakeApp.Password.PressKeys("haslo");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WakeApp132{RShiftKey down}!{RShiftKey up}' with focus on 'WelcomeWakeApp.Password'.", repo.WelcomeWakeApp.PasswordInfo, new RecordItemIndex(7));
+            repo.WelcomeWakeApp.Password.PressKeys("WakeApp132{RShiftKey down}!{RShiftKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.ConfirmPassword' at 85;11.", repo.WelcomeWakeApp.ConfirmPasswordInfo, new RecordItemIndex(7));
-            repo.WelcomeWakeApp.ConfirmPassword.Click("85;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.ConfirmPassword' at 111;10.", repo.WelcomeWakeApp.ConfirmPasswordInfo, new RecordItemIndex(8));
+            repo.WelcomeWakeApp.ConfirmPassword.Click("111;10");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'haslo' with focus on 'WelcomeWakeApp.ConfirmPassword'.", repo.WelcomeWakeApp.ConfirmPasswordInfo, new RecordItemIndex(8));
-            repo.WelcomeWakeApp.ConfirmPassword.PressKeys("haslo");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WakeApp132{RShiftKey down}!{RShiftKey up}' with focus on 'WelcomeWakeApp.ConfirmPassword'.", repo.WelcomeWakeApp.ConfirmPasswordInfo, new RecordItemIndex(9));
+            repo.WelcomeWakeApp.ConfirmPassword.PressKeys("WakeApp132{RShiftKey down}!{RShiftKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DivTagRow.FormCheck' at 14;15.", repo.WelcomeWakeApp.DivTagRow.FormCheckInfo, new RecordItemIndex(9));
-            repo.WelcomeWakeApp.DivTagRow.FormCheck.Click("14;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.CreateNewGroup' at 8;9.", repo.WelcomeWakeApp.CreateNewGroupInfo, new RecordItemIndex(10));
+            repo.WelcomeWakeApp.CreateNewGroup.Click("8;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.LabelTagCreateNewGroup' at 49;12.", repo.WelcomeWakeApp.LabelTagCreateNewGroupInfo, new RecordItemIndex(10));
-            repo.WelcomeWakeApp.LabelTagCreateNewGroup.Click("49;12");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupName' at 63;9.", repo.WelcomeWakeApp.GroupNameInfo, new RecordItemIndex(11));
-            repo.WelcomeWakeApp.GroupName.Click("63;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupName' at 38;12.", repo.WelcomeWakeApp.GroupNameInfo, new RecordItemIndex(11));
+            repo.WelcomeWakeApp.GroupName.Click("38;12");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'grupa' with focus on 'WelcomeWakeApp.GroupName'.", repo.WelcomeWakeApp.GroupNameInfo, new RecordItemIndex(12));
             repo.WelcomeWakeApp.GroupName.PressKeys("grupa");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupPassword' at 93;21.", repo.WelcomeWakeApp.GroupPasswordInfo, new RecordItemIndex(13));
-            repo.WelcomeWakeApp.GroupPassword.Click("93;21");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupPassword' at 47;10.", repo.WelcomeWakeApp.GroupPasswordInfo, new RecordItemIndex(13));
+            repo.WelcomeWakeApp.GroupPassword.Click("47;10");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'haslo' with focus on 'WelcomeWakeApp.GroupPassword'.", repo.WelcomeWakeApp.GroupPasswordInfo, new RecordItemIndex(14));
             repo.WelcomeWakeApp.GroupPassword.PressKeys("haslo");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupConfirmPassword' at 90;9.", repo.WelcomeWakeApp.GroupConfirmPasswordInfo, new RecordItemIndex(15));
-            repo.WelcomeWakeApp.GroupConfirmPassword.Click("90;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupConfirmPassword' at 126;4.", repo.WelcomeWakeApp.GroupConfirmPasswordInfo, new RecordItemIndex(15));
+            repo.WelcomeWakeApp.GroupConfirmPassword.Click("126;4");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'haslo' with focus on 'WelcomeWakeApp.GroupConfirmPassword'.", repo.WelcomeWakeApp.GroupConfirmPasswordInfo, new RecordItemIndex(16));
             repo.WelcomeWakeApp.GroupConfirmPassword.PressKeys("haslo");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Submit1' at 73;28.", repo.WelcomeWakeApp.Submit1Info, new RecordItemIndex(17));
-            repo.WelcomeWakeApp.Submit1.Click("73;28");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Submit1' at 73;21.", repo.WelcomeWakeApp.Submit1Info, new RecordItemIndex(17));
+            repo.WelcomeWakeApp.Submit1.Click("73;21");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Podany adres email już istnieje') on item 'WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstnieje'.", repo.WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstniejeInfo, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstniejeInfo, "InnerText", "Podany adres email już istnieje");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Podany adres email już istnieje') on item 'WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstnieje1'.", repo.WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstnieje1Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.PodanyAdresEmailJużIstnieje1Info, "InnerText", "Podany adres email już istnieje");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(19));
