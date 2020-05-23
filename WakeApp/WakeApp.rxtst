@@ -7,29 +7,29 @@
 			name="teardown1">
 			</teardown>
 			<smartfoldernode
+			id="0715e56b-0110-4e9a-b9c4-50b086b356b8"
+			name="SettingOfAlarm">
+				<description>
+					<![CDATA[Set Alarm + validate if date of alarm can be past]]>
+				</description>
+			</smartfoldernode>
+			<smartfoldernode
 			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b"
 			name="Happy_Path_for_user_and_group_registration">
 				<description>
 					<![CDATA[Happy path - go thru registration process of user an group]]>
 				</description>
 			</smartfoldernode>
-			<smartfoldernode
-			id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3"
-			name="Set_Alarm">
-				<description>
-					<![CDATA[Set Alarm + Validation of setting Alarm with wrong date - past]]>
-				</description>
-			</smartfoldernode>
+			<testmodule
+			id="0d28f8c1-1c9a-4a3d-a037-82dd97c923ee"
+			name="DeleteDevises"
+			ref="19c29362-b72c-465f-ae77-c2e4f2dc0ba9"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="2e555e63-239c-41f2-a94f-9197bd8d241b"
 			name="Test_Case_for_Mobile_WebApplication">
 			</testcase>
-			<testmodule
-			id="316fa430-b1ec-4288-aa45-ce1753349a32"
-			name="DeleteDevices"
-			ref="ac3d7932-25c7-4e37-8bac-e2cb1312ecc3"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="36bcac0a-71d6-41da-8fbd-6abc3b381d93"
 			name="RegisterAlreadyUserCredentials"
@@ -45,6 +45,10 @@
 					<![CDATA[Validation of main page (links, position of text, text, size of elements)]]>
 				</description>
 			</testmodule>
+			<smartfoldernode
+			id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d"
+			name="SmartFolder">
+			</smartfoldernode>
 			<testmodule
 			id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
 			name="HappyPath"
@@ -52,13 +56,10 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="72ee496b-5818-41fe-8047-0dc492a758f8"
-			name="AddDevice"
-			ref="3e5cbe22-a4f8-4d2e-b9fa-273d92380733"
+			id="73c2c05e-589a-4524-806f-db5f2df948f0"
+			name="Alarm"
+			ref="685f952c-c909-4665-a41c-c66490a91424"
 			type="Recording">
-				<description>
-					<![CDATA[Add Phone]]>
-				</description>
 			</testmodule>
 			<smartfoldernode
 			id="7da44347-21a8-456b-b001-63cf8bf87286"
@@ -107,17 +108,14 @@
 			name="WakeApp"
 			reportlevel="Info;20">
 			</testcase>
+			<smartfoldernode
+			id="a6ebccee-e979-4b1d-a350-d4652cb80e44"
+			name="Deletion_Of_Devices">
+			</smartfoldernode>
 			<testcase
 			id="a81eeb45-f617-4015-b0e7-400385a6cc76"
 			name="Test_Case_for_LogIn_/_Device_/_Alarm_functionality">
 			</testcase>
-			<smartfoldernode
-			id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef"
-			name="Delete_both_Devices">
-				<description>
-					<![CDATA[<p>Deletion of created devices</p><p><br></p>]]>
-				</description>
-			</smartfoldernode>
 			<testmodule
 			id="aece6528-d023-47a5-84ea-2c99d4e92bd8"
 			name="Login"
@@ -153,10 +151,13 @@
 			name="Check_error_message_when_fields_are_empy">
 			</smartfoldernode>
 			<testmodule
-			id="d578a34c-75bc-4e1c-b8fd-d0185b07e3ea"
-			name="AddAlarm"
-			ref="5e532534-a94a-4aa3-ab35-078ccc867a1e"
+			id="d5b53f5c-a486-4b32-80f2-eca8ae83c79a"
+			name="AddPhone"
+			ref="cfdd0209-8bfa-4e35-85dc-2be7b7315b93"
 			type="Recording">
+				<description>
+					<![CDATA[Add Phone]]>
+				</description>
 			</testmodule>
 			<smartfoldernode
 			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876"
@@ -263,10 +264,6 @@
 					<testcase
 					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
 					name="Test_Case_for_Android_Application">
-						<teardown
-						id="00c4572d-0a88-4a7e-99ef-469c40271bde"
-						name="teardown1">
-						</teardown>
 					</testcase>
 					<testcase
 					id="a81eeb45-f617-4015-b0e7-400385a6cc76"
@@ -286,26 +283,34 @@
 							id="a443d843-2acb-4718-a62b-8ef0e6e779b6"
 							name="AddDevice">
 							</testmodule>
+							<smartfoldernode
+							id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d"
+							name="SmartFolder">
+								<testmodule
+								id="d5b53f5c-a486-4b32-80f2-eca8ae83c79a"
+								name="AddPhone">
+								</testmodule>
+							</smartfoldernode>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0715e56b-0110-4e9a-b9c4-50b086b356b8"
+						name="SettingOfAlarm">
 							<testmodule
-							id="72ee496b-5818-41fe-8047-0dc492a758f8"
-							name="AddDevice">
+							id="73c2c05e-589a-4524-806f-db5f2df948f0"
+							name="Alarm">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
-						id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3"
-						name="Set_Alarm">
+						id="a6ebccee-e979-4b1d-a350-d4652cb80e44"
+						name="Deletion_Of_Devices">
 							<testmodule
-							id="d578a34c-75bc-4e1c-b8fd-d0185b07e3ea"
-							name="AddAlarm">
+							id="0d28f8c1-1c9a-4a3d-a037-82dd97c923ee"
+							name="DeleteDevises">
 							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef"
-						name="Delete_both_Devices">
-							<testmodule
-							id="316fa430-b1ec-4288-aa45-ce1753349a32"
-							name="DeleteDevices">
-							</testmodule>
+							<teardown
+							id="00c4572d-0a88-4a7e-99ef-469c40271bde"
+							name="teardown1">
+							</teardown>
 						</smartfoldernode>
 					</testcase>
 				</testcase>
@@ -319,13 +324,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0715e56b-0110-4e9a-b9c4-50b086b356b8">
+			</testcontainer>
+			<testcontainer
 			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b">
 			</testcontainer>
 			<testcontainer
-			id="1ab3f602-2e3e-458e-9fed-21d63cb16bc3">
+			id="2e555e63-239c-41f2-a94f-9197bd8d241b">
 			</testcontainer>
 			<testcontainer
-			id="2e555e63-239c-41f2-a94f-9197bd8d241b">
+			id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d">
 			</testcontainer>
 			<testcontainer
 			id="7da44347-21a8-456b-b001-63cf8bf87286">
@@ -340,10 +348,10 @@
 			id="a4a1184b-747a-499f-9b27-894e151dd824">
 			</testcontainer>
 			<testcontainer
-			id="a81eeb45-f617-4015-b0e7-400385a6cc76">
+			id="a6ebccee-e979-4b1d-a350-d4652cb80e44">
 			</testcontainer>
 			<testcontainer
-			id="abba9bd7-e1c0-4136-ac2e-be79d3d9fcef">
+			id="a81eeb45-f617-4015-b0e7-400385a6cc76">
 			</testcontainer>
 			<testcontainer
 			id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1">

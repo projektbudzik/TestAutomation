@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace WakeApp
 {
-    public partial class DeleteDevices
+    public partial class AddPhone
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

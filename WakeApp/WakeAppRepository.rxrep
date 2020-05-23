@@ -45,63 +45,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="af579ae3-af4b-4a5d-a072-16f9d944ff0f"
 		isrooted="True"
 		name="WelcomeWakeApp"
-		refimgid="e2ddd113-4032-488c-9be4-94276b5f13ee"
+		refimgid="e484c0da-ffb5-4b98-9efc-59639dc0e7c7"
 		refpath="/dom[@domain='www.projektbudzik.pl']"
 		searchtimeout="30000ms"
 		usecache="False">
-			<item
-			addcaps="unknown,webelement,imgtag"
-			capname="imgtag"
-			id="3b049cb8-0153-477d-a848-4122549151f9"
-			name="HttpWwwProjektbudzikPlNavbarOnly"
-			refimgid="d19464dc-0bd1-4201-ba95-d7f61e1fb20d"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/a[@innertext='                    WakeApp                ']/img[@alt='']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//nav/?/?/a[@innertext&gt;'                    WakeApp']/img[@alt='']
-			</item>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="52ff9d1b-1500-4d2d-853b-677b120e429c"
-			name="FaFaAndroid"
-			refimgid="3ee50b9f-899f-4371-8b22-4238bca6c2d1"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[1]/form[@action='http://www.projektbudzik.pl/']/a[@title='Pobierz aplikację na Androida']/i"
-			searchtimeout="30000ms">
-				<image
-				guid="6d7e701c-7ddc-4e4f-b5cd-38108f100140"
-				name="Screenshot1">
-					iVBORw0KGgoAAAANSUhEUgAAABMAAAAYCAYAAAAYl8YPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
-AAAOxAAADsQBlSsOGwAAAX1JREFUSEvtlb1rwlAUxf1XHAQ76ZQtcwehoJ10qjjoVjoUnCy0dFAc
-MnQoZAs4CA8kBIoIIgFRhwaHFpcSkBoQdLIgZDtN4gvte9H60VI69MANL8k9v9zcJDch/KB+AWbp
-6Jh0HZCNXnvobIPaUJkN40HHbDnBc1eDIkmQiQ7DnMN+aqE5pWmc1sOWJurFBMKRo2DE0qj25zSR
-VRC2HOL22DEJIoQYB3IiJoqIRuLIkgk1fIiD2ehcxT1TRhnBuOeru4RqDXGXcNdpKFxfWdiUIMuY
-v47o9YB5ECysX1lr2hjJGl6o1VXIbbYqS1Dcpjq3oGra7tE2saB+uT1ByJBWPQpHKujtW1mOwGjk
-6X7egZX9k3nUyQEw8g9jkrfFZtgNOvo3YbA0nCdTKMgj2I/7w16tFkpnKWTKA+4LOAA2o1ZXLMyZ
-GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
-6sUWj6Lc4AAAAABJRU5ErkJggg==
-				</image>
-				/dom[@domain='www.projektbudzik.pl']//nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/a[@title&gt;'Pobierz aplikacj&#281; na Andr']/i
-			</item>
-			<item
-			addcaps="unknown,webelement,h1tag"
-			capname="h1tag"
-			id="64c3622d-950b-40ba-89bc-b866917b2834"
-			name="Witamy"
-			refimgid="1fe1cc3f-278b-4c3b-b3a1-099cca4359ef"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/div/div/h1[@innertext='Witamy']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/div/div/h1[@innertext='Witamy']
-			</item>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="c70e6848-4462-438d-8bf6-40bfe73a2977"
-			name="HeadsetMic"
-			refimgid="b2562b45-c2d1-4004-89de-b681d841e4c1"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[2]/form/button/i[@innertext='headset_mic']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']/i[@innertext='headset_mic']
-			</item>
 			<item
 			addcaps="unknown,webelement,atag"
 			capname="atag"
@@ -191,70 +138,10 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				searchtimeout="30000ms">
 					/dom[@domain='www.projektbudzik.pl']/?/?/footer/div/div[1]/div[5]/?/?/a[@title='github.com']/i
 				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="c15765e7-4354-4f2c-bfac-43e6a9d11522"
-				name="HttpWwwProjektbudzikPlLogoRndPng"
-				refimgid="27a39332-2d56-4732-b226-ad7150971dad"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/footer/div/div[@innertext='                © WakeApp - Projekt zespołowy pracy dyplomowej studentów Wydziału Informatyki PJATK Gdańsk ']/img[@src='http://www.projektbudzik.pl/logo-rnd.png']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/?/?/footer/div/div[1]/img[@src='http://www.projektbudzik.pl/logo-rnd.png']
-				</item>
 				<basepath>
 					/dom[@domain='www.projektbudzik.pl']/?/?/footer/div/div[1]
 				</basepath>
 			</folder>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="9d5869c6-76d5-4974-9973-2b09e5d7547b"
-			name="FaFaUserCircleO"
-			refimgid="e82f43eb-b760-4504-ac59-d1b7c603bebe"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='                                        Zaloguj się                                    ']/i"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext&gt;'']/i
-			</item>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="c4907e55-f8de-40d9-910f-353dec8e07a2"
-			name="FaFaAndroid1"
-			refimgid="142c4cae-53ae-4485-9476-96f980b13305"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/div/h5[@innertext='                pobierz aplikację na urządzenie z systemem Android                ']/a[@title='Pobierz aplikację na Androida']/i"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div//h5[@innertext&gt;'                pobierz aplikacj&#281;']/a[@title&gt;'Pobierz aplikacj&#281; na Andr']/i
-			</item>
-			<item
-			addcaps="unknown,webelement,h5tag"
-			capname="h5tag"
-			id="3e1bebd1-93b0-49f5-8369-09d387ff2cf1"
-			name="H5TagPobierzAplikację"
-			refimgid="4e609b2c-4ba8-4e87-9210-cd20ebd9a56b"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/div/h5[@innertext='                pobierz aplikację na urządzenie z systemem Android                ']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div//h5[@innertext&gt;'                pobierz aplikacj&#281;']
-			</item>
-			<item
-			addcaps="unknown,webelement,h2tag"
-			capname="h2tag"
-			id="fe7d7127-81b5-47d7-ad62-142ee7f626c6"
-			name="Kontakt"
-			refimgid="3bd0f569-536c-4aad-a892-76b9efa78b2f"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/h2[@innertext='Kontakt']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/h2[@innertext='Kontakt']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="f6846fb0-6c32-4292-91d8-b916cca10a63"
-			name="SomeDivTag"
-			refimgid="a96f3cea-75d4-42f4-9361-6df79f08282b"
-			refpath="/dom[@domain='www.projektbudzik.pl']//div[#'map-container-section']/iframe[@src='https://maps.google.com/maps?q=Polsko-Japo%C5%84ska+Akademia+Technik+Komputerowych&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed']//div[#'mapDiv']/div/div/div[1]/div[3]"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//div[#'map-container-section']/iframe[@src='https://maps.google.com/maps?q=Polsko-Japo%C5%84ska+Akademia+Technik+Komputerowych&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed']//div[#'mapDiv']/div/div/div[1]/div[3]
-			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -264,95 +151,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div[1]"
 			searchtimeout="30000ms"
 			usecache="False">
-				<item
-				addcaps="unknown,webelement,itag"
-				capname="itag"
-				id="f23360cc-45aa-4d36-b245-8d957e0592cb"
-				name="FaFaWrench"
-				refimgid="d0ee3449-bfb2-4eea-b35e-ad3a3e2eb685"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div[1]/div[2]/div[2]/div[3]/a/i"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//a/i
-				</item>
-				<item
-				addcaps="unknown,webelement,h3tag"
-				capname="h3tag"
-				id="a68f6978-d2c7-4469-881c-76b9caa52b6a"
-				name="H3TagWyślijNamWiadomość"
-				refimgid="219686f5-3180-40a0-9735-27bc8de193c0"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div[1]/div[1]/div/div/div/h3[@innertext=' Wyślij nam wiadomość']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/div[1]/div/div/div/h3[@innertext=' Wy&#347;lij nam wiadomo&#347;&#263;']
-				</item>
-				<item
-				addcaps="unknown,webelement,itag"
-				capname="itag"
-				id="95462c65-6b8a-4bc3-a8ec-d65f59aa9d9e"
-				name="FaFaMapMarker"
-				refimgid="96a93cf0-27a5-44f4-8ba4-eb2983606ea3"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div[1]/div[2]/div[2]/div[1]/i"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/div[2]/div[2]/div[1]/i
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="78bb5c62-1ab9-40b8-864a-977820db931f"
-				name="TheNameFieldIsRequired"
-				refimgid="e29c2943-455f-4cc0-952a-103be8728bbc"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div[1]/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Contact']/div[1]/span[@innertext='The Name field is required.']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Contact']/div[1]/span[@innertext&gt;'The Name field is require']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="d3541a73-c2d1-49eb-847e-45994639d706"
-				name="TheEmailFieldIsRequired"
-				refimgid="ea687cba-030c-41e8-85a4-af9fecd5e561"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div[1]/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Contact']/div[2]/span[@innertext='The Email field is required.']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Contact']/div[2]/span[@innertext&gt;'The Email field is requir']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="5b691459-4b2c-4bd2-9ed7-3d8339fe11c5"
-				name="TheSubjectFieldIsRequired"
-				refimgid="f27974e6-1f9e-4492-9866-d0567cbbf828"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div[1]/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Contact']/div[4]/span[@innertext='The Subject field is required.']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Contact']/div[4]/span[@innertext&gt;'The Subject field is requ']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="1148da5f-26de-47cc-892e-442616c75127"
-				name="TheMessageFieldIsRequired"
-				refimgid="5c503706-408c-422f-afa5-190172c0c069"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div[1]/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext='The Message field is required.']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext&gt;'The Message field is requ']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="b14b653d-48b7-490a-aca2-483d50910e06"
-				name="FormCheck"
-				refimgid="cc488cf1-4c10-47bc-ae2e-e8f94e46aa66"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/div//form[@action='http://www.projektbudzik.pl/Account/Register']/div[5]/div[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="74d797dd-803f-4c95-9c36-e24247c38726"
-				name="PodanyAdresEmailJużIstnieje"
-				refimgid="40ccc54d-247a-40c7-a831-3fd9c5f5ce11"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext='Podany adres email już istnieje']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext&gt;'Podany adres email ju&#380; is']
-				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
 				capname="buttontag"
@@ -424,34 +222,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Device/Create']/div[5]/input[@type='submit']
 				</item>
 				<item
-				addcaps="unknown,webelement,atag"
-				capname="atag"
-				id="11b70799-9b77-48bb-a7d2-01a143641248"
-				name="ATag"
-				refimgid="e68d4017-0936-4500-8ec7-850db3a33570"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/div/a[@innertext&gt;'                     Dodaj']
-				</item>
-				<item
-				addcaps="unknown,webelement,atag"
-				capname="inputtag"
-				id="0987ce95-2d3a-4956-b881-477619b3adb0"
-				name="ATagDodaj"
-				refimgid="fba049ee-e51f-409f-99ca-ee7afe989fba"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/div//form[@action='http://www.projektbudzik.pl/Device/Create']/div[1]/input[@id='Name']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="d868c7f6-d80d-48d0-8790-2ef557cf2444"
-				name="FormGroup"
-				refimgid="0b5760e3-d8a4-4c8f-be89-4f9c543c1690"
-				refpath="/dom[@domain='www.projektbudzik.pl' and @caption='Dodaj alarm - WakeApp']/body/div[1]/main/section/div/div[1]/div/div/form/div[4]"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Alarm/Create']/div[4]
-				</item>
-				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="5cf15ecb-5245-4e9b-ae98-1f8bc34f07f1"
@@ -460,16 +230,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				refpath="/dom[@domain='www.projektbudzik.pl' and @caption='Dodaj alarm - WakeApp']/body/div[1]/main/section/div/div[1]/div/div/form/div[7]/input[@type='submit']"
 				searchtimeout="30000ms">
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Alarm/Create']/div[7]/input[@type='submit']
-				</item>
-				<item
-				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
-				id="b7249bd9-5cc0-46f9-b072-272a321ad423"
-				name="TdTagTestTel"
-				refimgid="ac226e83-6e29-4ade-a830-4a308c610649"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/table/tbody/tr/td[@innertext='                        test - telefon                    ']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr/td[1]
 				</item>
 				<item
 				addcaps="unknown,webelement,tdtag"
@@ -491,16 +251,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr/td[5]/?/?/a[@a='']
 				</item>
 				<item
-				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
-				id="6f8b3251-ec01-46e4-a102-4723b341a79f"
-				name="TdTag20211207"
-				refimgid="81697e50-f9ca-4393-8621-05763dcddfe6"
-				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/table/tbody/tr/td[@innertext='                        2021-12-07                    ']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table//td[@innertext&gt;'                        2021-12-07']
-				</item>
-				<item
 				addcaps="unknown,webelement,atag"
 				capname="atag"
 				id="24a74b30-baf0-4e0f-bf89-a0db0fb1287e"
@@ -517,7 +267,7 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				name="SomeTdTag"
 				refimgid="3a687641-06f4-4310-b062-e007e4a90309"
 				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr[2]/td[2]
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr[2]/td[1]
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -536,7 +286,7 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				name="TdTag"
 				refimgid="cf93dbf8-7ef0-40b8-8597-c3ecb32e54b3"
 				searchtimeout="30000ms">
-					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr/td[1]
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/?/?/td[@innertext&gt;'                        12']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -551,16 +301,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]
 				</basepath>
 			</folder>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="a7b3baed-49f6-43be-9ecb-75c46a8de6b5"
-			name="Submit"
-			refimgid="4e9ddb32-78f7-4ee7-812e-50a63d0f9e60"
-			refpath="/dom[@domain='www.projektbudzik.pl']//button[#'submit']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//button[#'submit']
-			</item>
 			<item
 			addcaps="unknown,webelement,atag"
 			capname="atag"
@@ -580,16 +320,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']
-			</item>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="631af2d3-d27a-4f8a-aee6-a0d681c675a1"
-			name="FaFaUserCircleO1"
-			refimgid="63ab2e65-9893-4c2f-88d6-8a876011f686"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/button[@innertext='                                        Zaloguj się                                    ']/i"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/?/?/i
 			</item>
 			<item
 			addcaps="unknown,webelement,h6tag"
@@ -731,16 +461,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				/dom[@domain='www.projektbudzik.pl']//input[#'ConfirmPassword']
 			</item>
 			<item
-			addcaps="unknown,webelement,labeltag"
-			capname="labeltag"
-			id="91002e45-f61a-4069-be93-9af7872a5bdb"
-			name="LabelTagCreateNewGroup"
-			refimgid="b35e0648-57a8-4327-be69-95ff308abb9d"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form/div[6]/div[2]/label[@innertext>' Create new group']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]/label[@innertext&gt;' Create new group']
-			</item>
-			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="d836de61-74d7-4688-ac44-562f7849a78b"
@@ -879,16 +599,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 				/dom[@domain='www.projektbudzik.pl']/body/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/?/?/i[@innertext='devices_other']
 			</item>
 			<item
-			addcaps="unknown,webelement,selecttag"
-			capname="selecttag"
-			id="d2065dac-1686-4799-b80d-2dfa11391913"
-			name="DeviceType"
-			refimgid="1dc9ee89-6d19-4dac-b2e1-f557c0f7e4da"
-			refpath="/dom[@domain='www.projektbudzik.pl']//select[#'DeviceType']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//select[#'DeviceType']
-			</item>
-			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="67bf71cd-929b-4e45-a947-8c100889c2a8"
@@ -897,16 +607,6 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Mac']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']//input[#'Mac']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="f2b892c2-9c0d-4aea-b598-68031a3c4727"
-			name="Time"
-			refimgid="3b33f87f-3936-4bcd-b4b8-b14bcbb0c147"
-			refpath="/dom[@domain='www.projektbudzik.pl' and @caption='Dodaj alarm - WakeApp']//input[#'Time']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//input[#'Time']
 			</item>
 			<item
 			addcaps="unknown,webelement,textareatag"
@@ -931,31 +631,12 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
-			id="a4f6260b-6ce8-4c09-8707-96d62b962765"
-			name="Tuesday"
-			refimgid="5b1e7247-e62f-40ac-97b5-8653e3770bc7"
-			refpath="/dom[@domain='www.projektbudzik.pl' and @caption='Dodaj alarm - WakeApp']//input[#'Tuesday']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']//input[#'Tuesday']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
 			id="d5b5a516-55b2-4a10-a709-8bd84342b1eb"
 			name="DateEnd"
 			refimgid="75167633-519c-4f52-b5d1-e087697f8202"
 			refpath="/dom[@domain='www.projektbudzik.pl' and @caption='Dodaj alarm - WakeApp']//input[#'DateEnd']"
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']//input[#'DateEnd']
-			</item>
-			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="0f7d69ff-5afb-499c-a922-2a8e474721f4"
-			name="AccessAlarms"
-			refimgid="905b4ba9-b629-4cbe-bcae-2dec78f2bef8"
-			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section/?/?/table/tbody/tr/td[5]/?/?/a[@innertext&gt;'']/i[@innertext='access_alarms']
 			</item>
 			<item
 			addcaps="unknown,webelement,inputtag"
@@ -1011,9 +692,89 @@ GNUT/yXeFgIKDXZycFPD1xz1HDX5V/9UdZbsOs88/V3YG5oXK2O02MLCPTSu4dSDxVHqrvudAO8P
 			capname="atag"
 			id="5e585588-7bb8-4842-828d-8264d2ff35e3"
 			name="SomeATag"
-			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div/table/tbody/tr/td/div/a"
+			refimgid="059ba619-14ba-4d8a-8d0a-b27e851480be"
 			searchtimeout="30000ms">
-				/dom[@domain='www.projektbudzik.pl']/body/div/main/section/?/?/table//a
+				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section/?/?/table/tbody/tr/td[5]/?/?/a[@innertext&gt;'' and @href=null()]
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="09f72e69-9e4e-4443-b42f-bf23afd95c06"
+			name="DevicesOther1"
+			refimgid="f38ae793-f568-4693-9ce5-45a2d68c001c"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div[1]/ul/li[1]/form/button/i[@innertext='devices_other']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Device?']/?/?/i[@innertext='devices_other']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="ba7fcd07-678e-4893-b2a0-d5ed2e89b3db"
+			name="FaFaPlus"
+			refimgid="5b6fc8ca-d725-4bcc-ab6d-874e9e7dc88a"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div/a/i"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section//a[@innertext&gt;'                     Dodaj']/i
+			</item>
+			<item
+			addcaps="unknown,webelement,selecttag"
+			capname="selecttag"
+			id="ecbb2e2f-a841-4c2a-b20a-0faa8e98deec"
+			name="DeviceType"
+			refimgid="08b067ed-21f9-4bad-9d5f-ff6289417524"
+			refpath="/dom[@domain='www.projektbudzik.pl']//select[#'DeviceType']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//select[#'DeviceType']
+			</item>
+			<item
+			addcaps="unknown,webelement,selecttag"
+			capname="selecttag"
+			id="facb4155-e1bc-491e-b22c-cfb47e598487"
+			name="DeviceId"
+			refimgid="9b1f8244-bd7c-48b7-8495-84d7bbfe6042"
+			refpath="/dom[@domain='www.projektbudzik.pl']//select[#'DeviceId']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//select[#'DeviceId']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="bdb6bbf3-35a9-435e-af43-f6281c595c0c"
+			name="FaFaPlus1"
+			refimgid="705c4fde-8c3e-4785-87df-a4659498f119"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div/a/i"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/body/div[1]/?/?/section//a[@innertext&gt;'                Dodaj']/i
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="60f9c6ad-fde5-4bda-9c60-9b181df23cb8"
+			name="Friday"
+			refimgid="da418935-a636-44dd-8e97-85ee47be5467"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Friday']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Friday']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="551f5075-cafb-4839-b2f7-4236721a5c9e"
+			name="Tuesday"
+			refimgid="2b8459c0-a9b5-4710-a7b8-9e2db8cc2104"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Tuesday']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Tuesday']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="20b3938e-9b8d-4433-9859-1a4aff52464b"
+			name="DevicesOther2"
+			refimgid="0b60d8e3-d98b-4903-b97a-06de27d9aa8a"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div[1]/ul/li[1]/form/button/i[@innertext='devices_other']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Alarm?deviceId=10068']/?/?/i[@innertext='devices_other']
 			</item>
 			<basepath>
 				/dom[@domain='www.projektbudzik.pl']
@@ -1059,10 +820,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<appfolder
 		addcaps="container"
 		capname="container"
-		id="e4d69351-1e23-4663-a14b-a3b90165cb7c"
+		id="bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d"
 		isrooted="True"
 		name="Dropdown"
-		refimgid="8291b3e5-19f4-4a74-910d-fc64396c2416"
+		refimgid="2e4ee5ad-c01f-467f-8aed-4a2f0c6bada3"
 		refpath="/container[@caption='dropdown']"
 		searchtimeout="30000ms"
 		usecache="True">

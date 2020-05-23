@@ -24,29 +24,29 @@ namespace WakeApp
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DeleteDevices recording.
+    ///The DeleteDevises recording.
     /// </summary>
-    [TestModule("ac3d7932-25c7-4e37-8bac-e2cb1312ecc3", ModuleType.Recording, 1)]
-    public partial class DeleteDevices : ITestModule
+    [TestModule("19c29362-b72c-465f-ae77-c2e4f2dc0ba9", ModuleType.Recording, 1)]
+    public partial class DeleteDevises : ITestModule
     {
         /// <summary>
         /// Holds an instance of the WakeAppRepository repository.
         /// </summary>
         public static WakeAppRepository repo = WakeAppRepository.Instance;
 
-        static DeleteDevices instance = new DeleteDevices();
+        static DeleteDevises instance = new DeleteDevises();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DeleteDevices()
+        public DeleteDevises()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DeleteDevices Instance
+        public static DeleteDevises Instance
         {
             get { return instance; }
         }
@@ -79,17 +79,21 @@ namespace WakeApp
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DevicesOther' at 12;10.", repo.WelcomeWakeApp.DevicesOtherInfo, new RecordItemIndex(0));
-            repo.WelcomeWakeApp.DevicesOther.Click("12;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DevicesOther' at 11;10.", repo.WelcomeWakeApp.DevicesOtherInfo, new RecordItemIndex(0));
+            repo.WelcomeWakeApp.DevicesOther.Click("11;10");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DivTagRow.ATag2' at Center.", repo.WelcomeWakeApp.DivTagRow.ATag2Info, new RecordItemIndex(1));
-            repo.WelcomeWakeApp.DivTagRow.ATag2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp' at 1011;355.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(1));
+            repo.WelcomeWakeApp.Self.Click("1011;355");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.SomeATag' at Center.", repo.WelcomeWakeApp.SomeATagInfo, new RecordItemIndex(2));
-            repo.WelcomeWakeApp.SomeATag.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp' at 1009;353.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(2));
+            repo.WelcomeWakeApp.Self.Click("1009;353");
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(3));
+            Host.Current.CloseApplication(repo.WelcomeWakeApp.Self, 100);
+            Delay.Milliseconds(0);
             
         }
 

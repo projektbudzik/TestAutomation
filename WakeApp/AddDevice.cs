@@ -30,9 +30,9 @@ namespace WakeApp
     public partial class AddDevice : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the WakeAppRepository repository.
+        /// Holds an instance of the AddDeviceArduino repository.
         /// </summary>
-        public static WakeAppRepository repo = WakeAppRepository.Instance;
+        public static AddDeviceArduino repo = AddDeviceArduino.Instance;
 
         static AddDevice instance = new AddDevice();
 
@@ -79,36 +79,36 @@ namespace WakeApp
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.ButtonTag1' at Center.", repo.WelcomeWakeApp.ButtonTag1Info, new RecordItemIndex(0));
-            repo.WelcomeWakeApp.ButtonTag1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.ButtonTag1' at 16;11.", repo.WelcomeWakeApp.ButtonTag1Info, new RecordItemIndex(0));
+            repo.WelcomeWakeApp.ButtonTag1.Click("16;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.ButtonTag2' at Center.", repo.WelcomeWakeApp.ButtonTag2Info, new RecordItemIndex(1));
-            repo.WelcomeWakeApp.ButtonTag2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp' at 294;243.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(1));
+            repo.WelcomeWakeApp.Self.Click("294;243");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Name' at 46;22.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(2));
-            repo.WelcomeWakeApp.Name.Click("46;22");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Name' at 38;15.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(2));
+            repo.WelcomeWakeApp.Name.Click("38;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Phone' with focus on 'WelcomeWakeApp.Name'.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(3));
-            repo.WelcomeWakeApp.Name.PressKeys("Phone");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Arduino' with focus on 'WelcomeWakeApp.Name'.", repo.WelcomeWakeApp.NameInfo, new RecordItemIndex(3));
+            repo.WelcomeWakeApp.Name.PressKeys("Arduino");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.InputTagMac' at 74;14.", repo.WelcomeWakeApp.InputTagMacInfo, new RecordItemIndex(4));
-            repo.WelcomeWakeApp.InputTagMac.Click("74;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.InputTagMac' at 60;17.", repo.WelcomeWakeApp.InputTagMacInfo, new RecordItemIndex(4));
+            repo.WelcomeWakeApp.InputTagMac.Click("60;17");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+48792215483' with focus on 'WelcomeWakeApp.InputTagMac'.", repo.WelcomeWakeApp.InputTagMacInfo, new RecordItemIndex(5));
-            repo.WelcomeWakeApp.InputTagMac.PressKeys("+48792215483");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'mac' with focus on 'WelcomeWakeApp.InputTagMac'.", repo.WelcomeWakeApp.InputTagMacInfo, new RecordItemIndex(5));
+            repo.WelcomeWakeApp.InputTagMac.PressKeys("mac");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DivTagRow.Submit1' at 38;25.", repo.WelcomeWakeApp.DivTagRow.Submit1Info, new RecordItemIndex(6));
-            repo.WelcomeWakeApp.DivTagRow.Submit1.Click("38;25");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.DivTagRow.Submit1' at 35;18.", repo.WelcomeWakeApp.DivTagRow.Submit1Info, new RecordItemIndex(6));
+            repo.WelcomeWakeApp.DivTagRow.Submit1.Click("35;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n                                    Phone\n                                ') on item 'WelcomeWakeApp.DivTagRow.TdTag'.", repo.WelcomeWakeApp.DivTagRow.TdTagInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.WelcomeWakeApp.DivTagRow.TdTagInfo, "InnerText", "\n                                    Phone\n                                ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeWakeApp.DivTagRow.TdTag1'.", repo.WelcomeWakeApp.DivTagRow.TdTag1Info, new RecordItemIndex(7));
+            Validate.Exists(repo.WelcomeWakeApp.DivTagRow.TdTag1Info);
             Delay.Milliseconds(100);
             
         }

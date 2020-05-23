@@ -99,7 +99,7 @@ namespace WakeApp
         /// <summary>
         /// The Dropdown folder.
         /// </summary>
-        [RepositoryFolder("e4d69351-1e23-4663-a14b-a3b90165cb7c")]
+        [RepositoryFolder("bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d")]
         public virtual WakeAppRepositoryFolders.DropdownAppFolder Dropdown
         {
             get { return _dropdown; }
@@ -160,22 +160,11 @@ namespace WakeApp
         {
             WakeAppRepositoryFolders.DFlexJustifyContentCenterMb1Pt4Folder _dflexjustifycontentcentermb1pt4;
             WakeAppRepositoryFolders.DivTagRowFolder _divtagrow;
-            RepoItemInfo _httpwwwprojektbudzikplnavbaronlyInfo;
-            FaFaAndroidInfoClass _fafaandroidInfo;
-            RepoItemInfo _witamyInfo;
-            RepoItemInfo _headsetmicInfo;
             RepoItemInfo _projektbudzikplInfo;
             RepoItemInfo _wakeappInfo;
             RepoItemInfo _divtagcwakeappprojeInfo;
-            RepoItemInfo _fafausercircleoInfo;
-            RepoItemInfo _fafaandroid1Info;
-            RepoItemInfo _h5tagpobierzaplikacjęInfo;
-            RepoItemInfo _kontaktInfo;
-            RepoItemInfo _somedivtagInfo;
-            RepoItemInfo _submitInfo;
             RepoItemInfo _pobierzaplikacjęnaandroidaInfo;
             RepoItemInfo _kontakt1Info;
-            RepoItemInfo _fafausercircleo1Info;
             RepoItemInfo _tastronawykorzystujeplikicookieInfo;
             RepoItemInfo _navitemInfo;
             RepoItemInfo _zamknijInfo;
@@ -190,7 +179,6 @@ namespace WakeApp
             RepoItemInfo _emailInfo;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _confirmpasswordInfo;
-            RepoItemInfo _labeltagcreatenewgroupInfo;
             RepoItemInfo _groupnameInfo;
             RepoItemInfo _grouppasswordInfo;
             RepoItemInfo _groupconfirmpasswordInfo;
@@ -205,20 +193,24 @@ namespace WakeApp
             RepoItemInfo _divtagcol1Info;
             RepoItemInfo _buttontagInfo;
             RepoItemInfo _buttontag1Info;
-            RepoItemInfo _devicetypeInfo;
             RepoItemInfo _inputtagmacInfo;
-            RepoItemInfo _timeInfo;
             RepoItemInfo _commentInfo;
             RepoItemInfo _mondayInfo;
-            RepoItemInfo _tuesdayInfo;
             RepoItemInfo _dateendInfo;
-            RepoItemInfo _accessalarmsInfo;
             RepoItemInfo _datestartInfo;
             RepoItemInfo _repeatInfo;
             RepoItemInfo _wednesdayInfo;
             RepoItemInfo _buttontag2Info;
             RepoItemInfo _devicesotherInfo;
             RepoItemInfo _someatagInfo;
+            RepoItemInfo _devicesother1Info;
+            RepoItemInfo _fafaplusInfo;
+            RepoItemInfo _devicetypeInfo;
+            RepoItemInfo _deviceidInfo;
+            RepoItemInfo _fafaplus1Info;
+            RepoItemInfo _fridayInfo;
+            RepoItemInfo _tuesdayInfo;
+            RepoItemInfo _devicesother2Info;
 
             /// <summary>
             /// Creates a new WelcomeWakeApp  folder.
@@ -228,22 +220,11 @@ namespace WakeApp
             {
                 _dflexjustifycontentcentermb1pt4 = new WakeAppRepositoryFolders.DFlexJustifyContentCenterMb1Pt4Folder(this);
                 _divtagrow = new WakeAppRepositoryFolders.DivTagRowFolder(this);
-                _httpwwwprojektbudzikplnavbaronlyInfo = new RepoItemInfo(this, "HttpWwwProjektbudzikPlNavbarOnly", ".//nav/?/?/a[@innertext>'                    WakeApp']/img[@alt='']", 30000, null, "3b049cb8-0153-477d-a848-4122549151f9");
-                _fafaandroidInfo = new FaFaAndroidInfoClass(this);
-                _witamyInfo = new RepoItemInfo(this, "Witamy", "body/div[1]/main/div/div/h1[@innertext='Witamy']", 30000, null, "64c3622d-950b-40ba-89bc-b866917b2834");
-                _headsetmicInfo = new RepoItemInfo(this, "HeadsetMic", ".//nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']/i[@innertext='headset_mic']", 30000, null, "c70e6848-4462-438d-8bf6-40bfe73a2977");
                 _projektbudzikplInfo = new RepoItemInfo(this, "ProjektbudzikPl", "?/?/header/nav/?/?/a[@innertext>'                    WakeApp']", 30000, null, "72227eb6-18fb-4f50-a965-89817f713b24");
                 _wakeappInfo = new RepoItemInfo(this, "WakeApp", "body/div[1]/main/div/div/img[@alt='WakeApp']", 30000, null, "9f9cac08-74cf-47b5-bc52-37b957afa40d");
                 _divtagcwakeappprojeInfo = new RepoItemInfo(this, "DivTagCWakeAppProje", "?/?/footer/?/?/div[@innertext>'                © WakeApp']", 30000, null, "edb369dd-323a-4fcc-81f1-e82abdca6af6");
-                _fafausercircleoInfo = new RepoItemInfo(this, "FaFaUserCircleO", ".//nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext>'']/i", 30000, null, "9d5869c6-76d5-4974-9973-2b09e5d7547b");
-                _fafaandroid1Info = new RepoItemInfo(this, "FaFaAndroid1", "body/div//h5[@innertext>'                pobierz aplikację']/a[@title>'Pobierz aplikację na Andr']/i", 30000, null, "c4907e55-f8de-40d9-910f-353dec8e07a2");
-                _h5tagpobierzaplikacjęInfo = new RepoItemInfo(this, "H5TagPobierzAplikację", "body/div//h5[@innertext>'                pobierz aplikację']", 30000, null, "3e1bebd1-93b0-49f5-8369-09d387ff2cf1");
-                _kontaktInfo = new RepoItemInfo(this, "Kontakt", "body/div/?/?/section/h2[@innertext='Kontakt']", 30000, null, "fe7d7127-81b5-47d7-ad62-142ee7f626c6");
-                _somedivtagInfo = new RepoItemInfo(this, "SomeDivTag", ".//div[#'map-container-section']/iframe[@src='https://maps.google.com/maps?q=Polsko-Japo%C5%84ska+Akademia+Technik+Komputerowych&t=&z=15&ie=UTF8&iwloc=&output=embed']//div[#'mapDiv']/div/div/div[1]/div[3]", 30000, null, "f6846fb0-6c32-4292-91d8-b916cca10a63");
-                _submitInfo = new RepoItemInfo(this, "Submit", ".//button[#'submit']", 30000, null, "a7b3baed-49f6-43be-9ecb-75c46a8de6b5");
                 _pobierzaplikacjęnaandroidaInfo = new RepoItemInfo(this, "PobierzAplikacjęNaAndroida", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/a[@title>'Pobierz aplikację na Andr']", 30000, null, "34bac232-6509-48ac-93e0-d6593fe5dd70");
                 _kontakt1Info = new RepoItemInfo(this, "Kontakt1", "?/?/header/nav//ul/li[2]/form[@action='http://www.projektbudzik.pl/']/button[@title='Kontakt']", 30000, null, "94d6584c-8239-4847-85e9-bea13d203319");
-                _fafausercircleo1Info = new RepoItemInfo(this, "FaFaUserCircleO1", "?/?/header/nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/Account/Login?']/?/?/i", 30000, null, "631af2d3-d27a-4f8a-aee6-a0d681c675a1");
                 _tastronawykorzystujeplikicookieInfo = new RepoItemInfo(this, "TaStronaWykorzystujePlikiCookie", ".//div[#'cookieinfo']/h6[@innertext>'Ta strona wykorzystuje pliki']", 30000, null, "9a37b010-3d99-4d3d-b65f-9b57b22de612");
                 _navitemInfo = new RepoItemInfo(this, "NavItem", "?/?/header/nav//ul/li[4]", 30000, null, "48edf724-1806-440e-938b-77a9c66cb4c0");
                 _zamknijInfo = new RepoItemInfo(this, "Zamknij", ".//div[#'cookieinfo']/a[@innertext='x']", 30000, null, "a0fae0bc-55ec-43c4-b657-43d08560d722");
@@ -258,7 +239,6 @@ namespace WakeApp
                 _emailInfo = new RepoItemInfo(this, "Email", ".//input[#'Email']", 30000, null, "555f779d-8591-46cd-98d8-7a938b4f2b25");
                 _passwordInfo = new RepoItemInfo(this, "Password", ".//input[#'Password']", 30000, null, "a0753bc4-a813-46a6-b17e-42721665eb9e");
                 _confirmpasswordInfo = new RepoItemInfo(this, "ConfirmPassword", ".//input[#'ConfirmPassword']", 30000, null, "9a3d6e44-2da3-438a-85e8-febe4d1cd26f");
-                _labeltagcreatenewgroupInfo = new RepoItemInfo(this, "LabelTagCreateNewGroup", "body/div[1]/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Register']/div[6]/div[2]/label[@innertext>' Create new group']", 30000, null, "91002e45-f61a-4069-be93-9af7872a5bdb");
                 _groupnameInfo = new RepoItemInfo(this, "GroupName", ".//input[#'GroupName']", 30000, null, "d836de61-74d7-4688-ac44-562f7849a78b");
                 _grouppasswordInfo = new RepoItemInfo(this, "GroupPassword", ".//input[#'GroupPassword']", 30000, null, "cfc5af30-4216-4f5d-aa9f-6114342b0fb4");
                 _groupconfirmpasswordInfo = new RepoItemInfo(this, "GroupConfirmPassword", ".//input[#'GroupConfirmPassword']", 30000, null, "264e39d3-92ba-479e-a754-46c255689803");
@@ -273,55 +253,24 @@ namespace WakeApp
                 _divtagcol1Info = new RepoItemInfo(this, "DivTagCol1", "body/div[1]/main/div/div[2]/div/div[2]", 30000, null, "cfa7a4cc-756a-4604-8b68-a6c793f8318d");
                 _buttontagInfo = new RepoItemInfo(this, "ButtonTag", ".//input[#'Email']", 30000, null, "692dcf19-4266-43fc-b7b7-d7dc825cc5f7");
                 _buttontag1Info = new RepoItemInfo(this, "ButtonTag1", "body/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/?/?/i[@innertext='devices_other']", 30000, null, "3e991043-7423-4667-a8d9-9f6d1df70a8d");
-                _devicetypeInfo = new RepoItemInfo(this, "DeviceType", ".//select[#'DeviceType']", 30000, null, "d2065dac-1686-4799-b80d-2dfa11391913");
                 _inputtagmacInfo = new RepoItemInfo(this, "InputTagMac", ".//input[#'Mac']", 30000, null, "67bf71cd-929b-4e45-a947-8c100889c2a8");
-                _timeInfo = new RepoItemInfo(this, "Time", ".//input[#'Time']", 30000, null, "f2b892c2-9c0d-4aea-b598-68031a3c4727");
                 _commentInfo = new RepoItemInfo(this, "Comment", ".//textarea[#'Comment']", 30000, null, "f6cbe7b6-3133-408c-bdcf-ffc526678eab");
                 _mondayInfo = new RepoItemInfo(this, "Monday", ".//input[#'Monday']", 30000, null, "d4e2a19e-b6fa-4beb-8fd7-6524d0d23aef");
-                _tuesdayInfo = new RepoItemInfo(this, "Tuesday", ".//input[#'Tuesday']", 30000, null, "a4f6260b-6ce8-4c09-8707-96d62b962765");
                 _dateendInfo = new RepoItemInfo(this, "DateEnd", ".//input[#'DateEnd']", 30000, null, "d5b5a516-55b2-4a10-a709-8bd84342b1eb");
-                _accessalarmsInfo = new RepoItemInfo(this, "AccessAlarms", "body/div[1]/?/?/section/?/?/table/tbody/tr/td[5]/?/?/a[@innertext>'']/i[@innertext='access_alarms']", 30000, null, "0f7d69ff-5afb-499c-a922-2a8e474721f4");
                 _datestartInfo = new RepoItemInfo(this, "DateStart", ".//input[#'DateStart']", 30000, null, "dd046d50-8421-4faf-962b-282474c73906");
                 _repeatInfo = new RepoItemInfo(this, "Repeat", ".//input[#'Repeat']", 30000, null, "195f1e99-9582-4ef1-8001-e8ba3f0d05be");
                 _wednesdayInfo = new RepoItemInfo(this, "Wednesday", ".//input[#'Wednesday']", 30000, null, "d1c7a0de-72c8-4744-8f1f-bc163b13aed1");
                 _buttontag2Info = new RepoItemInfo(this, "ButtonTag2", "body/div[1]/?/?/section//a[@innertext>'                     Dodaj']", 30000, null, "161d428d-a548-44dd-bacc-a31c5ac754e7");
                 _devicesotherInfo = new RepoItemInfo(this, "DevicesOther", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Alarm']/?/?/i[@innertext='devices_other']", 30000, null, "ef86b687-a6df-4643-bfe1-98dc10d132a6");
-                _someatagInfo = new RepoItemInfo(this, "SomeATag", "body/div/main/section/?/?/table//a", 30000, null, "5e585588-7bb8-4842-828d-8264d2ff35e3");
-            }
-
-            /// <summary>
-            /// The FaFaAndroidInfoClass folder.
-            /// </summary>
-            [RepositoryItemInfo("52ff9d1b-1500-4d2d-853b-677b120e429c")]
-            public class FaFaAndroidInfoClass : RepoItemInfo
-            {
-                /// <summary>
-                /// FaFaAndroidInfoClass class constructor.
-                /// </summary>
-                public FaFaAndroidInfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "FaFaAndroid", ".//nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/a[@title>'Pobierz aplikację na Andr']/i", 30000, null, "52ff9d1b-1500-4d2d-853b-677b120e429c")
-                { }
-
-                /// <summary>
-                /// Gets the Screenshot1 item image.
-                /// </summary>
-                /// <returns>The Screenshot1 image.</returns>
-                [RepositoryImage("6d7e701c-7ddc-4e4f-b5cd-38108f100140")]
-                public CompressedImage GetScreenshot1()
-                {
-                    return GetImage("6d7e701c-7ddc-4e4f-b5cd-38108f100140");
-                }
-
-                /// <summary>
-                /// Gets the Screenshot1 item image.
-                /// </summary>
-                /// <param name="cropRect">The bounds of the sub-image to return.</param>
-                /// <returns>The cropped image.</returns>
-                [RepositoryImage("6d7e701c-7ddc-4e4f-b5cd-38108f100140")]
-                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
-                {
-                    return GetImage("6d7e701c-7ddc-4e4f-b5cd-38108f100140", cropRect);
-                }
+                _someatagInfo = new RepoItemInfo(this, "SomeATag", "body/div[1]/?/?/section/?/?/table/tbody/tr/td[5]/?/?/a[@innertext>'' and @href=null()]", 30000, null, "5e585588-7bb8-4842-828d-8264d2ff35e3");
+                _devicesother1Info = new RepoItemInfo(this, "DevicesOther1", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Device?']/?/?/i[@innertext='devices_other']", 30000, null, "09f72e69-9e4e-4443-b42f-bf23afd95c06");
+                _fafaplusInfo = new RepoItemInfo(this, "FaFaPlus", "body/div[1]/?/?/section//a[@innertext>'                     Dodaj']/i", 30000, null, "ba7fcd07-678e-4893-b2a0-d5ed2e89b3db");
+                _devicetypeInfo = new RepoItemInfo(this, "DeviceType", ".//select[#'DeviceType']", 30000, null, "ecbb2e2f-a841-4c2a-b20a-0faa8e98deec");
+                _deviceidInfo = new RepoItemInfo(this, "DeviceId", ".//select[#'DeviceId']", 30000, null, "facb4155-e1bc-491e-b22c-cfb47e598487");
+                _fafaplus1Info = new RepoItemInfo(this, "FaFaPlus1", "body/div[1]/?/?/section//a[@innertext>'                Dodaj']/i", 30000, null, "bdb6bbf3-35a9-435e-af43-f6281c595c0c");
+                _fridayInfo = new RepoItemInfo(this, "Friday", ".//input[#'Friday']", 30000, null, "60f9c6ad-fde5-4bda-9c60-9b181df23cb8");
+                _tuesdayInfo = new RepoItemInfo(this, "Tuesday", ".//input[#'Tuesday']", 30000, null, "551f5075-cafb-4839-b2f7-4236721a5c9e");
+                _devicesother2Info = new RepoItemInfo(this, "DevicesOther2", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Alarm?deviceId=10068']/?/?/i[@innertext='devices_other']", 30000, null, "20b3938e-9b8d-4433-9859-1a4aff52464b");
             }
 
             /// <summary>
@@ -345,102 +294,6 @@ namespace WakeApp
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HttpWwwProjektbudzikPlNavbarOnly item.
-            /// </summary>
-            [RepositoryItem("3b049cb8-0153-477d-a848-4122549151f9")]
-            public virtual Ranorex.ImgTag HttpWwwProjektbudzikPlNavbarOnly
-            {
-                get
-                {
-                    return _httpwwwprojektbudzikplnavbaronlyInfo.CreateAdapter<Ranorex.ImgTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HttpWwwProjektbudzikPlNavbarOnly item info.
-            /// </summary>
-            [RepositoryItemInfo("3b049cb8-0153-477d-a848-4122549151f9")]
-            public virtual RepoItemInfo HttpWwwProjektbudzikPlNavbarOnlyInfo
-            {
-                get
-                {
-                    return _httpwwwprojektbudzikplnavbaronlyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FaFaAndroid item.
-            /// </summary>
-            [RepositoryItem("52ff9d1b-1500-4d2d-853b-677b120e429c")]
-            public virtual Ranorex.ITag FaFaAndroid
-            {
-                get
-                {
-                    return _fafaandroidInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaAndroid item info.
-            /// </summary>
-            [RepositoryItemInfo("52ff9d1b-1500-4d2d-853b-677b120e429c")]
-            public virtual FaFaAndroidInfoClass FaFaAndroidInfo
-            {
-                get
-                {
-                    return _fafaandroidInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Witamy item.
-            /// </summary>
-            [RepositoryItem("64c3622d-950b-40ba-89bc-b866917b2834")]
-            public virtual Ranorex.H1Tag Witamy
-            {
-                get
-                {
-                    return _witamyInfo.CreateAdapter<Ranorex.H1Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Witamy item info.
-            /// </summary>
-            [RepositoryItemInfo("64c3622d-950b-40ba-89bc-b866917b2834")]
-            public virtual RepoItemInfo WitamyInfo
-            {
-                get
-                {
-                    return _witamyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HeadsetMic item.
-            /// </summary>
-            [RepositoryItem("c70e6848-4462-438d-8bf6-40bfe73a2977")]
-            public virtual Ranorex.ITag HeadsetMic
-            {
-                get
-                {
-                    return _headsetmicInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HeadsetMic item info.
-            /// </summary>
-            [RepositoryItemInfo("c70e6848-4462-438d-8bf6-40bfe73a2977")]
-            public virtual RepoItemInfo HeadsetMicInfo
-            {
-                get
-                {
-                    return _headsetmicInfo;
                 }
             }
 
@@ -517,150 +370,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The FaFaUserCircleO item.
-            /// </summary>
-            [RepositoryItem("9d5869c6-76d5-4974-9973-2b09e5d7547b")]
-            public virtual Ranorex.ITag FaFaUserCircleO
-            {
-                get
-                {
-                    return _fafausercircleoInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaUserCircleO item info.
-            /// </summary>
-            [RepositoryItemInfo("9d5869c6-76d5-4974-9973-2b09e5d7547b")]
-            public virtual RepoItemInfo FaFaUserCircleOInfo
-            {
-                get
-                {
-                    return _fafausercircleoInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FaFaAndroid1 item.
-            /// </summary>
-            [RepositoryItem("c4907e55-f8de-40d9-910f-353dec8e07a2")]
-            public virtual Ranorex.ITag FaFaAndroid1
-            {
-                get
-                {
-                    return _fafaandroid1Info.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaAndroid1 item info.
-            /// </summary>
-            [RepositoryItemInfo("c4907e55-f8de-40d9-910f-353dec8e07a2")]
-            public virtual RepoItemInfo FaFaAndroid1Info
-            {
-                get
-                {
-                    return _fafaandroid1Info;
-                }
-            }
-
-            /// <summary>
-            /// The H5TagPobierzAplikację item.
-            /// </summary>
-            [RepositoryItem("3e1bebd1-93b0-49f5-8369-09d387ff2cf1")]
-            public virtual Ranorex.H5Tag H5TagPobierzAplikację
-            {
-                get
-                {
-                    return _h5tagpobierzaplikacjęInfo.CreateAdapter<Ranorex.H5Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The H5TagPobierzAplikację item info.
-            /// </summary>
-            [RepositoryItemInfo("3e1bebd1-93b0-49f5-8369-09d387ff2cf1")]
-            public virtual RepoItemInfo H5TagPobierzAplikacjęInfo
-            {
-                get
-                {
-                    return _h5tagpobierzaplikacjęInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Kontakt item.
-            /// </summary>
-            [RepositoryItem("fe7d7127-81b5-47d7-ad62-142ee7f626c6")]
-            public virtual Ranorex.H2Tag Kontakt
-            {
-                get
-                {
-                    return _kontaktInfo.CreateAdapter<Ranorex.H2Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Kontakt item info.
-            /// </summary>
-            [RepositoryItemInfo("fe7d7127-81b5-47d7-ad62-142ee7f626c6")]
-            public virtual RepoItemInfo KontaktInfo
-            {
-                get
-                {
-                    return _kontaktInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeDivTag item.
-            /// </summary>
-            [RepositoryItem("f6846fb0-6c32-4292-91d8-b916cca10a63")]
-            public virtual Ranorex.DivTag SomeDivTag
-            {
-                get
-                {
-                    return _somedivtagInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeDivTag item info.
-            /// </summary>
-            [RepositoryItemInfo("f6846fb0-6c32-4292-91d8-b916cca10a63")]
-            public virtual RepoItemInfo SomeDivTagInfo
-            {
-                get
-                {
-                    return _somedivtagInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Submit item.
-            /// </summary>
-            [RepositoryItem("a7b3baed-49f6-43be-9ecb-75c46a8de6b5")]
-            public virtual Ranorex.ButtonTag Submit
-            {
-                get
-                {
-                    return _submitInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Submit item info.
-            /// </summary>
-            [RepositoryItemInfo("a7b3baed-49f6-43be-9ecb-75c46a8de6b5")]
-            public virtual RepoItemInfo SubmitInfo
-            {
-                get
-                {
-                    return _submitInfo;
-                }
-            }
-
-            /// <summary>
             /// The PobierzAplikacjęNaAndroida item.
             /// </summary>
             [RepositoryItem("34bac232-6509-48ac-93e0-d6593fe5dd70")]
@@ -705,30 +414,6 @@ namespace WakeApp
                 get
                 {
                     return _kontakt1Info;
-                }
-            }
-
-            /// <summary>
-            /// The FaFaUserCircleO1 item.
-            /// </summary>
-            [RepositoryItem("631af2d3-d27a-4f8a-aee6-a0d681c675a1")]
-            public virtual Ranorex.ITag FaFaUserCircleO1
-            {
-                get
-                {
-                    return _fafausercircleo1Info.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaUserCircleO1 item info.
-            /// </summary>
-            [RepositoryItemInfo("631af2d3-d27a-4f8a-aee6-a0d681c675a1")]
-            public virtual RepoItemInfo FaFaUserCircleO1Info
-            {
-                get
-                {
-                    return _fafausercircleo1Info;
                 }
             }
 
@@ -1069,30 +754,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The LabelTagCreateNewGroup item.
-            /// </summary>
-            [RepositoryItem("91002e45-f61a-4069-be93-9af7872a5bdb")]
-            public virtual Ranorex.LabelTag LabelTagCreateNewGroup
-            {
-                get
-                {
-                    return _labeltagcreatenewgroupInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LabelTagCreateNewGroup item info.
-            /// </summary>
-            [RepositoryItemInfo("91002e45-f61a-4069-be93-9af7872a5bdb")]
-            public virtual RepoItemInfo LabelTagCreateNewGroupInfo
-            {
-                get
-                {
-                    return _labeltagcreatenewgroupInfo;
-                }
-            }
-
-            /// <summary>
             /// The GroupName item.
             /// </summary>
             [RepositoryItem("d836de61-74d7-4688-ac44-562f7849a78b")]
@@ -1429,30 +1090,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The DeviceType item.
-            /// </summary>
-            [RepositoryItem("d2065dac-1686-4799-b80d-2dfa11391913")]
-            public virtual Ranorex.SelectTag DeviceType
-            {
-                get
-                {
-                    return _devicetypeInfo.CreateAdapter<Ranorex.SelectTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DeviceType item info.
-            /// </summary>
-            [RepositoryItemInfo("d2065dac-1686-4799-b80d-2dfa11391913")]
-            public virtual RepoItemInfo DeviceTypeInfo
-            {
-                get
-                {
-                    return _devicetypeInfo;
-                }
-            }
-
-            /// <summary>
             /// The InputTagMac item.
             /// </summary>
             [RepositoryItem("67bf71cd-929b-4e45-a947-8c100889c2a8")]
@@ -1473,30 +1110,6 @@ namespace WakeApp
                 get
                 {
                     return _inputtagmacInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Time item.
-            /// </summary>
-            [RepositoryItem("f2b892c2-9c0d-4aea-b598-68031a3c4727")]
-            public virtual Ranorex.InputTag Time
-            {
-                get
-                {
-                    return _timeInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Time item info.
-            /// </summary>
-            [RepositoryItemInfo("f2b892c2-9c0d-4aea-b598-68031a3c4727")]
-            public virtual RepoItemInfo TimeInfo
-            {
-                get
-                {
-                    return _timeInfo;
                 }
             }
 
@@ -1549,30 +1162,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The Tuesday item.
-            /// </summary>
-            [RepositoryItem("a4f6260b-6ce8-4c09-8707-96d62b962765")]
-            public virtual Ranorex.InputTag Tuesday
-            {
-                get
-                {
-                    return _tuesdayInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Tuesday item info.
-            /// </summary>
-            [RepositoryItemInfo("a4f6260b-6ce8-4c09-8707-96d62b962765")]
-            public virtual RepoItemInfo TuesdayInfo
-            {
-                get
-                {
-                    return _tuesdayInfo;
-                }
-            }
-
-            /// <summary>
             /// The DateEnd item.
             /// </summary>
             [RepositoryItem("d5b5a516-55b2-4a10-a709-8bd84342b1eb")]
@@ -1593,30 +1182,6 @@ namespace WakeApp
                 get
                 {
                     return _dateendInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AccessAlarms item.
-            /// </summary>
-            [RepositoryItem("0f7d69ff-5afb-499c-a922-2a8e474721f4")]
-            public virtual Ranorex.ITag AccessAlarms
-            {
-                get
-                {
-                    return _accessalarmsInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AccessAlarms item info.
-            /// </summary>
-            [RepositoryItemInfo("0f7d69ff-5afb-499c-a922-2a8e474721f4")]
-            public virtual RepoItemInfo AccessAlarmsInfo
-            {
-                get
-                {
-                    return _accessalarmsInfo;
                 }
             }
 
@@ -1765,6 +1330,198 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The DevicesOther1 item.
+            /// </summary>
+            [RepositoryItem("09f72e69-9e4e-4443-b42f-bf23afd95c06")]
+            public virtual Ranorex.ITag DevicesOther1
+            {
+                get
+                {
+                    return _devicesother1Info.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DevicesOther1 item info.
+            /// </summary>
+            [RepositoryItemInfo("09f72e69-9e4e-4443-b42f-bf23afd95c06")]
+            public virtual RepoItemInfo DevicesOther1Info
+            {
+                get
+                {
+                    return _devicesother1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlus item.
+            /// </summary>
+            [RepositoryItem("ba7fcd07-678e-4893-b2a0-d5ed2e89b3db")]
+            public virtual Ranorex.ITag FaFaPlus
+            {
+                get
+                {
+                    return _fafaplusInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlus item info.
+            /// </summary>
+            [RepositoryItemInfo("ba7fcd07-678e-4893-b2a0-d5ed2e89b3db")]
+            public virtual RepoItemInfo FaFaPlusInfo
+            {
+                get
+                {
+                    return _fafaplusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeviceType item.
+            /// </summary>
+            [RepositoryItem("ecbb2e2f-a841-4c2a-b20a-0faa8e98deec")]
+            public virtual Ranorex.SelectTag DeviceType
+            {
+                get
+                {
+                    return _devicetypeInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeviceType item info.
+            /// </summary>
+            [RepositoryItemInfo("ecbb2e2f-a841-4c2a-b20a-0faa8e98deec")]
+            public virtual RepoItemInfo DeviceTypeInfo
+            {
+                get
+                {
+                    return _devicetypeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeviceId item.
+            /// </summary>
+            [RepositoryItem("facb4155-e1bc-491e-b22c-cfb47e598487")]
+            public virtual Ranorex.SelectTag DeviceId
+            {
+                get
+                {
+                    return _deviceidInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeviceId item info.
+            /// </summary>
+            [RepositoryItemInfo("facb4155-e1bc-491e-b22c-cfb47e598487")]
+            public virtual RepoItemInfo DeviceIdInfo
+            {
+                get
+                {
+                    return _deviceidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlus1 item.
+            /// </summary>
+            [RepositoryItem("bdb6bbf3-35a9-435e-af43-f6281c595c0c")]
+            public virtual Ranorex.ITag FaFaPlus1
+            {
+                get
+                {
+                    return _fafaplus1Info.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlus1 item info.
+            /// </summary>
+            [RepositoryItemInfo("bdb6bbf3-35a9-435e-af43-f6281c595c0c")]
+            public virtual RepoItemInfo FaFaPlus1Info
+            {
+                get
+                {
+                    return _fafaplus1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Friday item.
+            /// </summary>
+            [RepositoryItem("60f9c6ad-fde5-4bda-9c60-9b181df23cb8")]
+            public virtual Ranorex.InputTag Friday
+            {
+                get
+                {
+                    return _fridayInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Friday item info.
+            /// </summary>
+            [RepositoryItemInfo("60f9c6ad-fde5-4bda-9c60-9b181df23cb8")]
+            public virtual RepoItemInfo FridayInfo
+            {
+                get
+                {
+                    return _fridayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tuesday item.
+            /// </summary>
+            [RepositoryItem("551f5075-cafb-4839-b2f7-4236721a5c9e")]
+            public virtual Ranorex.InputTag Tuesday
+            {
+                get
+                {
+                    return _tuesdayInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tuesday item info.
+            /// </summary>
+            [RepositoryItemInfo("551f5075-cafb-4839-b2f7-4236721a5c9e")]
+            public virtual RepoItemInfo TuesdayInfo
+            {
+                get
+                {
+                    return _tuesdayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DevicesOther2 item.
+            /// </summary>
+            [RepositoryItem("20b3938e-9b8d-4433-9859-1a4aff52464b")]
+            public virtual Ranorex.ITag DevicesOther2
+            {
+                get
+                {
+                    return _devicesother2Info.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DevicesOther2 item info.
+            /// </summary>
+            [RepositoryItemInfo("20b3938e-9b8d-4433-9859-1a4aff52464b")]
+            public virtual RepoItemInfo DevicesOther2Info
+            {
+                get
+                {
+                    return _devicesother2Info;
+                }
+            }
+
+            /// <summary>
             /// The DFlexJustifyContentCenterMb1Pt4 folder.
             /// </summary>
             [RepositoryFolder("b3a1e41c-84bc-4c7f-a4b6-21cf5344c79f")]
@@ -1794,7 +1551,6 @@ namespace WakeApp
             RepoItemInfo _pomocInfo;
             RepoItemInfo _kontaktInfo;
             RepoItemInfo _fafagithubInfo;
-            RepoItemInfo _httpwwwprojektbudzikpllogorndpngInfo;
 
             /// <summary>
             /// Creates a new DFlexJustifyContentCenterMb1Pt4  folder.
@@ -1807,7 +1563,6 @@ namespace WakeApp
                 _pomocInfo = new RepoItemInfo(this, "Pomoc", "div[3]/?/?/a[@innertext='Pomoc']", 30000, null, "4397a601-4213-4857-a59f-a4e1ed4c25ab");
                 _kontaktInfo = new RepoItemInfo(this, "Kontakt", "div[4]/?/?/a[@innertext='Kontakt']", 30000, null, "d83984be-0dd2-4bc7-8c90-fba6984e5f6b");
                 _fafagithubInfo = new RepoItemInfo(this, "FaFaGithub", "div[5]/?/?/a[@title='github.com']/i", 30000, null, "f9413d29-204d-4f78-992d-5bd761648b9a");
-                _httpwwwprojektbudzikpllogorndpngInfo = new RepoItemInfo(this, "HttpWwwProjektbudzikPlLogoRndPng", "img[@src='http://www.projektbudzik.pl/logo-rnd.png']", 30000, null, "c15765e7-4354-4f2c-bfac-43e6a9d11522");
             }
 
             /// <summary>
@@ -1953,30 +1708,6 @@ namespace WakeApp
                     return _fafagithubInfo;
                 }
             }
-
-            /// <summary>
-            /// The HttpWwwProjektbudzikPlLogoRndPng item.
-            /// </summary>
-            [RepositoryItem("c15765e7-4354-4f2c-bfac-43e6a9d11522")]
-            public virtual Ranorex.ImgTag HttpWwwProjektbudzikPlLogoRndPng
-            {
-                get
-                {
-                    return _httpwwwprojektbudzikpllogorndpngInfo.CreateAdapter<Ranorex.ImgTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HttpWwwProjektbudzikPlLogoRndPng item info.
-            /// </summary>
-            [RepositoryItemInfo("c15765e7-4354-4f2c-bfac-43e6a9d11522")]
-            public virtual RepoItemInfo HttpWwwProjektbudzikPlLogoRndPngInfo
-            {
-                get
-                {
-                    return _httpwwwprojektbudzikpllogorndpngInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -1985,15 +1716,6 @@ namespace WakeApp
         [RepositoryFolder("5ddda5fd-8020-4a92-8a1d-7ca34811d11e")]
         public partial class DivTagRowFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _fafawrenchInfo;
-            RepoItemInfo _h3tagwyślijnamwiadomośćInfo;
-            RepoItemInfo _fafamapmarkerInfo;
-            RepoItemInfo _thenamefieldisrequiredInfo;
-            RepoItemInfo _theemailfieldisrequiredInfo;
-            RepoItemInfo _thesubjectfieldisrequiredInfo;
-            RepoItemInfo _themessagefieldisrequiredInfo;
-            RepoItemInfo _formcheckInfo;
-            RepoItemInfo _podanyadresemailjużistniejeInfo;
             RepoItemInfo _wyślijInfo;
             RepoItemInfo _colmd4Info;
             RepoItemInfo _godzinypracyInfo;
@@ -2001,14 +1723,9 @@ namespace WakeApp
             RepoItemInfo _podanyadresemailjużistnieje1Info;
             RepoItemInfo _submitInfo;
             RepoItemInfo _submit1Info;
-            RepoItemInfo _atagInfo;
-            RepoItemInfo _atagdodajInfo;
-            RepoItemInfo _formgroupInfo;
             RepoItemInfo _submit2Info;
-            RepoItemInfo _tdtagtesttelInfo;
             RepoItemInfo _tdtagtestInfo;
             RepoItemInfo _atag1Info;
-            RepoItemInfo _tdtag20211207Info;
             RepoItemInfo _atagdodaj1Info;
             RepoItemInfo _sometdtagInfo;
             RepoItemInfo _proszęwybraćdatęzakończenianiewcześInfo;
@@ -2021,15 +1738,6 @@ namespace WakeApp
             public DivTagRowFolder(RepoGenBaseFolder parentFolder) :
                     base("DivTagRow", "body/div/?/?/section/div[1]", parentFolder, 30000, null, false, "5ddda5fd-8020-4a92-8a1d-7ca34811d11e", "")
             {
-                _fafawrenchInfo = new RepoItemInfo(this, "FaFaWrench", ".//a/i", 30000, null, "f23360cc-45aa-4d36-b245-8d957e0592cb");
-                _h3tagwyślijnamwiadomośćInfo = new RepoItemInfo(this, "H3TagWyślijNamWiadomość", "div[1]/div/div/div/h3[@innertext=' Wyślij nam wiadomość']", 30000, null, "a68f6978-d2c7-4469-881c-76b9caa52b6a");
-                _fafamapmarkerInfo = new RepoItemInfo(this, "FaFaMapMarker", "div[2]/div[2]/div[1]/i", 30000, null, "95462c65-6b8a-4bc3-a8ec-d65f59aa9d9e");
-                _thenamefieldisrequiredInfo = new RepoItemInfo(this, "TheNameFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[1]/span[@innertext>'The Name field is require']", 30000, null, "78bb5c62-1ab9-40b8-864a-977820db931f");
-                _theemailfieldisrequiredInfo = new RepoItemInfo(this, "TheEmailFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[2]/span[@innertext>'The Email field is requir']", 30000, null, "d3541a73-c2d1-49eb-847e-45994639d706");
-                _thesubjectfieldisrequiredInfo = new RepoItemInfo(this, "TheSubjectFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[4]/span[@innertext>'The Subject field is requ']", 30000, null, "5b691459-4b2c-4bd2-9ed7-3d8339fe11c5");
-                _themessagefieldisrequiredInfo = new RepoItemInfo(this, "TheMessageFieldIsRequired", ".//form[@action='http://www.projektbudzik.pl/Contact']/div[5]/span[@innertext>'The Message field is requ']", 30000, null, "1148da5f-26de-47cc-892e-442616c75127");
-                _formcheckInfo = new RepoItemInfo(this, "FormCheck", "div//form[@action='http://www.projektbudzik.pl/Account/Register']/div[5]/div[2]", 30000, null, "b14b653d-48b7-490a-aca2-483d50910e06");
-                _podanyadresemailjużistniejeInfo = new RepoItemInfo(this, "PodanyAdresEmailJużIstnieje", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[3]/span[@innertext>'Podany adres email już is']", 30000, null, "74d797dd-803f-4c95-9c36-e24247c38726");
                 _wyślijInfo = new RepoItemInfo(this, "Wyślij", ".//form[@action='http://www.projektbudzik.pl/Contact?']/div[7]/button[@innertext='Wyślij']", 30000, null, "0aaddfe7-2006-470d-a268-6067bc9418c8");
                 _colmd4Info = new RepoItemInfo(this, "ColMd4", "div[2]/div[2]/div[1]", 30000, null, "4242ebae-4fa0-4ec9-973a-9dcb335e4686");
                 _godzinypracyInfo = new RepoItemInfo(this, "GodzinyPracy", "div[2]/div[2]/div[2]/p[@innertext='Godziny pracy:']", 30000, null, "eae825a9-c8b7-4d96-ac49-c1ef8760651e");
@@ -2037,18 +1745,13 @@ namespace WakeApp
                 _podanyadresemailjużistnieje1Info = new RepoItemInfo(this, "PodanyAdresEmailJużIstnieje1", ".//form[@action='http://www.projektbudzik.pl/Account/Register']/div[2]/span[@innertext>'Podany adres email już is']", 30000, null, "0212e189-751b-4c4e-97db-cdc605d2c6e1");
                 _submitInfo = new RepoItemInfo(this, "Submit", ".//form[@action='http://www.projektbudzik.pl/Account/Login']/div[3]/input[@type='submit']", 30000, null, "4ef233ab-e919-4674-865e-484e940acf6d");
                 _submit1Info = new RepoItemInfo(this, "Submit1", ".//form[@action='http://www.projektbudzik.pl/Device/Create']/div[5]/input[@type='submit']", 30000, null, "01f2cc2e-8625-438a-b727-69e10a1cbe85");
-                _atagInfo = new RepoItemInfo(this, "ATag", "div/a[@innertext>'                     Dodaj']", 30000, null, "11b70799-9b77-48bb-a7d2-01a143641248");
-                _atagdodajInfo = new RepoItemInfo(this, "ATagDodaj", "div//form[@action='http://www.projektbudzik.pl/Device/Create']/div[1]/input[@id='Name']", 30000, null, "0987ce95-2d3a-4956-b881-477619b3adb0");
-                _formgroupInfo = new RepoItemInfo(this, "FormGroup", ".//form[@action='http://www.projektbudzik.pl/Alarm/Create']/div[4]", 30000, null, "d868c7f6-d80d-48d0-8790-2ef557cf2444");
                 _submit2Info = new RepoItemInfo(this, "Submit2", ".//form[@action='http://www.projektbudzik.pl/Alarm/Create']/div[7]/input[@type='submit']", 30000, null, "5cf15ecb-5245-4e9b-ae98-1f8bc34f07f1");
-                _tdtagtesttelInfo = new RepoItemInfo(this, "TdTagTestTel", "table/tbody/tr/td[1]", 30000, null, "b7249bd9-5cc0-46f9-b072-272a321ad423");
                 _tdtagtestInfo = new RepoItemInfo(this, "TdTagTest", "table/tbody/tr/td[6]", 30000, null, "1ab4cfa0-5176-44f8-843d-d755cfdb5891");
                 _atag1Info = new RepoItemInfo(this, "ATag1", "table/tbody/tr/td[5]/?/?/a[@a='']", 30000, null, "b862abe1-d010-484f-be58-6ed144a5c575");
-                _tdtag20211207Info = new RepoItemInfo(this, "TdTag20211207", "table//td[@innertext>'                        2021-12-07']", 30000, null, "6f8b3251-ec01-46e4-a102-4723b341a79f");
                 _atagdodaj1Info = new RepoItemInfo(this, "ATagDodaj1", "?/?/a[@innertext>'                Dodaj']", 30000, null, "24a74b30-baf0-4e0f-bf89-a0db0fb1287e");
-                _sometdtagInfo = new RepoItemInfo(this, "SomeTdTag", "table/tbody/tr[2]/td[2]", 30000, null, "a1298bf2-83a9-4d67-a0f5-b42b108e00a2");
+                _sometdtagInfo = new RepoItemInfo(this, "SomeTdTag", "table/tbody/tr[2]/td[1]", 30000, null, "a1298bf2-83a9-4d67-a0f5-b42b108e00a2");
                 _proszęwybraćdatęzakończenianiewcześInfo = new RepoItemInfo(this, "ProszęWybraćDatęZakończeniaNieWcześ", ".//form[@action='http://www.projektbudzik.pl/Alarm/Create']/div[5]/?/?/span[@innertext>'Proszę wybrać datę zakończenia']", 30000, null, "a8d87bbe-836b-4e8b-b03a-e76d1d182f8f");
-                _tdtagInfo = new RepoItemInfo(this, "TdTag", "table/tbody/tr/td[1]", 30000, null, "550c2525-4d86-4bec-af76-6b234c6b6685");
+                _tdtagInfo = new RepoItemInfo(this, "TdTag", "table/tbody/?/?/td[@innertext>'                        12']", 30000, null, "550c2525-4d86-4bec-af76-6b234c6b6685");
                 _atag2Info = new RepoItemInfo(this, "ATag2", "table/tbody/tr[1]/td[4]/?/?/a[@innertext>'']", 30000, null, "f4d173be-cf82-4b74-9c20-ce513b13bcd5");
             }
 
@@ -2073,222 +1776,6 @@ namespace WakeApp
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FaFaWrench item.
-            /// </summary>
-            [RepositoryItem("f23360cc-45aa-4d36-b245-8d957e0592cb")]
-            public virtual Ranorex.ITag FaFaWrench
-            {
-                get
-                {
-                    return _fafawrenchInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaWrench item info.
-            /// </summary>
-            [RepositoryItemInfo("f23360cc-45aa-4d36-b245-8d957e0592cb")]
-            public virtual RepoItemInfo FaFaWrenchInfo
-            {
-                get
-                {
-                    return _fafawrenchInfo;
-                }
-            }
-
-            /// <summary>
-            /// The H3TagWyślijNamWiadomość item.
-            /// </summary>
-            [RepositoryItem("a68f6978-d2c7-4469-881c-76b9caa52b6a")]
-            public virtual Ranorex.H3Tag H3TagWyślijNamWiadomość
-            {
-                get
-                {
-                    return _h3tagwyślijnamwiadomośćInfo.CreateAdapter<Ranorex.H3Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The H3TagWyślijNamWiadomość item info.
-            /// </summary>
-            [RepositoryItemInfo("a68f6978-d2c7-4469-881c-76b9caa52b6a")]
-            public virtual RepoItemInfo H3TagWyślijNamWiadomośćInfo
-            {
-                get
-                {
-                    return _h3tagwyślijnamwiadomośćInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FaFaMapMarker item.
-            /// </summary>
-            [RepositoryItem("95462c65-6b8a-4bc3-a8ec-d65f59aa9d9e")]
-            public virtual Ranorex.ITag FaFaMapMarker
-            {
-                get
-                {
-                    return _fafamapmarkerInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FaFaMapMarker item info.
-            /// </summary>
-            [RepositoryItemInfo("95462c65-6b8a-4bc3-a8ec-d65f59aa9d9e")]
-            public virtual RepoItemInfo FaFaMapMarkerInfo
-            {
-                get
-                {
-                    return _fafamapmarkerInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TheNameFieldIsRequired item.
-            /// </summary>
-            [RepositoryItem("78bb5c62-1ab9-40b8-864a-977820db931f")]
-            public virtual Ranorex.SpanTag TheNameFieldIsRequired
-            {
-                get
-                {
-                    return _thenamefieldisrequiredInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TheNameFieldIsRequired item info.
-            /// </summary>
-            [RepositoryItemInfo("78bb5c62-1ab9-40b8-864a-977820db931f")]
-            public virtual RepoItemInfo TheNameFieldIsRequiredInfo
-            {
-                get
-                {
-                    return _thenamefieldisrequiredInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TheEmailFieldIsRequired item.
-            /// </summary>
-            [RepositoryItem("d3541a73-c2d1-49eb-847e-45994639d706")]
-            public virtual Ranorex.SpanTag TheEmailFieldIsRequired
-            {
-                get
-                {
-                    return _theemailfieldisrequiredInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TheEmailFieldIsRequired item info.
-            /// </summary>
-            [RepositoryItemInfo("d3541a73-c2d1-49eb-847e-45994639d706")]
-            public virtual RepoItemInfo TheEmailFieldIsRequiredInfo
-            {
-                get
-                {
-                    return _theemailfieldisrequiredInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TheSubjectFieldIsRequired item.
-            /// </summary>
-            [RepositoryItem("5b691459-4b2c-4bd2-9ed7-3d8339fe11c5")]
-            public virtual Ranorex.SpanTag TheSubjectFieldIsRequired
-            {
-                get
-                {
-                    return _thesubjectfieldisrequiredInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TheSubjectFieldIsRequired item info.
-            /// </summary>
-            [RepositoryItemInfo("5b691459-4b2c-4bd2-9ed7-3d8339fe11c5")]
-            public virtual RepoItemInfo TheSubjectFieldIsRequiredInfo
-            {
-                get
-                {
-                    return _thesubjectfieldisrequiredInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TheMessageFieldIsRequired item.
-            /// </summary>
-            [RepositoryItem("1148da5f-26de-47cc-892e-442616c75127")]
-            public virtual Ranorex.SpanTag TheMessageFieldIsRequired
-            {
-                get
-                {
-                    return _themessagefieldisrequiredInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TheMessageFieldIsRequired item info.
-            /// </summary>
-            [RepositoryItemInfo("1148da5f-26de-47cc-892e-442616c75127")]
-            public virtual RepoItemInfo TheMessageFieldIsRequiredInfo
-            {
-                get
-                {
-                    return _themessagefieldisrequiredInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FormCheck item.
-            /// </summary>
-            [RepositoryItem("b14b653d-48b7-490a-aca2-483d50910e06")]
-            public virtual Ranorex.DivTag FormCheck
-            {
-                get
-                {
-                    return _formcheckInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FormCheck item info.
-            /// </summary>
-            [RepositoryItemInfo("b14b653d-48b7-490a-aca2-483d50910e06")]
-            public virtual RepoItemInfo FormCheckInfo
-            {
-                get
-                {
-                    return _formcheckInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PodanyAdresEmailJużIstnieje item.
-            /// </summary>
-            [RepositoryItem("74d797dd-803f-4c95-9c36-e24247c38726")]
-            public virtual Ranorex.SpanTag PodanyAdresEmailJużIstnieje
-            {
-                get
-                {
-                    return _podanyadresemailjużistniejeInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PodanyAdresEmailJużIstnieje item info.
-            /// </summary>
-            [RepositoryItemInfo("74d797dd-803f-4c95-9c36-e24247c38726")]
-            public virtual RepoItemInfo PodanyAdresEmailJużIstniejeInfo
-            {
-                get
-                {
-                    return _podanyadresemailjużistniejeInfo;
                 }
             }
 
@@ -2461,78 +1948,6 @@ namespace WakeApp
             }
 
             /// <summary>
-            /// The ATag item.
-            /// </summary>
-            [RepositoryItem("11b70799-9b77-48bb-a7d2-01a143641248")]
-            public virtual Ranorex.ATag ATag
-            {
-                get
-                {
-                    return _atagInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ATag item info.
-            /// </summary>
-            [RepositoryItemInfo("11b70799-9b77-48bb-a7d2-01a143641248")]
-            public virtual RepoItemInfo ATagInfo
-            {
-                get
-                {
-                    return _atagInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ATagDodaj item.
-            /// </summary>
-            [RepositoryItem("0987ce95-2d3a-4956-b881-477619b3adb0")]
-            public virtual Ranorex.InputTag ATagDodaj
-            {
-                get
-                {
-                    return _atagdodajInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ATagDodaj item info.
-            /// </summary>
-            [RepositoryItemInfo("0987ce95-2d3a-4956-b881-477619b3adb0")]
-            public virtual RepoItemInfo ATagDodajInfo
-            {
-                get
-                {
-                    return _atagdodajInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FormGroup item.
-            /// </summary>
-            [RepositoryItem("d868c7f6-d80d-48d0-8790-2ef557cf2444")]
-            public virtual Ranorex.DivTag FormGroup
-            {
-                get
-                {
-                    return _formgroupInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FormGroup item info.
-            /// </summary>
-            [RepositoryItemInfo("d868c7f6-d80d-48d0-8790-2ef557cf2444")]
-            public virtual RepoItemInfo FormGroupInfo
-            {
-                get
-                {
-                    return _formgroupInfo;
-                }
-            }
-
-            /// <summary>
             /// The Submit2 item.
             /// </summary>
             [RepositoryItem("5cf15ecb-5245-4e9b-ae98-1f8bc34f07f1")]
@@ -2553,30 +1968,6 @@ namespace WakeApp
                 get
                 {
                     return _submit2Info;
-                }
-            }
-
-            /// <summary>
-            /// The TdTagTestTel item.
-            /// </summary>
-            [RepositoryItem("b7249bd9-5cc0-46f9-b072-272a321ad423")]
-            public virtual Ranorex.TdTag TdTagTestTel
-            {
-                get
-                {
-                    return _tdtagtesttelInfo.CreateAdapter<Ranorex.TdTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TdTagTestTel item info.
-            /// </summary>
-            [RepositoryItemInfo("b7249bd9-5cc0-46f9-b072-272a321ad423")]
-            public virtual RepoItemInfo TdTagTestTelInfo
-            {
-                get
-                {
-                    return _tdtagtesttelInfo;
                 }
             }
 
@@ -2625,30 +2016,6 @@ namespace WakeApp
                 get
                 {
                     return _atag1Info;
-                }
-            }
-
-            /// <summary>
-            /// The TdTag20211207 item.
-            /// </summary>
-            [RepositoryItem("6f8b3251-ec01-46e4-a102-4723b341a79f")]
-            public virtual Ranorex.TdTag TdTag20211207
-            {
-                get
-                {
-                    return _tdtag20211207Info.CreateAdapter<Ranorex.TdTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TdTag20211207 item info.
-            /// </summary>
-            [RepositoryItemInfo("6f8b3251-ec01-46e4-a102-4723b341a79f")]
-            public virtual RepoItemInfo TdTag20211207Info
-            {
-                get
-                {
-                    return _tdtag20211207Info;
                 }
             }
 
@@ -2867,7 +2234,7 @@ namespace WakeApp
         /// <summary>
         /// The DropdownAppFolder folder.
         /// </summary>
-        [RepositoryFolder("e4d69351-1e23-4663-a14b-a3b90165cb7c")]
+        [RepositoryFolder("bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d")]
         public partial class DropdownAppFolder : RepoGenBaseFolder
         {
 
@@ -2875,14 +2242,14 @@ namespace WakeApp
             /// Creates a new Dropdown  folder.
             /// </summary>
             public DropdownAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Dropdown", "/container[@caption='dropdown']", parentFolder, 30000, null, true, "e4d69351-1e23-4663-a14b-a3b90165cb7c", "")
+                    base("Dropdown", "/container[@caption='dropdown']", parentFolder, 30000, null, true, "bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d", "")
             {
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("e4d69351-1e23-4663-a14b-a3b90165cb7c")]
+            [RepositoryItem("bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d")]
             public virtual Ranorex.Container Self
             {
                 get
@@ -2894,7 +2261,7 @@ namespace WakeApp
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("e4d69351-1e23-4663-a14b-a3b90165cb7c")]
+            [RepositoryItemInfo("bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d")]
             public virtual RepoItemInfo SelfInfo
             {
                 get

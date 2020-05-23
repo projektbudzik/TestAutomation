@@ -1,0 +1,118 @@
+﻿<repository
+id="66a253e7-fd21-4347-bbd9-f7cf10a96f9f"
+name="AddDeviceArduino">
+	<codegen
+	classname="AddDeviceArduino"
+	namespace="WakeApp">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="11a8705c-12a8-481b-bc4c-a188a5d15012"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="webdocument"
+		id="f24cac12-396d-4515-ad04-cb5e98458945"
+		isrooted="True"
+		name="WelcomeWakeApp"
+		refimgid="e5ee330c-0b6f-495d-b4f0-7b5bd55beddb"
+		refpath="/dom[@domain='www.projektbudzik.pl']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="divtag"
+			id="31cbfa6b-9476-42e1-8436-d7712f52da1e"
+			isrooted="True"
+			name="DivTagRow"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/div/main/section/div[1]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9d441f16-27f1-420e-b904-f38a68a3cc31"
+				name="Submit1"
+				refimgid="2966fb95-8000-4e8e-a0e5-4efed638f1e0"
+				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/div[1]/div/div/form/div[5]/input[@type='submit']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]//form[@action='http://www.projektbudzik.pl/Device/Create']/div[5]/input[@type='submit']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="b0bc8ff1-4824-463f-9d09-89a1ee4f7d40"
+				name="TdTag"
+				refimgid="5c8e6c74-ee27-409d-a00b-ec837e78cd17"
+				searchtimeout="30000ms">
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/?/?/td[@innertext&gt;'                        12']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="3590abfd-bb63-4e7f-8aa6-dd3eb05ffb5f"
+				name="TdTag1"
+				refimgid="cfa972a3-94ec-412c-8cef-7737ab2deed0"
+				refpath="/dom[@domain='www.projektbudzik.pl']/body/div[1]/main/section/div/table/tbody/tr/td[@innertext='                                    Arduino                                ']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]/table/tbody/tr/td[1]
+				</item>
+				<basepath>
+					/dom[@domain='www.projektbudzik.pl']/body/div/?/?/section/div[1]
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="itag"
+			id="14513247-75c5-4cc7-ba6c-76f1b51eed6e"
+			name="ButtonTag1"
+			refimgid="aef8e645-c86c-4617-9533-c5bf8fa9bf79"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/body/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/']/?/?/i[@innertext='devices_other']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6c89c71d-fbb3-4f52-a9b4-d5e731d40831"
+			name="Name"
+			refimgid="814fc736-bdc5-45fd-9bbf-f0b0c3781c47"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Name']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Name']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="d12f51fd-e538-4e98-9cf9-95ba955f64d2"
+			name="InputTagMac"
+			refimgid="f6e74734-e559-436f-8ea9-07336ced37d9"
+			refpath="/dom[@domain='www.projektbudzik.pl']//input[#'Mac']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']//input[#'Mac']
+			</item>
+			<basepath>
+				/dom[@domain='www.projektbudzik.pl']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

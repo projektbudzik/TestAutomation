@@ -133,18 +133,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAlarm.cs">
-      <BoundTo>819a6b2d-3ab0-4490-82c8-151a1ed042a1</BoundTo>
-      <DependentUpon>AddAlarm.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>033eaa16-776a-4210-9e17-3928262af1bd</id>
-    </Compile>
-    <Compile Include="AddAlarm.UserCode.cs">
-      <BoundTo>819a6b2d-3ab0-4490-82c8-151a1ed042a1</BoundTo>
-      <DependentUpon>AddAlarm.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>86cb77f7-1ec8-4136-a749-6993c97533d8</id>
-    </Compile>
     <Compile Include="AddDevice.cs">
       <BoundTo>f6ec499b-9b69-4ae6-895f-805a772c68b2</BoundTo>
       <DependentUpon>AddDevice.rxrec</DependentUpon>
@@ -156,6 +144,36 @@
       <DependentUpon>AddDevice.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5968c11a-c8d9-4c1d-896f-de772c7dce92</id>
+    </Compile>
+    <Compile Include="AddDeviceArduino.cs">
+      <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
+      <DependentUpon>AddDeviceArduino.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>c8d90ded-2d0a-424d-8d90-816136f47115</id>
+    </Compile>
+    <Compile Include="AddPhone.cs">
+      <BoundTo>04efec8b-056b-41ee-92a8-7da3fbe98bba</BoundTo>
+      <DependentUpon>AddPhone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>199605ac-fc28-4db5-b0ca-3efa423a7bcb</id>
+    </Compile>
+    <Compile Include="AddPhone.UserCode.cs">
+      <BoundTo>04efec8b-056b-41ee-92a8-7da3fbe98bba</BoundTo>
+      <DependentUpon>AddPhone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c24e5e7-09eb-41e7-b196-7f4cfd002173</id>
+    </Compile>
+    <Compile Include="Alarm.cs">
+      <BoundTo>f144ecec-49c8-403f-89fe-78e03aa4de64</BoundTo>
+      <DependentUpon>Alarm.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4aec495a-1f74-4429-af4a-f5192570d626</id>
+    </Compile>
+    <Compile Include="Alarm.UserCode.cs">
+      <BoundTo>f144ecec-49c8-403f-89fe-78e03aa4de64</BoundTo>
+      <DependentUpon>Alarm.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1e58f34-e204-40f5-99dc-161403e8c3c5</id>
     </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>8760b8fc-eed7-4c6e-b99b-50b217d6c0b0</id>
@@ -184,17 +202,17 @@
       <UserCode>true</UserCode>
       <id>6fd37d91-7589-4ea9-bc4e-41d681f2ad14</id>
     </Compile>
-    <Compile Include="DeleteDevices.cs">
-      <BoundTo>f46e4271-9186-4df5-8faa-a64ea8167dbb</BoundTo>
-      <DependentUpon>DeleteDevices.rxrec</DependentUpon>
+    <Compile Include="DeleteDevises.cs">
+      <BoundTo>e4f7452c-c6b3-4c24-bb05-49b519adeca7</BoundTo>
+      <DependentUpon>DeleteDevises.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>8636d819-7e7c-4e60-90cf-d4fae6d7c463</id>
+      <id>644200f4-b140-4688-8255-677419b71180</id>
     </Compile>
-    <Compile Include="DeleteDevices.UserCode.cs">
-      <BoundTo>f46e4271-9186-4df5-8faa-a64ea8167dbb</BoundTo>
-      <DependentUpon>DeleteDevices.rxrec</DependentUpon>
+    <Compile Include="DeleteDevises.UserCode.cs">
+      <BoundTo>e4f7452c-c6b3-4c24-bb05-49b519adeca7</BoundTo>
+      <DependentUpon>DeleteDevises.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>3cc93273-709d-4a92-a039-1a18acc33a21</id>
+      <id>29dc8fc4-4201-47d8-bc6c-9031df5dc1a5</id>
     </Compile>
     <Compile Include="HappyPath.cs">
       <BoundTo>ad90f9a7-81d2-4545-85d7-02004a0ab287</BoundTo>
@@ -315,15 +333,31 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AddAlarm.rxrec">
-      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
-      <id>819a6b2d-3ab0-4490-82c8-151a1ed042a1</id>
-      <recordtableid>5e532534-a94a-4aa3-ab35-078ccc867a1e</recordtableid>
-    </None>
     <None Include="AddDevice.rxrec">
-      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>f6ec499b-9b69-4ae6-895f-805a772c68b2</id>
       <recordtableid>3e5cbe22-a4f8-4d2e-b9fa-273d92380733</recordtableid>
+      <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
+    </None>
+    <None Include="AddDeviceArduino.rximg">
+      <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
+      <DependentUpon>AddDeviceArduino.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>56ecf491-cc0a-47de-8177-0594bc8b1551</id>
+    </None>
+    <None Include="AddDeviceArduino.rxrep">
+      <id>BAE686A1-70C4-4DF3-B305-68860DFCC695</id>
+      <repoid>66a253e7-fd21-4347-bbd9-f7cf10a96f9f</repoid>
+      <reporootid>11a8705c-12a8-481b-bc4c-a188a5d15012</reporootid>
+    </None>
+    <None Include="AddPhone.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>04efec8b-056b-41ee-92a8-7da3fbe98bba</id>
+      <recordtableid>cfdd0209-8bfa-4e35-85dc-2be7b7315b93</recordtableid>
+    </None>
+    <None Include="Alarm.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>f144ecec-49c8-403f-89fe-78e03aa4de64</id>
+      <recordtableid>685f952c-c909-4665-a41c-c66490a91424</recordtableid>
     </None>
     <None Include="app.config">
       <id>b6386d49-4e20-4336-9db1-b299a954be8d</id>
@@ -338,10 +372,10 @@
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
       <recordtableid>c5f06714-6b8b-46e7-8468-44e3641fae39</recordtableid>
     </None>
-    <None Include="DeleteDevices.rxrec">
+    <None Include="DeleteDevises.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
-      <id>f46e4271-9186-4df5-8faa-a64ea8167dbb</id>
-      <recordtableid>ac3d7932-25c7-4e37-8bac-e2cb1312ecc3</recordtableid>
+      <id>e4f7452c-c6b3-4c24-bb05-49b519adeca7</id>
+      <recordtableid>19c29362-b72c-465f-ae77-c2e4f2dc0ba9</recordtableid>
     </None>
     <None Include="HappyPath.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
