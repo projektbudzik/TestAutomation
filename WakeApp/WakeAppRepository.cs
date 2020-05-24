@@ -31,6 +31,7 @@ namespace WakeApp
         WakeAppRepositoryFolders.WelcomeWakeAppAppFolder _welcomewakeapp;
         WakeAppRepositoryFolders.BrowserAppFolder _browser;
         WakeAppRepositoryFolders.DropdownAppFolder _dropdown;
+        WakeAppRepositoryFolders.WakeAppAppFolder _wakeapp;
 
         /// <summary>
         /// Gets the singleton class instance representing the WakeAppRepository element repository.
@@ -51,6 +52,7 @@ namespace WakeApp
             _welcomewakeapp = new WakeAppRepositoryFolders.WelcomeWakeAppAppFolder(this);
             _browser = new WakeAppRepositoryFolders.BrowserAppFolder(this);
             _dropdown = new WakeAppRepositoryFolders.DropdownAppFolder(this);
+            _wakeapp = new WakeAppRepositoryFolders.WakeAppAppFolder(this);
         }
 
 #region Variables
@@ -103,6 +105,15 @@ namespace WakeApp
         public virtual WakeAppRepositoryFolders.DropdownAppFolder Dropdown
         {
             get { return _dropdown; }
+        }
+
+        /// <summary>
+        /// The WakeApp folder.
+        /// </summary>
+        [RepositoryFolder("9d661b82-2aea-457f-87eb-f3690f701c3e")]
+        public virtual WakeAppRepositoryFolders.WakeAppAppFolder WakeApp
+        {
+            get { return _wakeapp; }
         }
     }
 
@@ -211,6 +222,7 @@ namespace WakeApp
             RepoItemInfo _fridayInfo;
             RepoItemInfo _tuesdayInfo;
             RepoItemInfo _devicesother2Info;
+            RepoItemInfo _buttontag3Info;
 
             /// <summary>
             /// Creates a new WelcomeWakeApp  folder.
@@ -271,6 +283,7 @@ namespace WakeApp
                 _fridayInfo = new RepoItemInfo(this, "Friday", ".//input[#'Friday']", 30000, null, "60f9c6ad-fde5-4bda-9c60-9b181df23cb8");
                 _tuesdayInfo = new RepoItemInfo(this, "Tuesday", ".//input[#'Tuesday']", 30000, null, "551f5075-cafb-4839-b2f7-4236721a5c9e");
                 _devicesother2Info = new RepoItemInfo(this, "DevicesOther2", "?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Alarm?deviceId=10068']/?/?/i[@innertext='devices_other']", 30000, null, "20b3938e-9b8d-4433-9859-1a4aff52464b");
+                _buttontag3Info = new RepoItemInfo(this, "ButtonTag3", "?/?/header/nav//ul/li[4]/form[@action='http://www.projektbudzik.pl/']/button[@innertext>'']", 30000, null, "d9424b73-0b19-40f8-a83f-e670b03aa783");
             }
 
             /// <summary>
@@ -1522,6 +1535,30 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The ButtonTag3 item.
+            /// </summary>
+            [RepositoryItem("d9424b73-0b19-40f8-a83f-e670b03aa783")]
+            public virtual Ranorex.ButtonTag ButtonTag3
+            {
+                get
+                {
+                    return _buttontag3Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTag3 item info.
+            /// </summary>
+            [RepositoryItemInfo("d9424b73-0b19-40f8-a83f-e670b03aa783")]
+            public virtual RepoItemInfo ButtonTag3Info
+            {
+                get
+                {
+                    return _buttontag3Info;
+                }
+            }
+
+            /// <summary>
             /// The DFlexJustifyContentCenterMb1Pt4 folder.
             /// </summary>
             [RepositoryFolder("b3a1e41c-84bc-4c7f-a4b6-21cf5344c79f")]
@@ -2147,6 +2184,7 @@ namespace WakeApp
         public partial class BrowserAppFolder : RepoGenBaseFolder
         {
             WakeAppRepositoryFolders.DomAppFolder _dom;
+            RepoItemInfo _navbartogglericonInfo;
 
             /// <summary>
             /// Creates a new Browser  folder.
@@ -2155,6 +2193,7 @@ namespace WakeApp
                     base("Browser", "/mobileapp[@title='ranorex.RxBrowser']", parentFolder, 10000, null, false, "7855513f-a5aa-42d6-b5ea-7ef3d15754d4", "")
             {
                 _dom = new WakeAppRepositoryFolders.DomAppFolder(this);
+                _navbartogglericonInfo = new RepoItemInfo(this, "NavbarTogglerIcon", "form[@title='RxBrowserActivity']/container[@rid='content']/?/?/dom[@accessibilityid='WebContent']//nav//span", 30000, null, "3885bc70-e96d-4f7e-9606-8c4834b72a62");
             }
 
             /// <summary>
@@ -2182,6 +2221,30 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The NavbarTogglerIcon item.
+            /// </summary>
+            [RepositoryItem("3885bc70-e96d-4f7e-9606-8c4834b72a62")]
+            public virtual Ranorex.SpanTag NavbarTogglerIcon
+            {
+                get
+                {
+                    return _navbartogglericonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavbarTogglerIcon item info.
+            /// </summary>
+            [RepositoryItemInfo("3885bc70-e96d-4f7e-9606-8c4834b72a62")]
+            public virtual RepoItemInfo NavbarTogglerIconInfo
+            {
+                get
+                {
+                    return _navbartogglericonInfo;
+                }
+            }
+
+            /// <summary>
             /// The Dom folder.
             /// </summary>
             [RepositoryFolder("1c6d52a2-0346-48f1-8157-72884aebb352")]
@@ -2197,6 +2260,11 @@ namespace WakeApp
         [RepositoryFolder("1c6d52a2-0346-48f1-8157-72884aebb352")]
         public partial class DomAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _zalogujsięInfo;
+            RepoItemInfo _emailInfo;
+            RepoItemInfo _passwordInfo;
+            RepoItemInfo _submitInfo;
+            RepoItemInfo _cardcardcascadenarrowerInfo;
 
             /// <summary>
             /// Creates a new Dom  folder.
@@ -2204,6 +2272,11 @@ namespace WakeApp
             public DomAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Dom", ".//dom", parentFolder, 10000, null, false, "1c6d52a2-0346-48f1-8157-72884aebb352", "")
             {
+                _zalogujsięInfo = new RepoItemInfo(this, "ZalogujSię", ".//nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='Zaloguj się']", 30000, null, "ec28a27d-6800-4270-9214-a0a34e034ee1");
+                _emailInfo = new RepoItemInfo(this, "Email", ".//input[#'Email']", 30000, null, "5876029c-ce72-4e64-a80c-60bec6689be3");
+                _passwordInfo = new RepoItemInfo(this, "Password", ".//input[#'Password']", 30000, null, "83fe1c2c-eeab-462b-819f-7bde034b9665");
+                _submitInfo = new RepoItemInfo(this, "Submit", "body/div/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Login']/div[3]/input[@type='submit']", 30000, null, "62687e7c-678a-4bfe-b2ae-2d430c243eba");
+                _cardcardcascadenarrowerInfo = new RepoItemInfo(this, "CardCardCascadeNarrower", "body/div/main/div/div[2]/div/div[1]/div", 30000, null, "fe6bfdc1-99f8-45ad-a900-f479e58146b1");
             }
 
             /// <summary>
@@ -2227,6 +2300,126 @@ namespace WakeApp
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ZalogujSię item.
+            /// </summary>
+            [RepositoryItem("ec28a27d-6800-4270-9214-a0a34e034ee1")]
+            public virtual Ranorex.ButtonTag ZalogujSię
+            {
+                get
+                {
+                    return _zalogujsięInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ZalogujSię item info.
+            /// </summary>
+            [RepositoryItemInfo("ec28a27d-6800-4270-9214-a0a34e034ee1")]
+            public virtual RepoItemInfo ZalogujSięInfo
+            {
+                get
+                {
+                    return _zalogujsięInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Email item.
+            /// </summary>
+            [RepositoryItem("5876029c-ce72-4e64-a80c-60bec6689be3")]
+            public virtual Ranorex.InputTag Email
+            {
+                get
+                {
+                    return _emailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Email item info.
+            /// </summary>
+            [RepositoryItemInfo("5876029c-ce72-4e64-a80c-60bec6689be3")]
+            public virtual RepoItemInfo EmailInfo
+            {
+                get
+                {
+                    return _emailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Password item.
+            /// </summary>
+            [RepositoryItem("83fe1c2c-eeab-462b-819f-7bde034b9665")]
+            public virtual Ranorex.InputTag Password
+            {
+                get
+                {
+                    return _passwordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Password item info.
+            /// </summary>
+            [RepositoryItemInfo("83fe1c2c-eeab-462b-819f-7bde034b9665")]
+            public virtual RepoItemInfo PasswordInfo
+            {
+                get
+                {
+                    return _passwordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Submit item.
+            /// </summary>
+            [RepositoryItem("62687e7c-678a-4bfe-b2ae-2d430c243eba")]
+            public virtual Ranorex.InputTag Submit
+            {
+                get
+                {
+                    return _submitInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit item info.
+            /// </summary>
+            [RepositoryItemInfo("62687e7c-678a-4bfe-b2ae-2d430c243eba")]
+            public virtual RepoItemInfo SubmitInfo
+            {
+                get
+                {
+                    return _submitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CardCardCascadeNarrower item.
+            /// </summary>
+            [RepositoryItem("fe6bfdc1-99f8-45ad-a900-f479e58146b1")]
+            public virtual Ranorex.DivTag CardCardCascadeNarrower
+            {
+                get
+                {
+                    return _cardcardcascadenarrowerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CardCardCascadeNarrower item info.
+            /// </summary>
+            [RepositoryItemInfo("fe6bfdc1-99f8-45ad-a900-f479e58146b1")]
+            public virtual RepoItemInfo CardCardCascadeNarrowerInfo
+            {
+                get
+                {
+                    return _cardcardcascadenarrowerInfo;
                 }
             }
         }
@@ -2262,6 +2455,46 @@ namespace WakeApp
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("bedc4ef0-6b21-4e8b-b20c-72a1e3ae491d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WakeAppAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9d661b82-2aea-457f-87eb-f3690f701c3e")]
+        public partial class WakeAppAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new WakeApp  folder.
+            /// </summary>
+            public WakeAppAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WakeApp", "/mobiledevice[@displayname='WakeApp']", parentFolder, 30000, null, true, "9d661b82-2aea-457f-87eb-f3690f701c3e", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9d661b82-2aea-457f-87eb-f3690f701c3e")]
+            public virtual Ranorex.MobileDevice Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MobileDevice>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9d661b82-2aea-457f-87eb-f3690f701c3e")]
             public virtual RepoItemInfo SelfInfo
             {
                 get

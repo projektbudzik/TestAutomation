@@ -638,7 +638,7 @@ FFABSUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
 		<closeapprecorditem
 		enabled="True"
 		graceperiod="100ms"
-		method="CloseWindow"
+		method="KillProcess"
 		optional="False"
 		searchpropertyid="87d5d0aa-d14e-493b-9224-75e682a8e45b">
 			<comment>

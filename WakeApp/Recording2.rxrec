@@ -39,7 +39,7 @@ mode="Mobile">
 		</runmobileapprecorditem>
 		<runmobileapprecorditem
 		application="ranorex.RxBrowser"
-		devicename="Current Endpoint (None)"
+		devicename="Current Endpoint (WakeApp)"
 		duration="3500ms"
 		enabled="True"
 		optional="False"

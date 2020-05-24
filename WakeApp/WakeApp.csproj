@@ -190,6 +190,18 @@
       <UserCode>true</UserCode>
       <id>e91b7cf7-8716-4a82-85c2-3a9275bdcbd3</id>
     </Compile>
+    <Compile Include="ChildUser.cs">
+      <BoundTo>d3fb0bf5-728e-4df0-8c17-39c9d608efbb</BoundTo>
+      <DependentUpon>ChildUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f001d635-301e-4fd4-8747-11d55432b221</id>
+    </Compile>
+    <Compile Include="ChildUser.UserCode.cs">
+      <BoundTo>d3fb0bf5-728e-4df0-8c17-39c9d608efbb</BoundTo>
+      <DependentUpon>ChildUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86e72b91-b551-4176-a396-81eedd7a814f</id>
+    </Compile>
     <Compile Include="CloseBrowser.cs">
       <BoundTo>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</BoundTo>
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
@@ -261,6 +273,18 @@
       <DependentUpon>MainPageValidation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e1723507-72c9-4cc1-b10e-1996c72d46d1</id>
+    </Compile>
+    <Compile Include="MobileWebsite.cs">
+      <BoundTo>dd987730-9ab0-4475-ae49-c6b64150a0ce</BoundTo>
+      <DependentUpon>MobileWebsite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f991bee-4fb4-4a44-97b1-fdd7a3b52191</id>
+    </Compile>
+    <Compile Include="MobileWebsite.UserCode.cs">
+      <BoundTo>dd987730-9ab0-4475-ae49-c6b64150a0ce</BoundTo>
+      <DependentUpon>MobileWebsite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ac1af094-6f62-400f-8ca3-d72fd5f6ccff</id>
     </Compile>
     <Compile Include="OpenBrowser.cs">
       <BoundTo>84fb5a2a-f6ba-4b7e-8ce0-3e9b5b5cfb5c</BoundTo>
@@ -367,6 +391,11 @@
       <id>4525ff2b-21fa-4172-93a8-3e55a934c6da</id>
       <recordtableid>bc8a9c5e-24ad-46d9-ba77-0a976762a8f1</recordtableid>
     </None>
+    <None Include="ChildUser.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>d3fb0bf5-728e-4df0-8c17-39c9d608efbb</id>
+      <recordtableid>5db6105c-6542-4f93-b83a-ca9f888be580</recordtableid>
+    </None>
     <None Include="CloseBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
@@ -396,6 +425,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>9c69ddcf-dd6f-482f-94c3-18b237f5a162</id>
       <recordtableid>89f9e051-78f2-46a5-876a-a8b223247ad4</recordtableid>
+    </None>
+    <None Include="MobileWebsite.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>dd987730-9ab0-4475-ae49-c6b64150a0ce</id>
+      <recordtableid>42797f65-7b53-484c-b204-221b7e19d02c</recordtableid>
     </None>
     <None Include="OpenBrowser.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

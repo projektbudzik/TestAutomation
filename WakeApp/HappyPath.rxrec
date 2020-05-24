@@ -1578,7 +1578,7 @@ KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="test1{RShiftKey down}@{RShiftKey up}gmail.com"
+		KeySequence="test13112{RShiftKey down}@{RShiftKey up}gmail.com"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -3901,7 +3901,7 @@ ooooA//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="test1"
+		KeySequence="test11211"
 		duration="100ms"
 		enabled="True"
 		optional="False"

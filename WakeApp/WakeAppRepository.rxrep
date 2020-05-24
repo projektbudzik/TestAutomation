@@ -45,7 +45,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="af579ae3-af4b-4a5d-a072-16f9d944ff0f"
 		isrooted="True"
 		name="WelcomeWakeApp"
-		refimgid="e484c0da-ffb5-4b98-9efc-59639dc0e7c7"
+		refimgid="3d1653fa-4042-42ae-a910-69fc88123d22"
 		refpath="/dom[@domain='www.projektbudzik.pl']"
 		searchtimeout="30000ms"
 		usecache="False">
@@ -776,6 +776,16 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/?/?/form[@action='http://www.projektbudzik.pl/Alarm?deviceId=10068']/?/?/i[@innertext='devices_other']
 			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="d9424b73-0b19-40f8-a83f-e670b03aa783"
+			name="ButtonTag3"
+			refimgid="576257c2-5456-400d-982a-b8f33d0460e4"
+			refpath="/dom[@domain='www.projektbudzik.pl']/body/header/nav/div/div/ul/li[4]/form/button[@innertext>'']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.projektbudzik.pl']/?/?/header/nav//ul/li[4]/form[@action='http://www.projektbudzik.pl/']/button[@innertext&gt;'']
+			</item>
 			<basepath>
 				/dom[@domain='www.projektbudzik.pl']
 			</basepath>
@@ -809,10 +819,68 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="Dom"
 			searchtimeout="10000ms"
 			usecache="False">
+				<item
+				addcaps="unknown,buttontag,webelement,mobileuielement"
+				capname="buttontag"
+				id="ec28a27d-6800-4270-9214-a0a34e034ee1"
+				name="ZalogujSię"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom/body/header/nav/div/div/ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='Zaloguj się']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//nav//ul/li[3]/form[@action='http://www.projektbudzik.pl/']/button[@innertext='Zaloguj si&#281;']
+				</item>
+				<item
+				addcaps="unknown,inputtag,webelement,mobileuielement"
+				capname="inputtag"
+				id="5876029c-ce72-4e64-a80c-60bec6689be3"
+				name="Email"
+				refimgid="c247b74c-09cf-4159-ae8c-53465e40370c"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@accessibilityid='WebContent']//input[#'Email']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//input[#'Email']
+				</item>
+				<item
+				addcaps="unknown,inputtag,webelement,mobileuielement"
+				capname="inputtag"
+				id="83fe1c2c-eeab-462b-819f-7bde034b9665"
+				name="Password"
+				refimgid="6255b706-246f-4bcb-853d-0c3f3d138832"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@accessibilityid='WebContent']//input[#'Password']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//input[#'Password']
+				</item>
+				<item
+				addcaps="unknown,inputtag,webelement,mobileuielement"
+				capname="inputtag"
+				id="62687e7c-678a-4bfe-b2ae-2d430c243eba"
+				name="Submit"
+				refimgid="544a971a-759d-4d4b-9b88-a6fbbcb19cde"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@accessibilityid='WebContent']/body/div/main/section/div/div[1]/div/div/form[@action='http://www.projektbudzik.pl/Account/Login']/div[3]/input[@type='submit']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom/body/div/?/?/section//form[@action='http://www.projektbudzik.pl/Account/Login']/div[3]/input[@type='submit']
+				</item>
+				<item
+				addcaps="unknown,divtag,webelement,mobileuielement"
+				capname="divtag"
+				id="fe6bfdc1-99f8-45ad-a900-f479e58146b1"
+				name="CardCardCascadeNarrower"
+				refimgid="8d1d91aa-08c8-4979-8a9f-8bc1f30666b3"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@accessibilityid='WebContent']/body/div/main/div/div[2]/div/div[1]/div"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom/body/div/main/div/div[2]/div/div[1]/div
+				</item>
 				<basepath>
 					/mobileapp[@title='ranorex.RxBrowser']//dom
 				</basepath>
 			</appfolder>
+			<item
+			addcaps="unknown,spantag,webelement,mobileuielement"
+			capname="spantag"
+			id="3885bc70-e96d-4f7e-9606-8c4834b72a62"
+			name="NavbarTogglerIcon"
+			refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@accessibilityid='WebContent']/body/header/nav/div/button/span"
+			searchtimeout="30000ms">
+				/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/?/?/dom[@accessibilityid='WebContent']//nav//span
+			</item>
 			<basepath>
 				/mobileapp[@title='ranorex.RxBrowser']
 			</basepath>
@@ -841,6 +909,25 @@ PLid82fkky26fupo+me3mGDbL0pVqgw+c1DRgNbOBI6zOClp8gvFD5WSE8zw0id4o6SkkV8uhb5B
 GkrNBhPsnkZISSO3LAcVZKBUrzHBnueBlDRyy3JIgqkVJtj3hEhJ/3ZGIv0LdCeLwcklJnAeBvCa
 TOEl+UF4J7xJszz53W+BevEEPeMC2lUWifWCuZS24VV0qDbRN6JjAhpBEGAymWA0GsvCYDDAbDbD
 7XYzwT+G474AUqqnq7MiKz0AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,mobiledevice"
+		capname="mobiledevice"
+		id="9d661b82-2aea-457f-87eb-f3690f701c3e"
+		isrooted="True"
+		name="WakeApp"
+		refpath="/mobiledevice[@displayname='WakeApp']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/mobiledevice[@displayname='WakeApp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABNSURBVDhPY6A6CA0NWQ/E//Hg9VClmAAo
+KYCmGCuGKscEQEmwAVAuVkBInqCCUQNGjgGEMFQpdoBLIS5xDABU0ICsGAtugCqlBmBgAAAcoXfL
+E78sAQAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
 		<basepath>

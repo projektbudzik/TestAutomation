@@ -83,8 +83,8 @@ namespace WakeApp
             Host.Current.OpenBrowser("http://www.projektbudzik.pl/Account/Register?", "Chrome", "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Submit1' at 70;22.", repo.WelcomeWakeApp.Submit1Info, new RecordItemIndex(1));
-            repo.WelcomeWakeApp.Submit1.Click("70;22");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Submit1' at Center.", repo.WelcomeWakeApp.Submit1Info, new RecordItemIndex(1));
+            repo.WelcomeWakeApp.Submit1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Nazwa użytkownika jest wymagana') on item 'WelcomeWakeApp.NameError'.", repo.WelcomeWakeApp.NameErrorInfo, new RecordItemIndex(2));

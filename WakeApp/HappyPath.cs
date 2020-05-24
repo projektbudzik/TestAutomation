@@ -102,8 +102,8 @@ namespace WakeApp
             repo.WelcomeWakeApp.Email.Click("49;22");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'test1{RShiftKey down}@{RShiftKey up}gmail.com' with focus on 'WelcomeWakeApp.Email'.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(6));
-            repo.WelcomeWakeApp.Email.PressKeys("test1{RShiftKey down}@{RShiftKey up}gmail.com");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'test13112{RShiftKey down}@{RShiftKey up}gmail.com' with focus on 'WelcomeWakeApp.Email'.", repo.WelcomeWakeApp.EmailInfo, new RecordItemIndex(6));
+            repo.WelcomeWakeApp.Email.PressKeys("test13112{RShiftKey down}@{RShiftKey up}gmail.com");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.Password' at 39;15.", repo.WelcomeWakeApp.PasswordInfo, new RecordItemIndex(7));
@@ -130,8 +130,8 @@ namespace WakeApp
             repo.WelcomeWakeApp.GroupName.Click("46;18");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'test1' with focus on 'WelcomeWakeApp.GroupName'.", repo.WelcomeWakeApp.GroupNameInfo, new RecordItemIndex(13));
-            repo.WelcomeWakeApp.GroupName.PressKeys("test1");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'test11211' with focus on 'WelcomeWakeApp.GroupName'.", repo.WelcomeWakeApp.GroupNameInfo, new RecordItemIndex(13));
+            repo.WelcomeWakeApp.GroupName.PressKeys("test11211");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeWakeApp.GroupPassword' at 51;23.", repo.WelcomeWakeApp.GroupPasswordInfo, new RecordItemIndex(14));

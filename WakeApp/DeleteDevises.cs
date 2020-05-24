@@ -91,8 +91,8 @@ namespace WakeApp
             repo.WelcomeWakeApp.Self.Click("1009;353");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(3));
-            Host.Current.CloseApplication(repo.WelcomeWakeApp.Self, 100);
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'WelcomeWakeApp'.", repo.WelcomeWakeApp.SelfInfo, new RecordItemIndex(3));
+            Host.Current.KillApplication(repo.WelcomeWakeApp.Self);
             Delay.Milliseconds(0);
             
         }

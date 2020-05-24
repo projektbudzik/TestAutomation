@@ -27,8 +27,18 @@
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="20b10a49-7547-4a14-ae0a-663ad068fc16"
+			name="Test_Case_For_Child_User_Added_to_Group">
+				<description>
+					<![CDATA[Registration of child user and adding him to group]]>
+				</description>
+			</testcase>
+			<testcase
 			id="2e555e63-239c-41f2-a94f-9197bd8d241b"
-			name="Test_Case_for_Mobile_WebApplication">
+			name="Test_Case_for_Mobile_WebsiteApplication">
+				<description>
+					<![CDATA[Happy path for login feature]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="36bcac0a-71d6-41da-8fbd-6abc3b381d93"
@@ -53,6 +63,12 @@
 			id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
 			name="HappyPath"
 			ref="240274e3-a7e5-413d-8bcf-357237c95cad"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="61ed3e38-df8f-4bc2-b940-cfe8003b65dd"
+			name="ChildUser"
+			ref="5db6105c-6542-4f93-b83a-ca9f888be580"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -111,6 +127,9 @@
 			<smartfoldernode
 			id="a6ebccee-e979-4b1d-a350-d4652cb80e44"
 			name="Deletion_Of_Devices">
+				<description>
+					<![CDATA[<p>Delete both devices</p><p><br></p>]]>
+				</description>
 			</smartfoldernode>
 			<testcase
 			id="a81eeb45-f617-4015-b0e7-400385a6cc76"
@@ -170,6 +189,12 @@
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d"
 			name="SentContactMessage">
 			</smartfoldernode>
+			<testmodule
+			id="e4504e8c-b6eb-4db7-aafa-1e44a1d2d9b5"
+			name="MobileWebsite"
+			ref="42797f65-7b53-484c-b204-221b7e19d02c"
+			type="Recording">
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -258,14 +283,6 @@
 						</smartfoldernode>
 					</testcase>
 					<testcase
-					id="2e555e63-239c-41f2-a94f-9197bd8d241b"
-					name="Test_Case_for_Mobile_WebApplication">
-					</testcase>
-					<testcase
-					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
-					name="Test_Case_for_Android_Application">
-					</testcase>
-					<testcase
 					id="a81eeb45-f617-4015-b0e7-400385a6cc76"
 					name="Test_Case_for_LogIn_/_Device_/_Alarm_functionality">
 						<smartfoldernode
@@ -307,12 +324,32 @@
 							id="0d28f8c1-1c9a-4a3d-a037-82dd97c923ee"
 							name="DeleteDevises">
 							</testmodule>
-							<teardown
-							id="00c4572d-0a88-4a7e-99ef-469c40271bde"
-							name="teardown1">
-							</teardown>
 						</smartfoldernode>
 					</testcase>
+					<testcase
+					id="20b10a49-7547-4a14-ae0a-663ad068fc16"
+					name="Test_Case_For_Child_User_Added_to_Group">
+						<testmodule
+						id="61ed3e38-df8f-4bc2-b940-cfe8003b65dd"
+						name="ChildUser">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="2e555e63-239c-41f2-a94f-9197bd8d241b"
+					name="Test_Case_for_Mobile_WebsiteApplication">
+						<testmodule
+						id="e4504e8c-b6eb-4db7-aafa-1e44a1d2d9b5"
+						name="MobileWebsite">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
+					name="Test_Case_for_Android_Application">
+					</testcase>
+					<teardown
+					id="00c4572d-0a88-4a7e-99ef-469c40271bde"
+					name="teardown1">
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -328,6 +365,9 @@
 			</testcontainer>
 			<testcontainer
 			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b">
+			</testcontainer>
+			<testcontainer
+			id="20b10a49-7547-4a14-ae0a-663ad068fc16">
 			</testcontainer>
 			<testcontainer
 			id="2e555e63-239c-41f2-a94f-9197bd8d241b">
