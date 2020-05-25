@@ -32,6 +32,7 @@ namespace WakeApp
         WakeAppRepositoryFolders.BrowserAppFolder _browser;
         WakeAppRepositoryFolders.DropdownAppFolder _dropdown;
         WakeAppRepositoryFolders.WakeAppAppFolder _wakeapp;
+        WakeAppRepositoryFolders.MExampleWakeapp2AppFolder _mexamplewakeapp2;
 
         /// <summary>
         /// Gets the singleton class instance representing the WakeAppRepository element repository.
@@ -53,6 +54,7 @@ namespace WakeApp
             _browser = new WakeAppRepositoryFolders.BrowserAppFolder(this);
             _dropdown = new WakeAppRepositoryFolders.DropdownAppFolder(this);
             _wakeapp = new WakeAppRepositoryFolders.WakeAppAppFolder(this);
+            _mexamplewakeapp2 = new WakeAppRepositoryFolders.MExampleWakeapp2AppFolder(this);
         }
 
 #region Variables
@@ -114,6 +116,15 @@ namespace WakeApp
         public virtual WakeAppRepositoryFolders.WakeAppAppFolder WakeApp
         {
             get { return _wakeapp; }
+        }
+
+        /// <summary>
+        /// The MExampleWakeapp2 folder.
+        /// </summary>
+        [RepositoryFolder("c9d8a499-d104-4703-bf9c-b08097c0560e")]
+        public virtual WakeAppRepositoryFolders.MExampleWakeapp2AppFolder MExampleWakeapp2
+        {
+            get { return _mexamplewakeapp2; }
         }
     }
 
@@ -2500,6 +2511,228 @@ namespace WakeApp
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MExampleWakeapp2AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c9d8a499-d104-4703-bf9c-b08097c0560e")]
+        public partial class MExampleWakeapp2AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _contentInfo;
+            RepoItemInfo _btnloginuserInfo;
+            RepoItemInfo _etloginInfo;
+            RepoItemInfo _etpasswordInfo;
+            RepoItemInfo _btnloginuser1Info;
+            RepoItemInfo _etlogin1Info;
+            RepoItemInfo _etpassword1Info;
+
+            /// <summary>
+            /// Creates a new MExampleWakeapp2  folder.
+            /// </summary>
+            public MExampleWakeapp2AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("MExampleWakeapp2", "/mobileapp[@title='m.example.wakeapp2']", parentFolder, 30000, null, false, "c9d8a499-d104-4703-bf9c-b08097c0560e", "")
+            {
+                _contentInfo = new RepoItemInfo(this, "Content", "?/?/androidelement[@rid='content']", 30000, null, "7743055a-53e9-4b59-9922-79d086bcb3c3");
+                _btnloginuserInfo = new RepoItemInfo(this, "BtnLoginUser", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/button[@resourceid='R.string.login']", 30000, null, "ad79b62f-5ed9-40aa-ac47-7df4d6dd5148");
+                _etloginInfo = new RepoItemInfo(this, "EtLogin", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_login']", 30000, null, "b2b387ff-76ad-4f8a-b235-57eff3586142");
+                _etpasswordInfo = new RepoItemInfo(this, "EtPassword", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_password']", 30000, null, "1818bc3b-feae-4a26-ab10-15cc311ca6f6");
+                _btnloginuser1Info = new RepoItemInfo(this, "BtnLoginUser1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/button[@resourceid='R.string.login']", 30000, null, "ba073034-f983-48b1-b7d7-7663f631dda4");
+                _etlogin1Info = new RepoItemInfo(this, "EtLogin1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_login']", 30000, null, "5ffb6a1c-18c4-447d-9de4-6120a27ef18a");
+                _etpassword1Info = new RepoItemInfo(this, "EtPassword1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_password']", 30000, null, "f6122f52-27ac-4194-b40d-de8f88bb83f8");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c9d8a499-d104-4703-bf9c-b08097c0560e")]
+            public virtual Ranorex.MobileApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MobileApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c9d8a499-d104-4703-bf9c-b08097c0560e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Content item.
+            /// </summary>
+            [RepositoryItem("7743055a-53e9-4b59-9922-79d086bcb3c3")]
+            public virtual Ranorex.AndroidElement Content
+            {
+                get
+                {
+                    return _contentInfo.CreateAdapter<Ranorex.AndroidElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Content item info.
+            /// </summary>
+            [RepositoryItemInfo("7743055a-53e9-4b59-9922-79d086bcb3c3")]
+            public virtual RepoItemInfo ContentInfo
+            {
+                get
+                {
+                    return _contentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoginUser item.
+            /// </summary>
+            [RepositoryItem("ad79b62f-5ed9-40aa-ac47-7df4d6dd5148")]
+            public virtual Ranorex.Button BtnLoginUser
+            {
+                get
+                {
+                    return _btnloginuserInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoginUser item info.
+            /// </summary>
+            [RepositoryItemInfo("ad79b62f-5ed9-40aa-ac47-7df4d6dd5148")]
+            public virtual RepoItemInfo BtnLoginUserInfo
+            {
+                get
+                {
+                    return _btnloginuserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin item.
+            /// </summary>
+            [RepositoryItem("b2b387ff-76ad-4f8a-b235-57eff3586142")]
+            public virtual Ranorex.Text EtLogin
+            {
+                get
+                {
+                    return _etloginInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin item info.
+            /// </summary>
+            [RepositoryItemInfo("b2b387ff-76ad-4f8a-b235-57eff3586142")]
+            public virtual RepoItemInfo EtLoginInfo
+            {
+                get
+                {
+                    return _etloginInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword item.
+            /// </summary>
+            [RepositoryItem("1818bc3b-feae-4a26-ab10-15cc311ca6f6")]
+            public virtual Ranorex.Text EtPassword
+            {
+                get
+                {
+                    return _etpasswordInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("1818bc3b-feae-4a26-ab10-15cc311ca6f6")]
+            public virtual RepoItemInfo EtPasswordInfo
+            {
+                get
+                {
+                    return _etpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoginUser1 item.
+            /// </summary>
+            [RepositoryItem("ba073034-f983-48b1-b7d7-7663f631dda4")]
+            public virtual Ranorex.Button BtnLoginUser1
+            {
+                get
+                {
+                    return _btnloginuser1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnLoginUser1 item info.
+            /// </summary>
+            [RepositoryItemInfo("ba073034-f983-48b1-b7d7-7663f631dda4")]
+            public virtual RepoItemInfo BtnLoginUser1Info
+            {
+                get
+                {
+                    return _btnloginuser1Info;
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin1 item.
+            /// </summary>
+            [RepositoryItem("5ffb6a1c-18c4-447d-9de4-6120a27ef18a")]
+            public virtual Ranorex.Text EtLogin1
+            {
+                get
+                {
+                    return _etlogin1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5ffb6a1c-18c4-447d-9de4-6120a27ef18a")]
+            public virtual RepoItemInfo EtLogin1Info
+            {
+                get
+                {
+                    return _etlogin1Info;
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword1 item.
+            /// </summary>
+            [RepositoryItem("f6122f52-27ac-4194-b40d-de8f88bb83f8")]
+            public virtual Ranorex.Text EtPassword1
+            {
+                get
+                {
+                    return _etpassword1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword1 item info.
+            /// </summary>
+            [RepositoryItemInfo("f6122f52-27ac-4194-b40d-de8f88bb83f8")]
+            public virtual RepoItemInfo EtPassword1Info
+            {
+                get
+                {
+                    return _etpassword1Info;
                 }
             }
         }

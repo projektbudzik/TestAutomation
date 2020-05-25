@@ -175,6 +175,18 @@
       <UserCode>true</UserCode>
       <id>f1e58f34-e204-40f5-99dc-161403e8c3c5</id>
     </Compile>
+    <Compile Include="AndroidApp.cs">
+      <BoundTo>de32682c-124d-48f2-9f56-27fa265564ae</BoundTo>
+      <DependentUpon>AndroidApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>033866d2-b177-4fa2-ac01-4946e1817c65</id>
+    </Compile>
+    <Compile Include="AndroidApp.UserCode.cs">
+      <BoundTo>de32682c-124d-48f2-9f56-27fa265564ae</BoundTo>
+      <DependentUpon>AndroidApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>512edf4b-c8ae-48f0-a286-446043657ba5</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>8760b8fc-eed7-4c6e-b99b-50b217d6c0b0</id>
     </Compile>
@@ -325,6 +337,18 @@
       <UserCode>true</UserCode>
       <id>737d44cd-6951-4316-9294-87cbe90bbc27</id>
     </Compile>
+    <Compile Include="Register.cs">
+      <BoundTo>84067564-fafa-4265-8c62-dad0459de41b</BoundTo>
+      <DependentUpon>Register.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e837fd3c-ac98-4300-8121-b46334f8598f</id>
+    </Compile>
+    <Compile Include="Register.UserCode.cs">
+      <BoundTo>84067564-fafa-4265-8c62-dad0459de41b</BoundTo>
+      <DependentUpon>Register.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2304a449-4f70-4cde-97af-358968e8b0de</id>
+    </Compile>
     <Compile Include="RegisterAlreadyUserCredentials.cs">
       <BoundTo>958ff3fd-8071-4696-9cfa-284bd5fbce9b</BoundTo>
       <DependentUpon>RegisterAlreadyUserCredentials.rxrec</DependentUpon>
@@ -382,6 +406,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>f144ecec-49c8-403f-89fe-78e03aa4de64</id>
       <recordtableid>685f952c-c909-4665-a41c-c66490a91424</recordtableid>
+    </None>
+    <None Include="AndroidApp.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>de32682c-124d-48f2-9f56-27fa265564ae</id>
+      <recordtableid>2e574600-c103-4acb-9547-dc82173feebf</recordtableid>
     </None>
     <None Include="app.config">
       <id>b6386d49-4e20-4336-9db1-b299a954be8d</id>
@@ -445,6 +474,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>ad3ad896-145c-49a6-b6a5-c004ed1c253b</id>
       <recordtableid>2778919f-20b3-4435-8b8d-c77587d00a0b</recordtableid>
+    </None>
+    <None Include="Register.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>84067564-fafa-4265-8c62-dad0459de41b</id>
+      <recordtableid>f1046934-01cd-4929-b982-255ec8e29a4a</recordtableid>
     </None>
     <None Include="RegisterAlreadyUserCredentials.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

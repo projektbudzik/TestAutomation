@@ -78,6 +78,16 @@
 			type="Recording">
 			</testmodule>
 			<smartfoldernode
+			id="798b8690-510c-4159-a733-21259379ba0e"
+			name="Register">
+			</smartfoldernode>
+			<testmodule
+			id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
+			name="AndroidApp"
+			ref="2e574600-c103-4acb-9547-dc82173feebf"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
 			id="7da44347-21a8-456b-b001-63cf8bf87286"
 			name="Register_Empty_form">
 				<description>
@@ -183,6 +193,19 @@
 			name="Add_Device">
 				<description>
 					<![CDATA[<p>Add both devices</p><p><br></p>]]>
+				</description>
+			</smartfoldernode>
+			<testmodule
+			id="d9072606-1a82-4e31-a386-7cc90bf2a7b7"
+			name="Register"
+			ref="f1046934-01cd-4929-b982-255ec8e29a4a"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="de54f405-c6f1-4bdb-860e-2f95310fe13f"
+			name="Log_In_HappyPath">
+				<description>
+					<![CDATA[Happy path for log in functionallity]]>
 				</description>
 			</smartfoldernode>
 			<smartfoldernode
@@ -345,6 +368,22 @@
 					<testcase
 					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
 					name="Test_Case_for_Android_Application">
+						<smartfoldernode
+						id="de54f405-c6f1-4bdb-860e-2f95310fe13f"
+						name="Log_In_HappyPath">
+							<testmodule
+							id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
+							name="AndroidApp">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="798b8690-510c-4159-a733-21259379ba0e"
+						name="Register">
+							<testmodule
+							id="d9072606-1a82-4e31-a386-7cc90bf2a7b7"
+							name="Register">
+							</testmodule>
+						</smartfoldernode>
 					</testcase>
 					<teardown
 					id="00c4572d-0a88-4a7e-99ef-469c40271bde"
@@ -374,6 +413,9 @@
 			</testcontainer>
 			<testcontainer
 			id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d">
+			</testcontainer>
+			<testcontainer
+			id="798b8690-510c-4159-a733-21259379ba0e">
 			</testcontainer>
 			<testcontainer
 			id="7da44347-21a8-456b-b001-63cf8bf87286">
@@ -407,6 +449,9 @@
 			</testcontainer>
 			<testcontainer
 			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876">
+			</testcontainer>
+			<testcontainer
+			id="de54f405-c6f1-4bdb-860e-2f95310fe13f">
 			</testcontainer>
 			<testcontainer
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d">

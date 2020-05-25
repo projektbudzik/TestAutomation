@@ -24,29 +24,29 @@ namespace WakeApp
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The MobileWebsite recording.
+    ///The Register recording.
     /// </summary>
-    [TestModule("42797f65-7b53-484c-b204-221b7e19d02c", ModuleType.Recording, 1)]
-    public partial class MobileWebsite : ITestModule
+    [TestModule("f1046934-01cd-4929-b982-255ec8e29a4a", ModuleType.Recording, 1)]
+    public partial class Register : ITestModule
     {
         /// <summary>
         /// Holds an instance of the WakeAppRepository repository.
         /// </summary>
         public static WakeAppRepository repo = WakeAppRepository.Instance;
 
-        static MobileWebsite instance = new MobileWebsite();
+        static Register instance = new Register();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public MobileWebsite()
+        public Register()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static MobileWebsite Instance
+        public static Register Instance
         {
             get { return instance; }
         }
@@ -79,38 +79,21 @@ namespace WakeApp
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'WakeApp'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("WakeApp", "ranorex.RxBrowser", true);
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'm.example.wakeapp2' on device " + Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName() + ".", new RecordItemIndex(0));
+            Host.Local.RunMobileApp(Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName(), "m.example.wakeapp2", true);
             Delay.Milliseconds(3500);
             
-            // Browse to site.
-            Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://www.projektbudzik.pl/Account/Login?' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
-            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "http://www.projektbudzik.pl/Account/Login?");
-            Delay.Milliseconds(10000);
-            
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.Dom.Email' at Center", repo.Browser.Dom.EmailInfo, new RecordItemIndex(2));
-            repo.Browser.Dom.Email.Touch();
+            Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Left (180°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(1));
+            repo.MExampleWakeapp2.Content.Swipe(Location.Center, ValueConverter.ArgumentFromString<Ranorex.Core.Recorder.Touch.GestureDirection>("SwipeDirection", "Left (180°)"), ValueConverter.ArgumentFromString<Ranorex.Core.Distance>("Distance", "1.0"), ValueConverter.ArgumentFromString<Ranorex.Duration>("SwipeDuration", "500ms"), 0);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'test1@gmail.com' on item 'Browser.Dom.Email'.", repo.Browser.Dom.EmailInfo, new RecordItemIndex(3));
-            repo.Browser.Dom.Email.Element.SetAttributeValue("Value", "test1@gmail.com");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.Dom.Password' at Center", repo.Browser.Dom.PasswordInfo, new RecordItemIndex(4));
-            repo.Browser.Dom.Password.Touch();
+            Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Left (180°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(2));
+            repo.MExampleWakeapp2.Content.Swipe(Location.Center, ValueConverter.ArgumentFromString<Ranorex.Core.Recorder.Touch.GestureDirection>("SwipeDirection", "Left (180°)"), ValueConverter.ArgumentFromString<Ranorex.Core.Distance>("Distance", "1.0"), ValueConverter.ArgumentFromString<Ranorex.Duration>("SwipeDuration", "500ms"), 0);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to 'WakeApp132!' on item 'Browser.Dom.Password'.", repo.Browser.Dom.PasswordInfo, new RecordItemIndex(5));
-            repo.Browser.Dom.Password.Element.SetAttributeValue("Value", "WakeApp132!");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.Dom.Submit' at Center", repo.Browser.Dom.SubmitInfo, new RecordItemIndex(6));
-            repo.Browser.Dom.Submit.Touch();
+            Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Left (180°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(3));
+            repo.MExampleWakeapp2.Content.Swipe(Location.Center, ValueConverter.ArgumentFromString<Ranorex.Core.Recorder.Touch.GestureDirection>("SwipeDirection", "Left (180°)"), ValueConverter.ArgumentFromString<Ranorex.Core.Distance>("Distance", "1.0"), ValueConverter.ArgumentFromString<Ranorex.Duration>("SwipeDuration", "500ms"), 0);
             Delay.Milliseconds(500);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Browser.Dom.CardCardCascadeNarrower'.", repo.Browser.Dom.CardCardCascadeNarrowerInfo, new RecordItemIndex(7));
-            Validate.Exists(repo.Browser.Dom.CardCardCascadeNarrowerInfo);
-            Delay.Milliseconds(0);
             
         }
 

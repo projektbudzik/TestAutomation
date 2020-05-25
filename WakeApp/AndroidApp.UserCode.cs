@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace WakeApp
 {
-    public partial class MobileWebsite
+    public partial class AndroidApp
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,12 +31,6 @@ namespace WakeApp
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void MobileWebsite_Run_mobile_app()
-        {
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'WakeApp'.");
-            Host.Local.RunMobileApp("WakeApp", "ranorex.RxBrowser", true);
         }
 
     }

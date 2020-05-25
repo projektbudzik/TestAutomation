@@ -930,6 +930,95 @@ KYCmGCuGKscEQEmwAVAuVkBInqCCUQNGjgGEMFQpdoBLIS5xDABU0ICsGAtugCqlBmBgAAAcoXfL
 E78sAQAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="unknown,mobileapp,androidapp"
+		capname="mobileapp"
+		id="c9d8a499-d104-4703-bf9c-b08097c0560e"
+		isrooted="True"
+		name="MExampleWakeapp2"
+		refpath="/mobileapp[@title='m.example.wakeapp2']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,androidelement,mobileuielement"
+			capname="androidelement"
+			id="7743055a-53e9-4b59-9922-79d086bcb3c3"
+			name="Content"
+			refimgid="5e5d6b85-95ad-4934-a014-f358461e54de"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/?/?/androidelement[@rid='content']
+			</item>
+			<item
+			addcaps="button,androidelement,mobileuielement"
+			capname="button"
+			id="ad79b62f-5ed9-40aa-ac47-7df4d6dd5148"
+			name="BtnLoginUser"
+			refimgid="160e6f73-ac51-4aee-bebb-896d4a1928fa"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/button[@resourceid='R.string.login']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/button[@resourceid='R.string.login']
+			</item>
+			<item
+			addcaps="text,androidelement,mobileuielement"
+			capname="text"
+			id="b2b387ff-76ad-4f8a-b235-57eff3586142"
+			name="EtLogin"
+			refimgid="6dd41603-211a-4b64-a628-28da3dad5452"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[1]/text[@rid='et_login']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_login']
+			</item>
+			<item
+			addcaps="text,androidelement,mobileuielement"
+			capname="text"
+			id="1818bc3b-feae-4a26-ab10-15cc311ca6f6"
+			name="EtPassword"
+			refimgid="9f49db22-39dd-4f78-a80f-cbbb35c9de54"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[1]/text[@rid='et_password']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_password']
+			</item>
+			<item
+			addcaps="button,androidelement,mobileuielement"
+			capname="button"
+			id="ba073034-f983-48b1-b7d7-7663f631dda4"
+			name="BtnLoginUser1"
+			refimgid="bad8539f-84db-443e-84c3-e9ab5357bb78"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[1]/button[@resourceid='R.string.login']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/button[@resourceid='R.string.login']
+			</item>
+			<item
+			addcaps="text,androidelement,mobileuielement"
+			capname="text"
+			id="5ffb6a1c-18c4-447d-9de4-6120a27ef18a"
+			name="EtLogin1"
+			refimgid="81ab79cd-bab5-4589-982a-05fc8cc4c091"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/text[@rid='et_login']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_login']
+			</item>
+			<item
+			addcaps="text,androidelement,mobileuielement"
+			capname="text"
+			id="f6122f52-27ac-4194-b40d-de8f88bb83f8"
+			name="EtPassword1"
+			refimgid="ebc4197d-434e-4b8c-be04-4e5db8947279"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/text[@rid='et_password']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_password']
+			</item>
+			<basepath>
+				/mobileapp[@title='m.example.wakeapp2']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABNSURBVDhPY6A6CA0NWQ/E//Hg9VClmAAo
+KYCmGCuGKscEQEmwAVAuVkBInqCCUQNGjgGEMFQpdoBLIS5xDABU0ICsGAtugCqlBmBgAAAcoXfL
+E78sAQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
