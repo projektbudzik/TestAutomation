@@ -27,7 +27,7 @@ mode="Mobile">
 	<recorditems>
 		<runmobileapprecorditem
 		application="m.example.wakeapp2"
-		devicename="Current Endpoint (WakeApp)"
+		devicename="WakeApp"
 		duration="3500ms"
 		enabled="True"
 		optional="False"
@@ -236,7 +236,7 @@ mode="Mobile">
 				</path>
 			</info>
 			<AttributeValue>
-				test1@gmail.com
+				test222@gmail.com
 			</AttributeValue>
 		</setvaluerecorditem>
 		<touchrecorditem

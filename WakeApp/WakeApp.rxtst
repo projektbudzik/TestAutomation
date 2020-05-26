@@ -80,6 +80,9 @@
 			<smartfoldernode
 			id="798b8690-510c-4159-a733-21259379ba0e"
 			name="Register">
+				<description>
+					<![CDATA[Registration of an User]]>
+				</description>
 			</smartfoldernode>
 			<testmodule
 			id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
@@ -205,7 +208,7 @@
 			id="de54f405-c6f1-4bdb-860e-2f95310fe13f"
 			name="Log_In_HappyPath">
 				<description>
-					<![CDATA[Happy path for log in functionallity]]>
+					<![CDATA[<p>Happy path for log in functionallity + Validation of elements for main panel</p><p><br></p>]]>
 				</description>
 			</smartfoldernode>
 			<smartfoldernode
@@ -369,19 +372,19 @@
 					id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a"
 					name="Test_Case_for_Android_Application">
 						<smartfoldernode
-						id="de54f405-c6f1-4bdb-860e-2f95310fe13f"
-						name="Log_In_HappyPath">
-							<testmodule
-							id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
-							name="AndroidApp">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
 						id="798b8690-510c-4159-a733-21259379ba0e"
 						name="Register">
 							<testmodule
 							id="d9072606-1a82-4e31-a386-7cc90bf2a7b7"
 							name="Register">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="de54f405-c6f1-4bdb-860e-2f95310fe13f"
+						name="Log_In_HappyPath">
+							<testmodule
+							id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
+							name="AndroidApp">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>
@@ -415,13 +418,7 @@
 			id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d">
 			</testcontainer>
 			<testcontainer
-			id="798b8690-510c-4159-a733-21259379ba0e">
-			</testcontainer>
-			<testcontainer
 			id="7da44347-21a8-456b-b001-63cf8bf87286">
-			</testcontainer>
-			<testcontainer
-			id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a">
 			</testcontainer>
 			<testcontainer
 			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6">
@@ -449,9 +446,6 @@
 			</testcontainer>
 			<testcontainer
 			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876">
-			</testcontainer>
-			<testcontainer
-			id="de54f405-c6f1-4bdb-860e-2f95310fe13f">
 			</testcontainer>
 			<testcontainer
 			id="deb15c95-d8c5-47d1-9003-33f062876b4d">

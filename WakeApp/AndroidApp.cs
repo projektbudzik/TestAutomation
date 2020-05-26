@@ -79,8 +79,8 @@ namespace WakeApp
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'm.example.wakeapp2' on device " + Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName() + ".", new RecordItemIndex(0));
-            Host.Local.RunMobileApp(Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName(), "m.example.wakeapp2", true);
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'm.example.wakeapp2' on device 'WakeApp'.", new RecordItemIndex(0));
+            Host.Local.RunMobileApp("WakeApp", "m.example.wakeapp2", true);
             Delay.Milliseconds(3500);
             
             Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Left (180°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(1));
@@ -95,8 +95,8 @@ namespace WakeApp
             repo.MExampleWakeapp2.EtLogin1.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test1@gmail.com' on item 'MExampleWakeapp2.EtLogin1'.", repo.MExampleWakeapp2.EtLogin1Info, new RecordItemIndex(4));
-            repo.MExampleWakeapp2.EtLogin1.Element.SetAttributeValue("Text", "test1@gmail.com");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test222@gmail.com' on item 'MExampleWakeapp2.EtLogin1'.", repo.MExampleWakeapp2.EtLogin1Info, new RecordItemIndex(4));
+            repo.MExampleWakeapp2.EtLogin1.Element.SetAttributeValue("Text", "test222@gmail.com");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'MExampleWakeapp2.EtPassword1' at Center", repo.MExampleWakeapp2.EtPassword1Info, new RecordItemIndex(5));

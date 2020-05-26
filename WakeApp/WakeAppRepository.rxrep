@@ -1009,6 +1009,69 @@ E78sAQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_password']
 			</item>
+			<folder
+			addcaps="container,androidelement,mobileuielement"
+			capname="container"
+			id="18836523-f362-4cbc-b3cf-18769ead3709"
+			isrooted="True"
+			name="Linear"
+			refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,androidelement,mobileuielement"
+				capname="text"
+				id="fdf31d82-e865-4eb6-a99b-acd1fd681fb3"
+				name="EtEmail"
+				refimgid="3dd3579e-dd35-4b9e-ab90-9b683023c642"
+				refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]/text[@rid='et_email']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_email']
+				</item>
+				<item
+				addcaps="text,androidelement,mobileuielement"
+				capname="text"
+				id="cf1f7d34-4fd1-452e-86b6-afe2a22b88d1"
+				name="EtName"
+				refimgid="4fb0f4c9-6d8f-46a0-b0d8-ef0ddeb8f7ad"
+				refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]/text[@rid='et_name']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_name']
+				</item>
+				<item
+				addcaps="text,androidelement,mobileuielement"
+				capname="text"
+				id="bfdeca41-3a34-4337-a69c-cba634fc69e7"
+				name="EtPassword2"
+				refimgid="51df8e1e-eea1-4941-8bb4-7a0b0437deb5"
+				refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]/text[@rid='et_password']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_password']
+				</item>
+				<item
+				addcaps="text,androidelement,mobileuielement"
+				capname="text"
+				id="7701ae6c-9ec2-4501-b583-95f6931048d6"
+				name="EtRepassword"
+				refimgid="73c66f8a-9f5c-451b-946b-71085afbffa9"
+				refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]/text[@rid='et_repassword']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_repassword']
+				</item>
+				<item
+				addcaps="button,androidelement,mobileuielement"
+				capname="button"
+				id="9f33b260-f0bc-4382-9b28-4bf32e98dedf"
+				name="BtnRegister"
+				refimgid="517eb650-d101-4235-adc2-54c1d01df5fa"
+				refpath="/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']/androidelement[@rid='content']/androidelement/androidelement[@rid='viewPager2']/container[2]/container[@containertype='Linear']/container[2]/button[@resourceid='R.string.register']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/button[@resourceid='R.string.register']
+				</item>
+				<basepath>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]
+				</basepath>
+			</folder>
 			<basepath>
 				/mobileapp[@title='m.example.wakeapp2']
 			</basepath>

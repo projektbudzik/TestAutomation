@@ -2521,6 +2521,7 @@ namespace WakeApp
         [RepositoryFolder("c9d8a499-d104-4703-bf9c-b08097c0560e")]
         public partial class MExampleWakeapp2AppFolder : RepoGenBaseFolder
         {
+            WakeAppRepositoryFolders.LinearFolder _linear;
             RepoItemInfo _contentInfo;
             RepoItemInfo _btnloginuserInfo;
             RepoItemInfo _etloginInfo;
@@ -2535,6 +2536,7 @@ namespace WakeApp
             public MExampleWakeapp2AppFolder(RepoGenBaseFolder parentFolder) :
                     base("MExampleWakeapp2", "/mobileapp[@title='m.example.wakeapp2']", parentFolder, 30000, null, false, "c9d8a499-d104-4703-bf9c-b08097c0560e", "")
             {
+                _linear = new WakeAppRepositoryFolders.LinearFolder(this);
                 _contentInfo = new RepoItemInfo(this, "Content", "?/?/androidelement[@rid='content']", 30000, null, "7743055a-53e9-4b59-9922-79d086bcb3c3");
                 _btnloginuserInfo = new RepoItemInfo(this, "BtnLoginUser", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/button[@resourceid='R.string.login']", 30000, null, "ad79b62f-5ed9-40aa-ac47-7df4d6dd5148");
                 _etloginInfo = new RepoItemInfo(this, "EtLogin", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_login']", 30000, null, "b2b387ff-76ad-4f8a-b235-57eff3586142");
@@ -2733,6 +2735,185 @@ namespace WakeApp
                 get
                 {
                     return _etpassword1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Linear folder.
+            /// </summary>
+            [RepositoryFolder("18836523-f362-4cbc-b3cf-18769ead3709")]
+            public virtual WakeAppRepositoryFolders.LinearFolder Linear
+            {
+                get { return _linear; }
+            }
+        }
+
+        /// <summary>
+        /// The LinearFolder folder.
+        /// </summary>
+        [RepositoryFolder("18836523-f362-4cbc-b3cf-18769ead3709")]
+        public partial class LinearFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _etemailInfo;
+            RepoItemInfo _etnameInfo;
+            RepoItemInfo _etpassword2Info;
+            RepoItemInfo _etrepasswordInfo;
+            RepoItemInfo _btnregisterInfo;
+
+            /// <summary>
+            /// Creates a new Linear  folder.
+            /// </summary>
+            public LinearFolder(RepoGenBaseFolder parentFolder) :
+                    base("Linear", "form[@title='Login2Activity']//container[@containertype='Linear']/container[2]", parentFolder, 30000, null, false, "18836523-f362-4cbc-b3cf-18769ead3709", "")
+            {
+                _etemailInfo = new RepoItemInfo(this, "EtEmail", "text[@rid='et_email']", 30000, null, "fdf31d82-e865-4eb6-a99b-acd1fd681fb3");
+                _etnameInfo = new RepoItemInfo(this, "EtName", "text[@rid='et_name']", 30000, null, "cf1f7d34-4fd1-452e-86b6-afe2a22b88d1");
+                _etpassword2Info = new RepoItemInfo(this, "EtPassword2", "text[@rid='et_password']", 30000, null, "bfdeca41-3a34-4337-a69c-cba634fc69e7");
+                _etrepasswordInfo = new RepoItemInfo(this, "EtRepassword", "text[@rid='et_repassword']", 30000, null, "7701ae6c-9ec2-4501-b583-95f6931048d6");
+                _btnregisterInfo = new RepoItemInfo(this, "BtnRegister", "button[@resourceid='R.string.register']", 30000, null, "9f33b260-f0bc-4382-9b28-4bf32e98dedf");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("18836523-f362-4cbc-b3cf-18769ead3709")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("18836523-f362-4cbc-b3cf-18769ead3709")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtEmail item.
+            /// </summary>
+            [RepositoryItem("fdf31d82-e865-4eb6-a99b-acd1fd681fb3")]
+            public virtual Ranorex.Text EtEmail
+            {
+                get
+                {
+                    return _etemailInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("fdf31d82-e865-4eb6-a99b-acd1fd681fb3")]
+            public virtual RepoItemInfo EtEmailInfo
+            {
+                get
+                {
+                    return _etemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtName item.
+            /// </summary>
+            [RepositoryItem("cf1f7d34-4fd1-452e-86b6-afe2a22b88d1")]
+            public virtual Ranorex.Text EtName
+            {
+                get
+                {
+                    return _etnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtName item info.
+            /// </summary>
+            [RepositoryItemInfo("cf1f7d34-4fd1-452e-86b6-afe2a22b88d1")]
+            public virtual RepoItemInfo EtNameInfo
+            {
+                get
+                {
+                    return _etnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item.
+            /// </summary>
+            [RepositoryItem("bfdeca41-3a34-4337-a69c-cba634fc69e7")]
+            public virtual Ranorex.Text EtPassword2
+            {
+                get
+                {
+                    return _etpassword2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item info.
+            /// </summary>
+            [RepositoryItemInfo("bfdeca41-3a34-4337-a69c-cba634fc69e7")]
+            public virtual RepoItemInfo EtPassword2Info
+            {
+                get
+                {
+                    return _etpassword2Info;
+                }
+            }
+
+            /// <summary>
+            /// The EtRepassword item.
+            /// </summary>
+            [RepositoryItem("7701ae6c-9ec2-4501-b583-95f6931048d6")]
+            public virtual Ranorex.Text EtRepassword
+            {
+                get
+                {
+                    return _etrepasswordInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtRepassword item info.
+            /// </summary>
+            [RepositoryItemInfo("7701ae6c-9ec2-4501-b583-95f6931048d6")]
+            public virtual RepoItemInfo EtRepasswordInfo
+            {
+                get
+                {
+                    return _etrepasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister item.
+            /// </summary>
+            [RepositoryItem("9f33b260-f0bc-4382-9b28-4bf32e98dedf")]
+            public virtual Ranorex.Button BtnRegister
+            {
+                get
+                {
+                    return _btnregisterInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister item info.
+            /// </summary>
+            [RepositoryItemInfo("9f33b260-f0bc-4382-9b28-4bf32e98dedf")]
+            public virtual RepoItemInfo BtnRegisterInfo
+            {
+                get
+                {
+                    return _btnregisterInfo;
                 }
             }
         }
