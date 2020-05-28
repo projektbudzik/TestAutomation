@@ -187,6 +187,18 @@
       <UserCode>true</UserCode>
       <id>512edf4b-c8ae-48f0-a286-446043657ba5</id>
     </Compile>
+    <Compile Include="AndroidPhoneAlarmSetup.cs">
+      <BoundTo>540660b3-a398-41b7-a1cf-b9e365278939</BoundTo>
+      <DependentUpon>AndroidPhoneAlarmSetup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>98865640-ee4b-408b-b611-8d78411129b7</id>
+    </Compile>
+    <Compile Include="AndroidPhoneAlarmSetup.UserCode.cs">
+      <BoundTo>540660b3-a398-41b7-a1cf-b9e365278939</BoundTo>
+      <DependentUpon>AndroidPhoneAlarmSetup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f636a4d-e683-47fb-bc7b-c4bbd4c0d9e5</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>8760b8fc-eed7-4c6e-b99b-50b217d6c0b0</id>
     </Compile>
@@ -225,6 +237,18 @@
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6fd37d91-7589-4ea9-bc4e-41d681f2ad14</id>
+    </Compile>
+    <Compile Include="CreateGroup.cs">
+      <BoundTo>cdbab211-10bf-42dc-ba4b-60ba1981d03e</BoundTo>
+      <DependentUpon>CreateGroup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd15e082-24b1-44f5-9aea-aae51b32f9b3</id>
+    </Compile>
+    <Compile Include="CreateGroup.UserCode.cs">
+      <BoundTo>cdbab211-10bf-42dc-ba4b-60ba1981d03e</BoundTo>
+      <DependentUpon>CreateGroup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c11b652-72f4-4333-b97f-529f8a0fef22</id>
     </Compile>
     <Compile Include="DeleteDevises.cs">
       <BoundTo>e4f7452c-c6b3-4c24-bb05-49b519adeca7</BoundTo>
@@ -412,6 +436,11 @@
       <id>de32682c-124d-48f2-9f56-27fa265564ae</id>
       <recordtableid>2e574600-c103-4acb-9547-dc82173feebf</recordtableid>
     </None>
+    <None Include="AndroidPhoneAlarmSetup.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>540660b3-a398-41b7-a1cf-b9e365278939</id>
+      <recordtableid>d5d3d7a2-d2c1-4d9a-83ea-4b4244ff98f7</recordtableid>
+    </None>
     <None Include="app.config">
       <id>b6386d49-4e20-4336-9db1-b299a954be8d</id>
     </None>
@@ -429,6 +458,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>4c6cf3ad-ef74-498a-8ac8-7d712c9da207</id>
       <recordtableid>c5f06714-6b8b-46e7-8468-44e3641fae39</recordtableid>
+    </None>
+    <None Include="CreateGroup.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>cdbab211-10bf-42dc-ba4b-60ba1981d03e</id>
+      <recordtableid>3b0662d1-7153-4901-81b9-f69d3fff201c</recordtableid>
     </None>
     <None Include="DeleteDevises.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

@@ -95,8 +95,8 @@ namespace WakeApp
             repo.MExampleWakeapp2.EtLogin1.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test222@gmail.com' on item 'MExampleWakeapp2.EtLogin1'.", repo.MExampleWakeapp2.EtLogin1Info, new RecordItemIndex(4));
-            repo.MExampleWakeapp2.EtLogin1.Element.SetAttributeValue("Text", "test222@gmail.com");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test1@gmail.com' on item 'MExampleWakeapp2.EtLogin1'.", repo.MExampleWakeapp2.EtLogin1Info, new RecordItemIndex(4));
+            repo.MExampleWakeapp2.EtLogin1.Element.SetAttributeValue("Text", "test1@gmail.com");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'MExampleWakeapp2.EtPassword1' at Center", repo.MExampleWakeapp2.EtPassword1Info, new RecordItemIndex(5));
@@ -110,6 +110,22 @@ namespace WakeApp
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'MExampleWakeapp2.BtnLoginUser' at Center", repo.MExampleWakeapp2.BtnLoginUserInfo, new RecordItemIndex(7));
             repo.MExampleWakeapp2.BtnLoginUser.Touch();
             Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Alarmy') on item 'MExampleWakeapp2.Linear2.BtnAlarmMgmt'.", repo.MExampleWakeapp2.Linear2.BtnAlarmMgmtInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.MExampleWakeapp2.Linear2.BtnAlarmMgmtInfo, "Text", "Alarmy");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Urządzenia') on item 'MExampleWakeapp2.Linear2.BtnDiviceMgmt'.", repo.MExampleWakeapp2.Linear2.BtnDiviceMgmtInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.MExampleWakeapp2.Linear2.BtnDiviceMgmtInfo, "Text", "Urządzenia");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Użytkownicy') on item 'MExampleWakeapp2.Linear2.BtnUserMgmt'.", repo.MExampleWakeapp2.Linear2.BtnUserMgmtInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.MExampleWakeapp2.Linear2.BtnUserMgmtInfo, "Text", "Użytkownicy");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Ustawienia') on item 'MExampleWakeapp2.Linear2.BtnDsa'.", repo.MExampleWakeapp2.Linear2.BtnDsaInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.MExampleWakeapp2.Linear2.BtnDsaInfo, "Text", "Ustawienia");
+            Delay.Milliseconds(0);
             
         }
 

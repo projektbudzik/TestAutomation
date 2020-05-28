@@ -52,7 +52,7 @@
 			ref="89f9e051-78f2-46a5-876a-a8b223247ad4"
 			type="Recording">
 				<description>
-					<![CDATA[Validation of main page (links, position of text, text, size of elements)]]>
+					<![CDATA[Validation of main page (links, position of text, text, size of elements, etc)]]>
 				</description>
 			</testmodule>
 			<smartfoldernode
@@ -103,7 +103,7 @@
 			ref="6d63139b-f39e-400e-be2d-c176591c3f40"
 			type="Recording">
 				<description>
-					<![CDATA[successfull sending of contact message]]>
+					<![CDATA[Successfull sending of contact message]]>
 				</description>
 			</testmodule>
 			<testcase
@@ -198,6 +198,19 @@
 					<![CDATA[<p>Add both devices</p><p><br></p>]]>
 				</description>
 			</smartfoldernode>
+			<smartfoldernode
+			id="d887a779-03e0-48dd-a105-7a3e7e565e7c"
+			name="AddAlarmScreen">
+				<description>
+					<![CDATA[Add Alarm Screen validation]]>
+				</description>
+			</smartfoldernode>
+			<testmodule
+			id="d8b56323-6432-4270-9d86-5700dbe01de5"
+			name="AndroidPhoneAlarmSetup"
+			ref="d5d3d7a2-d2c1-4d9a-83ea-4b4244ff98f7"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d9072606-1a82-4e31-a386-7cc90bf2a7b7"
 			name="Register"
@@ -386,6 +399,14 @@
 							id="7a91c528-7b2a-4eb8-b0d3-3558e45f3da0"
 							name="AndroidApp">
 							</testmodule>
+							<smartfoldernode
+							id="d887a779-03e0-48dd-a105-7a3e7e565e7c"
+							name="AddAlarmScreen">
+								<testmodule
+								id="d8b56323-6432-4270-9d86-5700dbe01de5"
+								name="AndroidPhoneAlarmSetup">
+								</testmodule>
+							</smartfoldernode>
 						</smartfoldernode>
 					</testcase>
 					<teardown

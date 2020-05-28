@@ -2522,6 +2522,10 @@ namespace WakeApp
         public partial class MExampleWakeapp2AppFolder : RepoGenBaseFolder
         {
             WakeAppRepositoryFolders.LinearFolder _linear;
+            WakeAppRepositoryFolders.RelativeFolder _relative;
+            WakeAppRepositoryFolders.Linear1Folder _linear1;
+            WakeAppRepositoryFolders.Linear2Folder _linear2;
+            WakeAppRepositoryFolders.AlarmActivityFolder _alarmactivity;
             RepoItemInfo _contentInfo;
             RepoItemInfo _btnloginuserInfo;
             RepoItemInfo _etloginInfo;
@@ -2529,6 +2533,9 @@ namespace WakeApp
             RepoItemInfo _btnloginuser1Info;
             RepoItemInfo _etlogin1Info;
             RepoItemInfo _etpassword1Info;
+            RepoItemInfo _tvlogoInfo;
+            RepoItemInfo _loginactivityInfo;
+            RepoItemInfo _relative1Info;
 
             /// <summary>
             /// Creates a new MExampleWakeapp2  folder.
@@ -2537,6 +2544,10 @@ namespace WakeApp
                     base("MExampleWakeapp2", "/mobileapp[@title='m.example.wakeapp2']", parentFolder, 30000, null, false, "c9d8a499-d104-4703-bf9c-b08097c0560e", "")
             {
                 _linear = new WakeAppRepositoryFolders.LinearFolder(this);
+                _relative = new WakeAppRepositoryFolders.RelativeFolder(this);
+                _linear1 = new WakeAppRepositoryFolders.Linear1Folder(this);
+                _linear2 = new WakeAppRepositoryFolders.Linear2Folder(this);
+                _alarmactivity = new WakeAppRepositoryFolders.AlarmActivityFolder(this);
                 _contentInfo = new RepoItemInfo(this, "Content", "?/?/androidelement[@rid='content']", 30000, null, "7743055a-53e9-4b59-9922-79d086bcb3c3");
                 _btnloginuserInfo = new RepoItemInfo(this, "BtnLoginUser", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/button[@resourceid='R.string.login']", 30000, null, "ad79b62f-5ed9-40aa-ac47-7df4d6dd5148");
                 _etloginInfo = new RepoItemInfo(this, "EtLogin", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/text[@rid='et_login']", 30000, null, "b2b387ff-76ad-4f8a-b235-57eff3586142");
@@ -2544,6 +2555,9 @@ namespace WakeApp
                 _btnloginuser1Info = new RepoItemInfo(this, "BtnLoginUser1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/button[@resourceid='R.string.login']", 30000, null, "ba073034-f983-48b1-b7d7-7663f631dda4");
                 _etlogin1Info = new RepoItemInfo(this, "EtLogin1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_login']", 30000, null, "5ffb6a1c-18c4-447d-9de4-6120a27ef18a");
                 _etpassword1Info = new RepoItemInfo(this, "EtPassword1", "form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[2]/text[@rid='et_password']", 30000, null, "f6122f52-27ac-4194-b40d-de8f88bb83f8");
+                _tvlogoInfo = new RepoItemInfo(this, "TvLogo", "form[@title='LoginActivity']//container[@containertype='Linear']/container[1]/text[@resourceid='R.string.register']", 30000, null, "413daadb-32dd-475d-8fcd-451cdf2615da");
+                _loginactivityInfo = new RepoItemInfo(this, "LoginActivity", "form[@title='LoginActivity']", 30000, null, "f4a3f5c4-56e0-44de-aeca-7a299e9ed54b");
+                _relative1Info = new RepoItemInfo(this, "Relative1", "form/?/?/container/?/?/container", 30000, null, "02f2d31f-cae7-40f6-9a5a-2508c7560e83");
             }
 
             /// <summary>
@@ -2739,12 +2753,120 @@ namespace WakeApp
             }
 
             /// <summary>
+            /// The TvLogo item.
+            /// </summary>
+            [RepositoryItem("413daadb-32dd-475d-8fcd-451cdf2615da")]
+            public virtual Ranorex.Text TvLogo
+            {
+                get
+                {
+                    return _tvlogoInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TvLogo item info.
+            /// </summary>
+            [RepositoryItemInfo("413daadb-32dd-475d-8fcd-451cdf2615da")]
+            public virtual RepoItemInfo TvLogoInfo
+            {
+                get
+                {
+                    return _tvlogoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginActivity item.
+            /// </summary>
+            [RepositoryItem("f4a3f5c4-56e0-44de-aeca-7a299e9ed54b")]
+            public virtual Ranorex.Form LoginActivity
+            {
+                get
+                {
+                    return _loginactivityInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginActivity item info.
+            /// </summary>
+            [RepositoryItemInfo("f4a3f5c4-56e0-44de-aeca-7a299e9ed54b")]
+            public virtual RepoItemInfo LoginActivityInfo
+            {
+                get
+                {
+                    return _loginactivityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Relative1 item.
+            /// </summary>
+            [RepositoryItem("02f2d31f-cae7-40f6-9a5a-2508c7560e83")]
+            public virtual Ranorex.Container Relative1
+            {
+                get
+                {
+                    return _relative1Info.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Relative1 item info.
+            /// </summary>
+            [RepositoryItemInfo("02f2d31f-cae7-40f6-9a5a-2508c7560e83")]
+            public virtual RepoItemInfo Relative1Info
+            {
+                get
+                {
+                    return _relative1Info;
+                }
+            }
+
+            /// <summary>
             /// The Linear folder.
             /// </summary>
             [RepositoryFolder("18836523-f362-4cbc-b3cf-18769ead3709")]
             public virtual WakeAppRepositoryFolders.LinearFolder Linear
             {
                 get { return _linear; }
+            }
+
+            /// <summary>
+            /// The Relative folder.
+            /// </summary>
+            [RepositoryFolder("4e1cf543-31c4-4bd5-b8ea-f276b4da8564")]
+            public virtual WakeAppRepositoryFolders.RelativeFolder Relative
+            {
+                get { return _relative; }
+            }
+
+            /// <summary>
+            /// The Linear1 folder.
+            /// </summary>
+            [RepositoryFolder("f1e5ea68-b2c8-40f9-b22d-70ca46727081")]
+            public virtual WakeAppRepositoryFolders.Linear1Folder Linear1
+            {
+                get { return _linear1; }
+            }
+
+            /// <summary>
+            /// The Linear2 folder.
+            /// </summary>
+            [RepositoryFolder("b2f767d8-ca67-451c-8d11-2a3fb5041671")]
+            public virtual WakeAppRepositoryFolders.Linear2Folder Linear2
+            {
+                get { return _linear2; }
+            }
+
+            /// <summary>
+            /// The AlarmActivity folder.
+            /// </summary>
+            [RepositoryFolder("f15b4fda-9acb-480c-a633-3bca581b0025")]
+            public virtual WakeAppRepositoryFolders.AlarmActivityFolder AlarmActivity
+            {
+                get { return _alarmactivity; }
             }
         }
 
@@ -2914,6 +3036,608 @@ namespace WakeApp
                 get
                 {
                     return _btnregisterInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RelativeFolder folder.
+        /// </summary>
+        [RepositoryFolder("4e1cf543-31c4-4bd5-b8ea-f276b4da8564")]
+        public partial class RelativeFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tvtitlelvlInfo;
+            RepoItemInfo _etlogin2Info;
+            RepoItemInfo _etpassword2Info;
+
+            /// <summary>
+            /// Creates a new Relative  folder.
+            /// </summary>
+            public RelativeFolder(RepoGenBaseFolder parentFolder) :
+                    base("Relative", "form[@title='LoginActivity']//androidelement[@rid='viewPager']/container[2]", parentFolder, 30000, null, false, "4e1cf543-31c4-4bd5-b8ea-f276b4da8564", "")
+            {
+                _tvtitlelvlInfo = new RepoItemInfo(this, "TvTitleLvl", "text[@resourceid='R.string.group_lvl']", 30000, null, "b48a11da-8253-4091-8f47-1e656d5fde93");
+                _etlogin2Info = new RepoItemInfo(this, "EtLogin2", "text[@rid='et_login']", 30000, null, "6a0e785e-934b-4425-b632-35b6a7ea970f");
+                _etpassword2Info = new RepoItemInfo(this, "EtPassword2", "text[@rid='et_password']", 30000, null, "e1102394-f3db-4422-acc9-9b674d2d84c9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4e1cf543-31c4-4bd5-b8ea-f276b4da8564")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4e1cf543-31c4-4bd5-b8ea-f276b4da8564")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TvTitleLvl item.
+            /// </summary>
+            [RepositoryItem("b48a11da-8253-4091-8f47-1e656d5fde93")]
+            public virtual Ranorex.Text TvTitleLvl
+            {
+                get
+                {
+                    return _tvtitlelvlInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TvTitleLvl item info.
+            /// </summary>
+            [RepositoryItemInfo("b48a11da-8253-4091-8f47-1e656d5fde93")]
+            public virtual RepoItemInfo TvTitleLvlInfo
+            {
+                get
+                {
+                    return _tvtitlelvlInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin2 item.
+            /// </summary>
+            [RepositoryItem("6a0e785e-934b-4425-b632-35b6a7ea970f")]
+            public virtual Ranorex.Text EtLogin2
+            {
+                get
+                {
+                    return _etlogin2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtLogin2 item info.
+            /// </summary>
+            [RepositoryItemInfo("6a0e785e-934b-4425-b632-35b6a7ea970f")]
+            public virtual RepoItemInfo EtLogin2Info
+            {
+                get
+                {
+                    return _etlogin2Info;
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item.
+            /// </summary>
+            [RepositoryItem("e1102394-f3db-4422-acc9-9b674d2d84c9")]
+            public virtual Ranorex.Text EtPassword2
+            {
+                get
+                {
+                    return _etpassword2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item info.
+            /// </summary>
+            [RepositoryItemInfo("e1102394-f3db-4422-acc9-9b674d2d84c9")]
+            public virtual RepoItemInfo EtPassword2Info
+            {
+                get
+                {
+                    return _etpassword2Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Linear1Folder folder.
+        /// </summary>
+        [RepositoryFolder("f1e5ea68-b2c8-40f9-b22d-70ca46727081")]
+        public partial class Linear1Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _etnameInfo;
+            RepoItemInfo _etpassword2Info;
+            RepoItemInfo _etrepasswordInfo;
+            RepoItemInfo _btnregisterInfo;
+            RepoItemInfo _btnregister1Info;
+
+            /// <summary>
+            /// Creates a new Linear1  folder.
+            /// </summary>
+            public Linear1Folder(RepoGenBaseFolder parentFolder) :
+                    base("Linear1", "form[@title='LoginActivity']//container[@containertype='Linear']/container[2]", parentFolder, 30000, null, false, "f1e5ea68-b2c8-40f9-b22d-70ca46727081", "")
+            {
+                _etnameInfo = new RepoItemInfo(this, "EtName", "text[@rid='et_name']", 30000, null, "30d7f1a1-e926-4a5f-a86a-f68ded159e0f");
+                _etpassword2Info = new RepoItemInfo(this, "EtPassword2", "text[@rid='et_password']", 30000, null, "dfa1e3ae-bcbe-41ad-8acd-05e6878fb481");
+                _etrepasswordInfo = new RepoItemInfo(this, "EtRepassword", "text[@rid='et_repassword']", 30000, null, "4e682efb-7762-40cd-81ff-6385fd559601");
+                _btnregisterInfo = new RepoItemInfo(this, "BtnRegister", "button[@resourceid='R.string.register']", 30000, null, "896e3d1b-66c0-46bb-bc0b-90a68266b5f6");
+                _btnregister1Info = new RepoItemInfo(this, "BtnRegister1", "button[@resourceid='R.string.register']", 30000, null, "7f881488-8fa2-430d-be05-a7bace3b656a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f1e5ea68-b2c8-40f9-b22d-70ca46727081")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f1e5ea68-b2c8-40f9-b22d-70ca46727081")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtName item.
+            /// </summary>
+            [RepositoryItem("30d7f1a1-e926-4a5f-a86a-f68ded159e0f")]
+            public virtual Ranorex.Text EtName
+            {
+                get
+                {
+                    return _etnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtName item info.
+            /// </summary>
+            [RepositoryItemInfo("30d7f1a1-e926-4a5f-a86a-f68ded159e0f")]
+            public virtual RepoItemInfo EtNameInfo
+            {
+                get
+                {
+                    return _etnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item.
+            /// </summary>
+            [RepositoryItem("dfa1e3ae-bcbe-41ad-8acd-05e6878fb481")]
+            public virtual Ranorex.Text EtPassword2
+            {
+                get
+                {
+                    return _etpassword2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtPassword2 item info.
+            /// </summary>
+            [RepositoryItemInfo("dfa1e3ae-bcbe-41ad-8acd-05e6878fb481")]
+            public virtual RepoItemInfo EtPassword2Info
+            {
+                get
+                {
+                    return _etpassword2Info;
+                }
+            }
+
+            /// <summary>
+            /// The EtRepassword item.
+            /// </summary>
+            [RepositoryItem("4e682efb-7762-40cd-81ff-6385fd559601")]
+            public virtual Ranorex.Text EtRepassword
+            {
+                get
+                {
+                    return _etrepasswordInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EtRepassword item info.
+            /// </summary>
+            [RepositoryItemInfo("4e682efb-7762-40cd-81ff-6385fd559601")]
+            public virtual RepoItemInfo EtRepasswordInfo
+            {
+                get
+                {
+                    return _etrepasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister item.
+            /// </summary>
+            [RepositoryItem("896e3d1b-66c0-46bb-bc0b-90a68266b5f6")]
+            public virtual Ranorex.Button BtnRegister
+            {
+                get
+                {
+                    return _btnregisterInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister item info.
+            /// </summary>
+            [RepositoryItemInfo("896e3d1b-66c0-46bb-bc0b-90a68266b5f6")]
+            public virtual RepoItemInfo BtnRegisterInfo
+            {
+                get
+                {
+                    return _btnregisterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister1 item.
+            /// </summary>
+            [RepositoryItem("7f881488-8fa2-430d-be05-a7bace3b656a")]
+            public virtual Ranorex.Button BtnRegister1
+            {
+                get
+                {
+                    return _btnregister1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnRegister1 item info.
+            /// </summary>
+            [RepositoryItemInfo("7f881488-8fa2-430d-be05-a7bace3b656a")]
+            public virtual RepoItemInfo BtnRegister1Info
+            {
+                get
+                {
+                    return _btnregister1Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Linear2Folder folder.
+        /// </summary>
+        [RepositoryFolder("b2f767d8-ca67-451c-8d11-2a3fb5041671")]
+        public partial class Linear2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btnalarmmgmtInfo;
+            RepoItemInfo _btndivicemgmtInfo;
+            RepoItemInfo _btnusermgmtInfo;
+            RepoItemInfo _btndsaInfo;
+
+            /// <summary>
+            /// Creates a new Linear2  folder.
+            /// </summary>
+            public Linear2Folder(RepoGenBaseFolder parentFolder) :
+                    base("Linear2", "form[@title='MainActivity']//container[@containertype='Linear']", parentFolder, 30000, null, false, "b2f767d8-ca67-451c-8d11-2a3fb5041671", "")
+            {
+                _btnalarmmgmtInfo = new RepoItemInfo(this, "BtnAlarmMgmt", "container[2]/button[@rid='btn_alarm_mgmt']", 30000, null, "3ca14fd3-decc-4a89-9673-7fb893f857af");
+                _btndivicemgmtInfo = new RepoItemInfo(this, "BtnDiviceMgmt", "container[3]/button[@rid='btn_divice_mgmt']", 30000, null, "af62b27c-d597-4e42-aa76-6750cb75ec2b");
+                _btnusermgmtInfo = new RepoItemInfo(this, "BtnUserMgmt", "container[3]/button[@rid='btn_user_mgmt']", 30000, null, "72ca57be-4c19-4dbc-a53f-9bac820355cf");
+                _btndsaInfo = new RepoItemInfo(this, "BtnDsa", "container[3]/button[@rid='btn_dsa']", 30000, null, "06b5ae3b-9031-46a5-9164-e9904f09c708");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b2f767d8-ca67-451c-8d11-2a3fb5041671")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b2f767d8-ca67-451c-8d11-2a3fb5041671")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnAlarmMgmt item.
+            /// </summary>
+            [RepositoryItem("3ca14fd3-decc-4a89-9673-7fb893f857af")]
+            public virtual Ranorex.Button BtnAlarmMgmt
+            {
+                get
+                {
+                    return _btnalarmmgmtInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnAlarmMgmt item info.
+            /// </summary>
+            [RepositoryItemInfo("3ca14fd3-decc-4a89-9673-7fb893f857af")]
+            public virtual RepoItemInfo BtnAlarmMgmtInfo
+            {
+                get
+                {
+                    return _btnalarmmgmtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnDiviceMgmt item.
+            /// </summary>
+            [RepositoryItem("af62b27c-d597-4e42-aa76-6750cb75ec2b")]
+            public virtual Ranorex.Button BtnDiviceMgmt
+            {
+                get
+                {
+                    return _btndivicemgmtInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnDiviceMgmt item info.
+            /// </summary>
+            [RepositoryItemInfo("af62b27c-d597-4e42-aa76-6750cb75ec2b")]
+            public virtual RepoItemInfo BtnDiviceMgmtInfo
+            {
+                get
+                {
+                    return _btndivicemgmtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnUserMgmt item.
+            /// </summary>
+            [RepositoryItem("72ca57be-4c19-4dbc-a53f-9bac820355cf")]
+            public virtual Ranorex.Button BtnUserMgmt
+            {
+                get
+                {
+                    return _btnusermgmtInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnUserMgmt item info.
+            /// </summary>
+            [RepositoryItemInfo("72ca57be-4c19-4dbc-a53f-9bac820355cf")]
+            public virtual RepoItemInfo BtnUserMgmtInfo
+            {
+                get
+                {
+                    return _btnusermgmtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnDsa item.
+            /// </summary>
+            [RepositoryItem("06b5ae3b-9031-46a5-9164-e9904f09c708")]
+            public virtual Ranorex.Button BtnDsa
+            {
+                get
+                {
+                    return _btndsaInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnDsa item info.
+            /// </summary>
+            [RepositoryItemInfo("06b5ae3b-9031-46a5-9164-e9904f09c708")]
+            public virtual RepoItemInfo BtnDsaInfo
+            {
+                get
+                {
+                    return _btndsaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AlarmActivityFolder folder.
+        /// </summary>
+        [RepositoryFolder("f15b4fda-9acb-480c-a633-3bca581b0025")]
+        public partial class AlarmActivityFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _switch1Info;
+            RepoItemInfo _tvtitleInfo;
+            RepoItemInfo _btnaddnewalarmInfo;
+            RepoItemInfo _textview3Info;
+            RepoItemInfo _btndodajalarmInfo;
+
+            /// <summary>
+            /// Creates a new AlarmActivity  folder.
+            /// </summary>
+            public AlarmActivityFolder(RepoGenBaseFolder parentFolder) :
+                    base("AlarmActivity", "form[@title='AlarmActivity']", parentFolder, 30000, null, false, "f15b4fda-9acb-480c-a633-3bca581b0025", "")
+            {
+                _switch1Info = new RepoItemInfo(this, "Switch1", ".//container[@rid='fragment_container']/?/?/container[@containertype='ScrollView']/?/?/checkbox[@rid='switch1']", 30000, null, "b26ca7d0-43ab-432e-8939-b5eec45167d7");
+                _tvtitleInfo = new RepoItemInfo(this, "TvTitle", ".//container[@rid='fragment_container']/?/?/text[@resourceid='R.string.Alarm_title']", 30000, null, "0d2b96ab-a494-4ce9-9fba-f8d035858940");
+                _btnaddnewalarmInfo = new RepoItemInfo(this, "BtnAddNewAlarm", "?/?/container[@containertype='Relative']/container[1]/?/?/button[@rid='btn_add_new_alarm']", 30000, null, "52b92bf0-f253-4356-947e-5536fd03a648");
+                _textview3Info = new RepoItemInfo(this, "TextView3", ".//container[@rid='fragment_container']/?/?/container[@containertype='ScrollView']/?/?/container[@rid='LinearLayout2']/text[@rid='textView3']", 30000, null, "4d457a2c-0437-443d-a17b-16c1dc2c4586");
+                _btndodajalarmInfo = new RepoItemInfo(this, "BtnDodajAlarm", ".//container[@rid='fragment_container']/?/?/container[@containertype='ScrollView']/?/?/button[@rid='btn_dodaj_alarm']", 30000, null, "ae37fb1f-3049-4b46-beb7-64293ced44a0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f15b4fda-9acb-480c-a633-3bca581b0025")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f15b4fda-9acb-480c-a633-3bca581b0025")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Switch1 item.
+            /// </summary>
+            [RepositoryItem("b26ca7d0-43ab-432e-8939-b5eec45167d7")]
+            public virtual Ranorex.CheckBox Switch1
+            {
+                get
+                {
+                    return _switch1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Switch1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b26ca7d0-43ab-432e-8939-b5eec45167d7")]
+            public virtual RepoItemInfo Switch1Info
+            {
+                get
+                {
+                    return _switch1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TvTitle item.
+            /// </summary>
+            [RepositoryItem("0d2b96ab-a494-4ce9-9fba-f8d035858940")]
+            public virtual Ranorex.Text TvTitle
+            {
+                get
+                {
+                    return _tvtitleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TvTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("0d2b96ab-a494-4ce9-9fba-f8d035858940")]
+            public virtual RepoItemInfo TvTitleInfo
+            {
+                get
+                {
+                    return _tvtitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnAddNewAlarm item.
+            /// </summary>
+            [RepositoryItem("52b92bf0-f253-4356-947e-5536fd03a648")]
+            public virtual Ranorex.Button BtnAddNewAlarm
+            {
+                get
+                {
+                    return _btnaddnewalarmInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnAddNewAlarm item info.
+            /// </summary>
+            [RepositoryItemInfo("52b92bf0-f253-4356-947e-5536fd03a648")]
+            public virtual RepoItemInfo BtnAddNewAlarmInfo
+            {
+                get
+                {
+                    return _btnaddnewalarmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextView3 item.
+            /// </summary>
+            [RepositoryItem("4d457a2c-0437-443d-a17b-16c1dc2c4586")]
+            public virtual Ranorex.Text TextView3
+            {
+                get
+                {
+                    return _textview3Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextView3 item info.
+            /// </summary>
+            [RepositoryItemInfo("4d457a2c-0437-443d-a17b-16c1dc2c4586")]
+            public virtual RepoItemInfo TextView3Info
+            {
+                get
+                {
+                    return _textview3Info;
+                }
+            }
+
+            /// <summary>
+            /// The BtnDodajAlarm item.
+            /// </summary>
+            [RepositoryItem("ae37fb1f-3049-4b46-beb7-64293ced44a0")]
+            public virtual Ranorex.Button BtnDodajAlarm
+            {
+                get
+                {
+                    return _btndodajalarmInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnDodajAlarm item info.
+            /// </summary>
+            [RepositoryItemInfo("ae37fb1f-3049-4b46-beb7-64293ced44a0")]
+            public virtual RepoItemInfo BtnDodajAlarmInfo
+            {
+                get
+                {
+                    return _btndodajalarmInfo;
                 }
             }
         }

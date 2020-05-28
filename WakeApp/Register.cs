@@ -107,8 +107,8 @@ namespace WakeApp
             repo.MExampleWakeapp2.Linear.EtEmail.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test222@gmail.com' on item 'MExampleWakeapp2.Linear.EtEmail'.", repo.MExampleWakeapp2.Linear.EtEmailInfo, new RecordItemIndex(7));
-            repo.MExampleWakeapp2.Linear.EtEmail.Element.SetAttributeValue("Text", "test222@gmail.com");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test2122@gmail.com' on item 'MExampleWakeapp2.Linear.EtEmail'.", repo.MExampleWakeapp2.Linear.EtEmailInfo, new RecordItemIndex(7));
+            repo.MExampleWakeapp2.Linear.EtEmail.Element.SetAttributeValue("Text", "test2122@gmail.com");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'MExampleWakeapp2.Linear.EtPassword2' at Center", repo.MExampleWakeapp2.Linear.EtPassword2Info, new RecordItemIndex(8));
