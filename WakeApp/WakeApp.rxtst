@@ -13,6 +13,10 @@
 					<![CDATA[Set Alarm + validate if date of alarm can be past]]>
 				</description>
 			</smartfoldernode>
+			<testcase
+			id="08c50031-7445-48d5-8ae0-3f6d341c0ee8"
+			name="TestCase">
+			</testcase>
 			<smartfoldernode
 			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b"
 			name="Happy_Path_for_user_and_group_registration">
@@ -63,6 +67,12 @@
 			id="5227ba9b-71fd-46ac-803b-768fdb1b04b3"
 			name="HappyPath"
 			ref="240274e3-a7e5-413d-8bcf-357237c95cad"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5ab364c8-ca8d-464f-b8be-c7f58fd9de50"
+			name="AddDeviceAndroid"
+			ref="fa8e3e22-3bc7-4632-8101-b28af362caa0"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -234,6 +244,13 @@
 			ref="42797f65-7b53-484c-b204-221b7e19d02c"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="eeabb0f6-4090-436f-8ab3-1fc1365fb008"
+			name="AddDevice">
+				<description>
+					<![CDATA[<p>Add a device and screen validation</p><p><br></p>]]>
+				</description>
+			</smartfoldernode>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -408,6 +425,18 @@
 								</testmodule>
 							</smartfoldernode>
 						</smartfoldernode>
+						<smartfoldernode
+						id="eeabb0f6-4090-436f-8ab3-1fc1365fb008"
+						name="AddDevice">
+							<testmodule
+							id="5ab364c8-ca8d-464f-b8be-c7f58fd9de50"
+							name="AddDeviceAndroid">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="08c50031-7445-48d5-8ae0-3f6d341c0ee8"
+					name="TestCase">
 					</testcase>
 					<teardown
 					id="00c4572d-0a88-4a7e-99ef-469c40271bde"
@@ -424,55 +453,22 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0715e56b-0110-4e9a-b9c4-50b086b356b8">
+			id="798b8690-510c-4159-a733-21259379ba0e">
 			</testcontainer>
 			<testcontainer
-			id="0b5bafe9-fbc8-4058-b231-1216b98cda2b">
-			</testcontainer>
-			<testcontainer
-			id="20b10a49-7547-4a14-ae0a-663ad068fc16">
-			</testcontainer>
-			<testcontainer
-			id="2e555e63-239c-41f2-a94f-9197bd8d241b">
-			</testcontainer>
-			<testcontainer
-			id="44e15ee2-27c1-499d-a9b8-ea9ba3a5a54d">
-			</testcontainer>
-			<testcontainer
-			id="7da44347-21a8-456b-b001-63cf8bf87286">
-			</testcontainer>
-			<testcontainer
-			id="98d7dcfe-904c-41fe-8976-f659ab02f5d6">
+			id="8331ee48-cca2-4e8b-98ad-1ffb66fb660a">
 			</testcontainer>
 			<testcontainer
 			id="a4a1184b-747a-499f-9b27-894e151dd824">
 			</testcontainer>
 			<testcontainer
-			id="a6ebccee-e979-4b1d-a350-d4652cb80e44">
+			id="d887a779-03e0-48dd-a105-7a3e7e565e7c">
 			</testcontainer>
 			<testcontainer
-			id="a81eeb45-f617-4015-b0e7-400385a6cc76">
+			id="de54f405-c6f1-4bdb-860e-2f95310fe13f">
 			</testcontainer>
 			<testcontainer
-			id="b3e533f7-9ab3-4ae3-9320-1d8a32686bc1">
-			</testcontainer>
-			<testcontainer
-			id="b684c052-bee0-429a-b764-9636db7f489d">
-			</testcontainer>
-			<testcontainer
-			id="bb1709bb-7486-42db-9705-486261d30467">
-			</testcontainer>
-			<testcontainer
-			id="c9415a68-3fa6-4b25-bed0-d91d10177c3f">
-			</testcontainer>
-			<testcontainer
-			id="d5e4a80b-5238-47d0-a4bd-07d7493cb876">
-			</testcontainer>
-			<testcontainer
-			id="deb15c95-d8c5-47d1-9003-33f062876b4d">
-			</testcontainer>
-			<testcontainer
-			id="fa2595f1-c970-4369-8ce9-18c379a79934">
+			id="eeabb0f6-4090-436f-8ab3-1fc1365fb008">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

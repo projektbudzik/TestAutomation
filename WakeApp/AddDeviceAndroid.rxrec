@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f1046934-01cd-4929-b982-255ec8e29a4a"
+id="fa8e3e22-3bc7-4632-8101-b28af362caa0"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,183 +19,12 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Register"
+	classname="AddDeviceAndroid"
 	namespace="WakeApp">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<runmobileapprecorditem
-		application="m.example.wakeapp2"
-		devicename="WakeApp"
-		duration="3500ms"
-		enabled="True"
-		optional="False"
-		resetInitialState="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</runmobileapprecorditem>
-		<swiperecorditem
-		direction="180"
-		distance="1.0"
-		duration="500ms"
-		enabled="True"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="5d68944b-81ca-4e94-b11c-26570afd2962"
-		startlocation="Center"
-		steps="0"
-		swipeduration="500ms"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7743055a-53e9-4b59-9922-79d086bcb3c3"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="0"
-				prefcap="androidelement"
-				rect="0,61,1080,1977"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="rid"
-					type="System.String">
-						content
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.ContentFrameLayout
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						33789356
-					</attribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/?/?/androidelement[@rid='content']
-				</path>
-			</info>
-		</swiperecorditem>
-		<swiperecorditem
-		direction="180"
-		distance="1.0"
-		duration="500ms"
-		enabled="True"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="5d68944b-81ca-4e94-b11c-26570afd2962"
-		startlocation="Center"
-		steps="0"
-		swipeduration="500ms"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7743055a-53e9-4b59-9922-79d086bcb3c3"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="0"
-				prefcap="androidelement"
-				rect="0,61,1080,1977"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="rid"
-					type="System.String">
-						content
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.ContentFrameLayout
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						33789356
-					</attribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/?/?/androidelement[@rid='content']
-				</path>
-			</info>
-		</swiperecorditem>
-		<swiperecorditem
-		direction="180"
-		distance="1.0"
-		duration="500ms"
-		enabled="True"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="5d68944b-81ca-4e94-b11c-26570afd2962"
-		startlocation="Center"
-		steps="0"
-		swipeduration="500ms"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7743055a-53e9-4b59-9922-79d086bcb3c3"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="0"
-				prefcap="androidelement"
-				rect="0,61,1080,1977"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="rid"
-					type="System.String">
-						content
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.ContentFrameLayout
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						33789356
-					</attribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/?/?/androidelement[@rid='content']
-				</path>
-			</info>
-		</swiperecorditem>
 		<touchrecorditem
 		duration="500ms"
 		elementlocation="Center"
@@ -206,7 +35,7 @@ mode="Global">
 		moveduration="100ms"
 		optional="False"
 		screenshotname=""
-		searchpropertyid="7a776d50-8893-4e6b-8599-6fc19c1606c1"
+		searchpropertyid="474ad7fb-3151-4968-8bc2-44942c5db224"
 		sx="0"
 		sy="0"
 		touchduration="100ms"
@@ -217,7 +46,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="cf1f7d34-4fd1-452e-86b6-afe2a22b88d1"
+			id="fee0581d-235e-495c-8172-a33117cf6684"
 			sourcename="ElementTree">
 				<element
 				capabilities="androidelement, mobileuielement"
@@ -226,584 +55,8 @@ mode="Global">
 				flavor="mobile"
 				hasfocus="False"
 				index="0"
-				prefcap="text"
-				rect="3291,555,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_name
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						91269234
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_name']
-				</path>
-			</info>
-		</touchrecorditem>
-		<setvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="d7ab44b2-1bae-40dd-8f69-b47c583bd033">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cf1f7d34-4fd1-452e-86b6-afe2a22b88d1"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="3291,555,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_name
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						91269234
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_name']
-				</path>
-			</info>
-			<AttributeValue>
-				user1
-			</AttributeValue>
-		</setvaluerecorditem>
-		<touchrecorditem
-		duration="500ms"
-		elementlocation="Center"
-		enabled="True"
-		fingerid="0"
-		isremote="False"
-		longtouchduration="1000ms"
-		moveduration="100ms"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="4acb8b80-f953-48b0-bb1d-81a03f637854"
-		sx="0"
-		sy="0"
-		touchduration="100ms"
-		touchtype="Touch"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="fdf31d82-e865-4eb6-a99b-acd1fd681fb3"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="2"
-				prefcap="text"
-				rect="3291,709,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_email
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						9027904
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_email']
-				</path>
-			</info>
-		</touchrecorditem>
-		<setvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="2a8d553d-15bf-4a8c-8b6b-0b847aef8500">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="fdf31d82-e865-4eb6-a99b-acd1fd681fb3"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="2"
-				prefcap="text"
-				rect="3291,709,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_email
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						9027904
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_email']
-				</path>
-			</info>
-			<AttributeValue>
-				test91@gmail.com
-			</AttributeValue>
-		</setvaluerecorditem>
-		<touchrecorditem
-		duration="500ms"
-		elementlocation="Center"
-		enabled="True"
-		fingerid="0"
-		isremote="False"
-		longtouchduration="1000ms"
-		moveduration="100ms"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="807bcda8-de48-4080-9416-251728d9e151"
-		sx="0"
-		sy="0"
-		touchduration="100ms"
-		touchtype="Touch"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bfdeca41-3a34-4337-a69c-cba634fc69e7"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="4"
-				prefcap="text"
-				rect="3291,863,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_password
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						85776830
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_password']
-				</path>
-			</info>
-		</touchrecorditem>
-		<setvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b22a71c4-51a3-4d11-a6e8-211730f9ae0e">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bfdeca41-3a34-4337-a69c-cba634fc69e7"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="4"
-				prefcap="text"
-				rect="3291,863,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_password
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						85776830
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_password']
-				</path>
-			</info>
-			<AttributeValue>
-				WakeApp132!
-			</AttributeValue>
-		</setvaluerecorditem>
-		<touchrecorditem
-		duration="500ms"
-		elementlocation="Center"
-		enabled="True"
-		fingerid="0"
-		isremote="False"
-		longtouchduration="1000ms"
-		moveduration="100ms"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="5adc0bf8-a572-45b5-b3ab-a3b5cad83c9a"
-		sx="0"
-		sy="0"
-		touchduration="100ms"
-		touchtype="Touch"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7701ae6c-9ec2-4501-b583-95f6931048d6"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="6"
-				prefcap="text"
-				rect="3291,1017,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_repassword
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						233419116
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_repassword']
-				</path>
-			</info>
-		</touchrecorditem>
-		<setvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="ba3a0266-782a-47ba-ab2e-23ebafa4e927">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7701ae6c-9ec2-4501-b583-95f6931048d6"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="6"
-				prefcap="text"
-				rect="3291,1017,978,128"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="selectionlength"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="selectionstart"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="rid"
-					type="System.String">
-						et_repassword
-					</attribute>
-					<attribute
-					name="platformclass"
-					type="System.String">
-						androidx.appcompat.widget.AppCompatEditText
-					</attribute>
-					<attribute
-					name="temporaryelementid"
-					type="System.Int32">
-						233419116
-					</attribute>
-					<dynamicattribute
-					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
-					name="Hint"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/text[@rid='et_repassword']
-				</path>
-			</info>
-			<AttributeValue>
-				WakeApp132!
-			</AttributeValue>
-		</setvaluerecorditem>
-		<touchrecorditem
-		duration="500ms"
-		elementlocation="Center"
-		enabled="True"
-		fingerid="0"
-		isremote="False"
-		longtouchduration="1000ms"
-		moveduration="100ms"
-		optional="False"
-		screenshotname=""
-		searchpropertyid="a5089231-038b-415d-a158-f818c7da55ed"
-		sx="0"
-		sy="0"
-		touchduration="100ms"
-		touchtype="Touch"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9f33b260-f0bc-4382-9b28-4bf32e98dedf"
-			sourcename="ElementTree">
-				<element
-				capabilities="androidelement, mobileuielement"
-				dontcache="True"
-				enabled="True"
-				flavor="mobile"
-				hasfocus="False"
-				index="8"
 				prefcap="button"
-				rect="3291,1196,978,122"
+				rect="28,1913,1024,97"
 				role="button"
 				snapElem=""
 				valid="True"
@@ -816,17 +69,12 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						Rejestracja
-					</attribute>
-					<attribute
-					name="resourceid"
-					type="System.String">
-						R.string.register
+						Cofnij
 					</attribute>
 					<attribute
 					name="rid"
 					type="System.String">
-						btn_register
+						btn_back
 					</attribute>
 					<attribute
 					name="platformclass"
@@ -836,32 +84,36 @@ mode="Global">
 					<attribute
 					name="temporaryelementid"
 					type="System.Int32">
-						197710794
+						14184130
 					</attribute>
 				</element>
 				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//container[@containertype='Linear']/container[2]/button[@resourceid='R.string.register']
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='AlarmActivity']//container[@rid='LinearLayout1']/button[@rid='btn_back']
 				</path>
 			</info>
 		</touchrecorditem>
-		<swiperecorditem
-		direction="0"
-		distance="1.0"
+		<touchrecorditem
 		duration="500ms"
+		elementlocation="Center"
 		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
 		optional="False"
 		screenshotname=""
-		searchpropertyid="5d68944b-81ca-4e94-b11c-26570afd2962"
-		startlocation="Center"
-		steps="0"
-		swipeduration="500ms"
+		searchpropertyid="a79330c0-7c85-4b7c-bfa2-2c2db488c9d3"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="7743055a-53e9-4b59-9922-79d086bcb3c3"
+			id="fee0581d-235e-495c-8172-a33117cf6684"
 			sourcename="ElementTree">
 				<element
 				capabilities="androidelement, mobileuielement"
@@ -870,44 +122,121 @@ mode="Global">
 				flavor="mobile"
 				hasfocus="False"
 				index="0"
-				prefcap="androidelement"
-				rect="0,61,1080,1977"
-				role="unknown"
+				prefcap="button"
+				rect="28,1913,1024,97"
+				role="button"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Cofnij
+					</attribute>
+					<attribute
 					name="rid"
 					type="System.String">
-						content
+						btn_back
 					</attribute>
 					<attribute
 					name="platformclass"
 					type="System.String">
-						androidx.appcompat.widget.ContentFrameLayout
+						androidx.appcompat.widget.AppCompatButton
 					</attribute>
 					<attribute
 					name="temporaryelementid"
 					type="System.Int32">
-						33789356
+						14184130
 					</attribute>
 				</element>
 				<path>
-					/mobileapp[@title='m.example.wakeapp2']/?/?/androidelement[@rid='content']
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='AlarmActivity']//container[@rid='LinearLayout1']/button[@rid='btn_back']
 				</path>
 			</info>
-		</swiperecorditem>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="61af8f65-e060-450c-abd1-cd139f26d280"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="af62b27c-d597-4e42-aa76-6750cb75ec2b"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="69,860,296,317"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Urz&#261;dzenia
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						btn_divice_mgmt
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatButton
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						27124219
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='MainActivity']//container[@containertype='Linear']/container[3]/button[@rid='btn_divice_mgmt']
+				</path>
+			</info>
+		</touchrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="06a0452e-d9aa-474b-856b-274eeb45de42">
+		searchpropertyid="9aa21a92-259a-4a38-add9-d10331a3a23a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="ba073034-f983-48b1-b7d7-7663f631dda4"
+			id="02f2d31f-cae7-40f6-9a5a-2508c7560e83"
 			sourcename="ElementTree">
 				<element
 				capabilities="androidelement, mobileuielement"
@@ -915,9 +244,124 @@ mode="Global">
 				enabled="True"
 				flavor="mobile"
 				hasfocus="False"
-				index="8"
+				index="0"
+				prefcap="container"
+				rect="-2,59,1080,383"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="containertype"
+					type="System.String">
+						Relative
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						android.widget.RelativeLayout
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						261403392
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form/?/?/container/?/?/container
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="841710c2-9c7c-4e4d-bc99-785636a98bd5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02f2d31f-cae7-40f6-9a5a-2508c7560e83"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="1"
+				prefcap="container"
+				rect="-2,442,1080,383"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="containertype"
+					type="System.String">
+						Linear
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						android.widget.LinearLayout
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						47867705
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form/?/?/container/?/?/container
+				</path>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="9bd02d9a-e062-46ef-8ea7-8a8ef1182127"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="504b3fe8-4122-4956-a529-374c13b2d2aa"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="1"
 				prefcap="button"
-				rect="2211,1151,978,122"
+				rect="28,599,1024,97"
 				role="button"
 				snapElem=""
 				valid="True"
@@ -930,17 +374,12 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						Zaloguj
-					</attribute>
-					<attribute
-					name="resourceid"
-					type="System.String">
-						R.string.login
+						Dodaj nowe urzadzenie
 					</attribute>
 					<attribute
 					name="rid"
 					type="System.String">
-						btn_login_user
+						btn_add_new_device
 					</attribute>
 					<attribute
 					name="platformclass"
@@ -950,20 +389,689 @@ mode="Global">
 					<attribute
 					name="temporaryelementid"
 					type="System.Int32">
-						243725316
+						185640019
 					</attribute>
 				</element>
 				<path>
-					/mobileapp[@title='m.example.wakeapp2']/form[@title='Login2Activity']//androidelement[@rid='viewPager2']/container[1]/button[@resourceid='R.string.login']
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']/androidelement[@rid='content']//button[@rid='btn_add_new_device']
+				</path>
+			</info>
+		</touchrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46676d9f-ee65-4e8b-9ee8-329c07874576">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a13340fe-0818-4cf4-8f2c-38ab0018c55e"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="126,99,828,145"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						Nowe urz&#261;dzenie
+					</attribute>
+					<attribute
+					name="resourceid"
+					type="System.String">
+						R.string.Device_title
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						tv_title
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatTextView
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						91367991
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']/text[@resourceid='R.string.Device_title']
 				</path>
 			</info>
 			<matchname>
 				Text
 			</matchname>
 			<matchvalue>
-				Zaloguj
+				Nowe urz&#261;dzenie
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="296dc7cb-3479-4ab3-a29f-55c60f3d5af8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ae3e3be5-ca4f-4a4b-a69e-73382b503b4b"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="0"
+				prefcap="radiobutton"
+				rect="51,530,182,82"
+				role="radiobutton"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="checked"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Telefon
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						radioTelefon
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatRadioButton
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1482536
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//container[@rid='radioDevice']/radiobutton[@rid='radioTelefon']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Telefon
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="62095319-00dd-46a5-8cf0-f371c3bdce64">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d8ca8a93-9c59-4278-a2ac-aa0b7ce9db0f"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="1"
+				prefcap="radiobutton"
+				rect="51,612,419,82"
+				role="radiobutton"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="checked"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Budzik WakeApp Arduino
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						radioArduino
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatRadioButton
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						252716097
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//container[@rid='radioDevice']/radiobutton[@rid='radioArduino']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Budzik WakeApp Arduino
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2d2f47d1-19af-4eba-8ec9-0f86c3dcc870">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b4b06f47-2446-47b9-9250-3dd071d85224"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="8"
+				prefcap="button"
+				rect="79,1546,922,97"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Dodaj
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						btn_dodaj_device
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatButton
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						249612826
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//button[@rid='btn_dodaj_device']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Dodaj
+			</matchvalue>
+		</validationitem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="aaf400d9-d080-4419-8761-6bd772461b1d"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7217e259-ed84-4a47-b9a3-23b4c8093765"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="1"
+				prefcap="text"
+				rect="102,323,876,128"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						et_deviceName
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						87372499
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//text[@rid='et_deviceName']
+				</path>
+			</info>
+		</touchrecorditem>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="68c28312-f847-4265-81e9-e79dc6356ddb">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7217e259-ed84-4a47-b9a3-23b4c8093765"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="1"
+				prefcap="text"
+				rect="102,323,876,128"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						et_deviceName
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						87372499
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//text[@rid='et_deviceName']
+				</path>
+			</info>
+			<AttributeValue>
+				PhoneTest
+			</AttributeValue>
+		</setvaluerecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="5cbe6b1a-eea3-4f9a-abd8-6a544a78a5ad"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0fb55517-1552-4613-8a2e-5c6a2b0ea680"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="5"
+				prefcap="text"
+				rect="102,773,876,128"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						et_deviceMAC
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						236333359
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//text[@rid='et_deviceMAC']
+				</path>
+			</info>
+		</touchrecorditem>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8870c606-6182-4a11-946e-d3d0882c6730">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0fb55517-1552-4613-8a2e-5c6a2b0ea680"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="5"
+				prefcap="text"
+				rect="102,773,876,128"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						et_deviceMAC
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						236333359
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//text[@rid='et_deviceMAC']
+				</path>
+			</info>
+			<AttributeValue>
+				792215483
+			</AttributeValue>
+		</setvaluerecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="aa839268-ff94-4177-8563-4a86f6296797"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="641ac439-708e-4d17-a651-1a2ebca990d2"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="51,980,978,122"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						test
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						text1
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatTextView
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						3239398
+					</attribute>
+					<dynamicattribute
+					description="Hint property from Android TextView, EditText and TextInputLayout or similar classes"
+					name="Hint"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//list[@rid='listUser']/text[1]
+				</path>
+			</info>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="500ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="f3fd786d-ae4f-4a05-8115-84750c508e15"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b4b06f47-2446-47b9-9250-3dd071d85224"
+			sourcename="ElementTree">
+				<element
+				capabilities="androidelement, mobileuielement"
+				dontcache="True"
+				enabled="True"
+				flavor="mobile"
+				hasfocus="False"
+				index="8"
+				prefcap="button"
+				rect="79,1546,922,97"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Dodaj
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						btn_dodaj_device
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						androidx.appcompat.widget.AppCompatButton
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						249612826
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='m.example.wakeapp2']/form[@title='DeviceActivity']//container[@rid='fragment_container_device']/?/?/container[@containertype='Relative']//button[@rid='btn_dodaj_device']
+				</path>
+			</info>
+		</touchrecorditem>
 	</recorditems>
 	<repository
 	id="1cb3639a-dab9-484b-b470-871f8b54925e"
@@ -980,7 +1088,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Register.UserCode.cs
+		AddDeviceAndroid.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

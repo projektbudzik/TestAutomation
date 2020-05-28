@@ -145,6 +145,18 @@
       <UserCode>true</UserCode>
       <id>5968c11a-c8d9-4c1d-896f-de772c7dce92</id>
     </Compile>
+    <Compile Include="AddDeviceAndroid.cs">
+      <BoundTo>31b5af7f-84af-4180-893d-8f0a2727fc45</BoundTo>
+      <DependentUpon>AddDeviceAndroid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bf336d30-e058-414c-bd75-e7d746d4153a</id>
+    </Compile>
+    <Compile Include="AddDeviceAndroid.UserCode.cs">
+      <BoundTo>31b5af7f-84af-4180-893d-8f0a2727fc45</BoundTo>
+      <DependentUpon>AddDeviceAndroid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7cc974a-417c-4420-b8c2-d0077558f882</id>
+    </Compile>
     <Compile Include="AddDeviceArduino.cs">
       <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
       <DependentUpon>AddDeviceArduino.rxrep</DependentUpon>
@@ -361,6 +373,18 @@
       <UserCode>true</UserCode>
       <id>737d44cd-6951-4316-9294-87cbe90bbc27</id>
     </Compile>
+    <Compile Include="Recording3.cs">
+      <BoundTo>bd28cb96-7298-408e-b211-9af4a0592673</BoundTo>
+      <DependentUpon>Recording3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>360bef68-1e78-4637-a6e1-5abcd75ffc21</id>
+    </Compile>
+    <Compile Include="Recording3.UserCode.cs">
+      <BoundTo>bd28cb96-7298-408e-b211-9af4a0592673</BoundTo>
+      <DependentUpon>Recording3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>46adbff7-a7d6-4911-9e5f-6b5ceef4068b</id>
+    </Compile>
     <Compile Include="Register.cs">
       <BoundTo>84067564-fafa-4265-8c62-dad0459de41b</BoundTo>
       <DependentUpon>Register.rxrec</DependentUpon>
@@ -409,6 +433,11 @@
       <id>f6ec499b-9b69-4ae6-895f-805a772c68b2</id>
       <recordtableid>3e5cbe22-a4f8-4d2e-b9fa-273d92380733</recordtableid>
       <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
+    </None>
+    <None Include="AddDeviceAndroid.rxrec">
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
+      <id>31b5af7f-84af-4180-893d-8f0a2727fc45</id>
+      <recordtableid>fa8e3e22-3bc7-4632-8101-b28af362caa0</recordtableid>
     </None>
     <None Include="AddDeviceArduino.rximg">
       <BoundTo>BAE686A1-70C4-4DF3-B305-68860DFCC695</BoundTo>
@@ -508,6 +537,11 @@
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
       <id>ad3ad896-145c-49a6-b6a5-c004ed1c253b</id>
       <recordtableid>2778919f-20b3-4435-8b8d-c77587d00a0b</recordtableid>
+    </None>
+    <None Include="Recording3.rxrec">
+      <id>bd28cb96-7298-408e-b211-9af4a0592673</id>
+      <recordtableid>19c3a3b8-0cad-4514-9857-c056963e544b</recordtableid>
+      <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>
     </None>
     <None Include="Register.rxrec">
       <BoundTo>00dbbbde-4fd8-4de4-917e-ed29cc90dfe2</BoundTo>

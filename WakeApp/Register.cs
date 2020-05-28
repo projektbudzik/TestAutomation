@@ -107,8 +107,8 @@ namespace WakeApp
             repo.MExampleWakeapp2.Linear.EtEmail.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test2122@gmail.com' on item 'MExampleWakeapp2.Linear.EtEmail'.", repo.MExampleWakeapp2.Linear.EtEmailInfo, new RecordItemIndex(7));
-            repo.MExampleWakeapp2.Linear.EtEmail.Element.SetAttributeValue("Text", "test2122@gmail.com");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'test91@gmail.com' on item 'MExampleWakeapp2.Linear.EtEmail'.", repo.MExampleWakeapp2.Linear.EtEmailInfo, new RecordItemIndex(7));
+            repo.MExampleWakeapp2.Linear.EtEmail.Element.SetAttributeValue("Text", "test91@gmail.com");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'MExampleWakeapp2.Linear.EtPassword2' at Center", repo.MExampleWakeapp2.Linear.EtPassword2Info, new RecordItemIndex(8));
@@ -131,9 +131,13 @@ namespace WakeApp
             repo.MExampleWakeapp2.Linear.BtnRegister.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Left (180°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(13));
-            repo.MExampleWakeapp2.Content.Swipe(Location.Center, ValueConverter.ArgumentFromString<Ranorex.Core.Recorder.Touch.GestureDirection>("SwipeDirection", "Left (180°)"), ValueConverter.ArgumentFromString<Ranorex.Core.Distance>("Distance", "1.0"), ValueConverter.ArgumentFromString<Ranorex.Duration>("SwipeDuration", "500ms"), 0);
+            Report.Log(ReportLevel.Info, "Touch gestures", "Swipe gesture with direction 'Right (0°)' starting from 'Center' with distance '1.0' with swipe duration'500ms' and step count '0' on item 'MExampleWakeapp2.Content'.", repo.MExampleWakeapp2.ContentInfo, new RecordItemIndex(13));
+            repo.MExampleWakeapp2.Content.Swipe(Location.Center, ValueConverter.ArgumentFromString<Ranorex.Core.Recorder.Touch.GestureDirection>("SwipeDirection", "Right (0°)"), ValueConverter.ArgumentFromString<Ranorex.Core.Distance>("Distance", "1.0"), ValueConverter.ArgumentFromString<Ranorex.Duration>("SwipeDuration", "500ms"), 0);
             Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Zaloguj') on item 'MExampleWakeapp2.BtnLoginUser1'.", repo.MExampleWakeapp2.BtnLoginUser1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.MExampleWakeapp2.BtnLoginUser1Info, "Text", "Zaloguj");
+            Delay.Milliseconds(0);
             
         }
 
